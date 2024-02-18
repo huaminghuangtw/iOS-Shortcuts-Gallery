@@ -506,6 +506,8 @@
 			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>filename</string>
 				<key>UUID</key>
 				<string>6CB152BA-C255-41E9-BEEA-527697B8E481</string>
 				<key>WFTextActionText</key>
@@ -532,14 +534,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.documentpicker.save</string>
+			<string>is.workflow.actions.setitemname</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>CBAE7146-0C21-4407-BB72-8778DE089DED</string>
-				<key>WFAskWhereToSave</key>
-				<false/>
-				<key>WFFileDestinationPath</key>
+				<string>12F26925-C5C9-4192-9B0F-8FEB44BB22E1</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>1F845ED7-7DD0-410D-99C6-D168E5E52A9E</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFName</key>
 				<dict>
 					<key>Value</key>
 					<dict>
@@ -548,7 +562,7 @@
 							<key>{0, 1}</key>
 							<dict>
 								<key>OutputName</key>
-								<string>Text</string>
+								<string>filename</string>
 								<key>OutputUUID</key>
 								<string>6CB152BA-C255-41E9-BEEA-527697B8E481</string>
 								<key>Type</key>
@@ -561,6 +575,19 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.documentpicker.save</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>CBAE7146-0C21-4407-BB72-8778DE089DED</string>
+				<key>WFAskWhereToSave</key>
+				<false/>
+				<key>WFFileDestinationPath</key>
+				<string></string>
 				<key>WFFolder</key>
 				<dict>
 					<key>Value</key>
@@ -580,9 +607,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Renamed Item</string>
 						<key>OutputUUID</key>
-						<string>1F845ED7-7DD0-410D-99C6-D168E5E52A9E</string>
+						<string>12F26925-C5C9-4192-9B0F-8FEB44BB22E1</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -604,23 +631,6 @@
 				<string>39DF1CFF-9156-4274-BB1D-4E70E7B78B79</string>
 				<key>WFControlFlowMode</key>
 				<integer>2</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>AsheKube.app.a-Shell.ExecuteCommandIntent</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>65EA8795-D29A-4320-8196-173E56929559</string>
-				<key>command</key>
-				<array>
-					<string>jump Root</string>
-					<string>cd iOS-Shortcuts-Gallery</string>
-					<string>lg2 add .</string>
-					<string>lg2 commit -m "Weekly iOS Shortcuts update test"</string>
-					<string>lg2 push</string>
-				</array>
 			</dict>
 		</dict>
 		<dict>
