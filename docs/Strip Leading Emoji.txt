@@ -1,0 +1,3 @@
+# Strip Leading Emoji
+
+---
