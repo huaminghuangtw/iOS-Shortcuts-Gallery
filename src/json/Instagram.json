@@ -1,1 +1,89 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.dismisssiri","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.useractivity.open","WFWorkflowActionParameters":{"UserActivityData":{"__type__":"data","__value__":"YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBMLDDE3PT4\/Q0ZKT1BWV1hcYGFkVSRudWxs3xASDQ4PEBESExQVFhcYGRobHB0eHyAhIh8fJSYnKCkqKywtHyswWGlzQWN0aXZlXxAUcGVyc2lzdGVudElkZW50aWZpZXJXb3B0aW9uc1d2ZXJzaW9uXxARZWxpZ2libGVGb3JTZWFyY2hfEBllbGlnaWJsZUZvclB1YmxpY0luZGV4aW5nXHJlcXVpcmVkS2V5c1xhY3Rpdml0eVR5cGVUd2hlblV0aXRsZVR0eXBlViRjbGFzc18QEmVsaWdpYmxlRm9ySGFuZG9mZl8QF2NvbnRlbnRBdHRyaWJ1dGVTZXREYXRhWHBheWxvYWRzXxAUZWxpZ2libGVGb3JSZW1pbmRlcnNfEBVlbGlnaWJsZUZvclByZWRpY3Rpb25XcGF5bG9hZAiAAIACEAEICIAPgAWABoAEEAGAEgmACIALCAmACtMyMxg0NTZXTlMua2V5c1pOUy5vYmplY3RzoKCAA9I4OTo7WiRjbGFzc25hbWVYJGNsYXNzZXNcTlNEaWN0aW9uYXJ5ojo8WE5TT2JqZWN0WUluc3RhZ3JhbV8QEFNpZ25JbldpdGhJbnRlbnTSQBhBQldOUy50aW1lI0HFrbAiDBOQgAfSODlERVZOU0RhdGWiRDzSRxhISVdOUy5kYXRhTxECmmJwbGlzdDAw1AECAwQFBgcKWCR2ZXJzaW9uWSRhcmNoaXZlclQkdG9wWCRvYmplY3RzEgABhqBfEA9OU0tleWVkQXJjaGl2ZXLRCAlUcm9vdIABpAsMERJVJG51bGzSDQ4PEFljb250YWluZXJWJGNsYXNzgAKAA08RAWneugABAABpAQAA3QAAAB0AAADw3QAAAAAA3QAAALwAAAADALEAAAAlAAAAX19jbGFzczpDU1NlYXJjaGFibGVJdGVtQXR0cmlidXRlU2V0AHoAAAAGADQAAAAJAA8AAABwdWJsaWMuY29udGVudAARAAAAT3BlbiBpbiBGcmllbmRseQAAAAAAAQACAAMABAAEAAQABgAGAGsAAAAAAAAA4AAAAAAAAAAA4FQAAAAAAAAA4BYAAABcAAAA9D8AAABvAAAA9CsAAAAAAAAA4CcAAAD0AAAAAOJQAAAA8RMAa01ESXRlbVRodW1ibmFpbFVSTAASAGtNREl0ZW1Db250ZW50VHlwZQARAGtNREl0ZW1Db250ZW50VVJMABIAa01ESXRlbURlc2NyaXB0aW9uABQAa01ESXRlbVRodW1ibmFpbERhdGEAHgBrTURJdGVtUmVsYXRlZFVuaXF1ZUlkZW50aWZpZXIA0hMUFRZaJGNsYXNzbmFtZVgkY2xhc3Nlc18QHENTU2VhcmNoYWJsZUl0ZW1BdHRyaWJ1dGVTZXSiFxhfEBxDU1NlYXJjaGFibGVJdGVtQXR0cmlidXRlU2V0WE5TT2JqZWN0AAgAEQAaACQAKQAyADcASQBMAFEAUwBYAF4AYwBtAHQAdgB4AeUB6gH1Af4CHQIgAj8AAAAAAAACAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAACSIAJ0jg5S0xdTlNNdXRhYmxlRGF0YaNNTjxdTlNNdXRhYmxlRGF0YVZOU0RhdGFPEDVNUAMFgalwcm9maWxlSUTZJDhCQ0JBOTBFLUQzREQtNEFBQS05MDA5LTEwMDQ3OERDNTJDNtMyMxhRU1WhUoAMoVSADYAOXxAaVUFJbnRlbnRzSWRlbnRpZmllclBheWxvYWRPELBicGxpc3QwMNQBAgMEBQYHClgkdmVyc2lvblkkYXJjaGl2ZXJUJHRvcFgkb2JqZWN0cxIAAYagXxAPTlNLZXllZEFyY2hpdmVy0QgJVHJvb3SAAaILDFUkbnVsbF8QJDJCQTI5QzIxLTI5RTgtNDBGRC1BMDdGLUM1NjE2NzMwNzUyRAgRGiQpMjdJTFFTVlwAAAAAAAABAQAAAAAAAAANAAAAAAAAAAAAAAAAAAAAg9I4OVlaXxATTlNNdXRhYmxlRGljdGlvbmFyeaNbOjxfEBNOU011dGFibGVEaWN0aW9uYXJ50jMYXV+hXoAQgBFZcHJvZmlsZUlE0jg5YmNVTlNTZXSiYjzSODllZl8QElVBVXNlckFjdGl2aXR5SW5mb6JnPF8QElVBVXNlckFjdGl2aXR5SW5mbwAIABEAGgAkACkAMgA3AEkATABRAFMAaQBvAJYAnwC2AL4AxgDaAPYBAwEQARUBGwEgAScBPAFWAV8BdgGOAZYBlwGZAZsBnQGeAZ8BoQGjAaUBpwGpAasBrAGuAbABsQGyAbQBuwHDAc4BzwHQAdIB1wHiAesB+AH7AgQCDgIhAiYCLgI3AjkCPgJFAkgCTQJVBPME9QT6BQgFDAUaBSEFWQVgBWIFZAVmBWgFagWHBjoGPwZVBlkGbwZ0BnYGeAZ6BoQGiQaPBpIGlwasBq8AAAAAAAACAQAAAAAAAABoAAAAAAAAAAAAAAAAAAAGxA=="},"UUID":"B0632FA1-4D7D-4C23-9201-380C89A6E969","UserActivityDescriptor":{"TeamIdentifier":"YJBX43BCVD","BundleIdentifier":"com.oecoway.friendlyLite","Name":"Friendly","UserActivityType":"SignInWithIntent"},"UserActivitySubtitle":"Open in Friendly","AppBundleIdentifier":"com.oecoway.friendlyLite"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.timer.start","WFWorkflowActionParameters":{"WFDuration":{"Value":{"Unit":"min","Magnitude":"10"},"WFSerializationType":"WFQuantityFieldValue"},"UUID":"45EA6042-6B20-4765-840A-0BECC7DBA7F5","AppIntentDescriptor":{"TeamIdentifier":"0000000000","BundleIdentifier":"com.apple.mobiletimer","Name":"Clock","AppIntentIdentifier":"INCreateTimerIntent"}}}],"WFWorkflowInputContentItemClasses":["WFAppContentItem","WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 61440
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.dismisssiri",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.useractivity.open",
+      "WFWorkflowActionParameters" : {
+        "AppBundleIdentifier" : "com.oecoway.friendlyLite",
+        "UUID" : "B0632FA1-4D7D-4C23-9201-380C89A6E969",
+        "UserActivityDescriptor" : {
+          "TeamIdentifier" : "YJBX43BCVD",
+          "BundleIdentifier" : "com.oecoway.friendlyLite",
+          "Name" : "Friendly",
+          "UserActivityType" : "SignInWithIntent"
+        },
+        "UserActivitySubtitle" : "Open in Friendly",
+        "UserActivityData" : {
+          "__type__" : "data",
+          "__value__" : "YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBMLDDE3PT4\/Q0ZKT1BWV1hcYGFkVSRudWxs3xASDQ4PEBESExQVFhcYGRobHB0eHyAhIh8fJSYnKCkqKywtHyswWGlzQWN0aXZlXxAUcGVyc2lzdGVudElkZW50aWZpZXJXb3B0aW9uc1d2ZXJzaW9uXxARZWxpZ2libGVGb3JTZWFyY2hfEBllbGlnaWJsZUZvclB1YmxpY0luZGV4aW5nXHJlcXVpcmVkS2V5c1xhY3Rpdml0eVR5cGVUd2hlblV0aXRsZVR0eXBlViRjbGFzc18QEmVsaWdpYmxlRm9ySGFuZG9mZl8QF2NvbnRlbnRBdHRyaWJ1dGVTZXREYXRhWHBheWxvYWRzXxAUZWxpZ2libGVGb3JSZW1pbmRlcnNfEBVlbGlnaWJsZUZvclByZWRpY3Rpb25XcGF5bG9hZAiAAIACEAEICIAPgAWABoAEEAGAEgmACIALCAmACtMyMxg0NTZXTlMua2V5c1pOUy5vYmplY3RzoKCAA9I4OTo7WiRjbGFzc25hbWVYJGNsYXNzZXNcTlNEaWN0aW9uYXJ5ojo8WE5TT2JqZWN0WUluc3RhZ3JhbV8QEFNpZ25JbldpdGhJbnRlbnTSQBhBQldOUy50aW1lI0HFrbAiDBOQgAfSODlERVZOU0RhdGWiRDzSRxhISVdOUy5kYXRhTxECmmJwbGlzdDAw1AECAwQFBgcKWCR2ZXJzaW9uWSRhcmNoaXZlclQkdG9wWCRvYmplY3RzEgABhqBfEA9OU0tleWVkQXJjaGl2ZXLRCAlUcm9vdIABpAsMERJVJG51bGzSDQ4PEFljb250YWluZXJWJGNsYXNzgAKAA08RAWneugABAABpAQAA3QAAAB0AAADw3QAAAAAA3QAAALwAAAADALEAAAAlAAAAX19jbGFzczpDU1NlYXJjaGFibGVJdGVtQXR0cmlidXRlU2V0AHoAAAAGADQAAAAJAA8AAABwdWJsaWMuY29udGVudAARAAAAT3BlbiBpbiBGcmllbmRseQAAAAAAAQACAAMABAAEAAQABgAGAGsAAAAAAAAA4AAAAAAAAAAA4FQAAAAAAAAA4BYAAABcAAAA9D8AAABvAAAA9CsAAAAAAAAA4CcAAAD0AAAAAOJQAAAA8RMAa01ESXRlbVRodW1ibmFpbFVSTAASAGtNREl0ZW1Db250ZW50VHlwZQARAGtNREl0ZW1Db250ZW50VVJMABIAa01ESXRlbURlc2NyaXB0aW9uABQAa01ESXRlbVRodW1ibmFpbERhdGEAHgBrTURJdGVtUmVsYXRlZFVuaXF1ZUlkZW50aWZpZXIA0hMUFRZaJGNsYXNzbmFtZVgkY2xhc3Nlc18QHENTU2VhcmNoYWJsZUl0ZW1BdHRyaWJ1dGVTZXSiFxhfEBxDU1NlYXJjaGFibGVJdGVtQXR0cmlidXRlU2V0WE5TT2JqZWN0AAgAEQAaACQAKQAyADcASQBMAFEAUwBYAF4AYwBtAHQAdgB4AeUB6gH1Af4CHQIgAj8AAAAAAAACAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAACSIAJ0jg5S0xdTlNNdXRhYmxlRGF0YaNNTjxdTlNNdXRhYmxlRGF0YVZOU0RhdGFPEDVNUAMFgalwcm9maWxlSUTZJDhCQ0JBOTBFLUQzREQtNEFBQS05MDA5LTEwMDQ3OERDNTJDNtMyMxhRU1WhUoAMoVSADYAOXxAaVUFJbnRlbnRzSWRlbnRpZmllclBheWxvYWRPELBicGxpc3QwMNQBAgMEBQYHClgkdmVyc2lvblkkYXJjaGl2ZXJUJHRvcFgkb2JqZWN0cxIAAYagXxAPTlNLZXllZEFyY2hpdmVy0QgJVHJvb3SAAaILDFUkbnVsbF8QJDJCQTI5QzIxLTI5RTgtNDBGRC1BMDdGLUM1NjE2NzMwNzUyRAgRGiQpMjdJTFFTVlwAAAAAAAABAQAAAAAAAAANAAAAAAAAAAAAAAAAAAAAg9I4OVlaXxATTlNNdXRhYmxlRGljdGlvbmFyeaNbOjxfEBNOU011dGFibGVEaWN0aW9uYXJ50jMYXV+hXoAQgBFZcHJvZmlsZUlE0jg5YmNVTlNTZXSiYjzSODllZl8QElVBVXNlckFjdGl2aXR5SW5mb6JnPF8QElVBVXNlckFjdGl2aXR5SW5mbwAIABEAGgAkACkAMgA3AEkATABRAFMAaQBvAJYAnwC2AL4AxgDaAPYBAwEQARUBGwEgAScBPAFWAV8BdgGOAZYBlwGZAZsBnQGeAZ8BoQGjAaUBpwGpAasBrAGuAbABsQGyAbQBuwHDAc4BzwHQAdIB1wHiAesB+AH7AgQCDgIhAiYCLgI3AjkCPgJFAkgCTQJVBPME9QT6BQgFDAUaBSEFWQVgBWIFZAVmBWgFagWHBjoGPwZVBlkGbwZ0BnYGeAZ6BoQGiQaPBpIGlwasBq8AAAAAAAACAQAAAAAAAABoAAAAAAAAAAAAAAAAAAAGxA=="
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.timer.start",
+      "WFWorkflowActionParameters" : {
+        "WFDuration" : {
+          "Value" : {
+            "Unit" : "min",
+            "Magnitude" : "10"
+          },
+          "WFSerializationType" : "WFQuantityFieldValue"
+        },
+        "AppIntentDescriptor" : {
+          "TeamIdentifier" : "0000000000",
+          "BundleIdentifier" : "com.apple.mobiletimer",
+          "Name" : "Clock",
+          "AppIntentIdentifier" : "INCreateTimerIntent"
+        },
+        "UUID" : "45EA6042-6B20-4765-840A-0BECC7DBA7F5"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppContentItem",
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

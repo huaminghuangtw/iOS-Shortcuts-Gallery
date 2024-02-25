@@ -1,0 +1,70 @@
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 946986751,
+    "WFWorkflowIconGlyphNumber" : 61440
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "com.grailr.CARROTweather.HideDetails",
+      "WFWorkflowActionParameters" : {
+        "AppIntentDescriptor" : {
+          "TeamIdentifier" : "WF8PNMLBHU",
+          "BundleIdentifier" : "com.grailr.CARROTweather",
+          "Name" : "CARROT",
+          "AppIntentIdentifier" : "HideDetails"
+        },
+        "UUID" : "621BE776-E08D-4EEB-ADF9-321064A3F671"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "com.grailr.CARROTweather.CurrentForecastIntent",
+      "WFWorkflowActionParameters" : {
+        "ShowWhenRun" : true,
+        "UUID" : "6848FBF0-5908-4035-80B1-62A0472B89E7",
+        "dataType" : "precipChance",
+        "forecastType" : "hourly",
+        "location" : {
+          "isCurrentLocation" : true
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppContentItem",
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

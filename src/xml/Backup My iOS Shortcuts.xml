@@ -24,6 +24,8 @@
 			<string>is.workflow.actions.file.createfolder</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>/src/shortcut</string>
 				<key>UUID</key>
 				<string>200B415C-7253-4D42-8E2F-64AD25856ED6</string>
 				<key>WFFilePath</key>
@@ -88,6 +90,8 @@
 			<string>is.workflow.actions.file.createfolder</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>/src/json</string>
 				<key>UUID</key>
 				<string>33FDCF74-D28B-4604-A1BE-40CCEE05563B</string>
 				<key>WFFilePath</key>
@@ -152,6 +156,8 @@
 			<string>is.workflow.actions.file.createfolder</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>/src/xml</string>
 				<key>UUID</key>
 				<string>772C9224-98E9-45C3-B3E0-9C6881477945</string>
 				<key>WFFilePath</key>
@@ -216,6 +222,8 @@
 			<string>is.workflow.actions.file.createfolder</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>CustomOutputName</key>
+				<string>/docs</string>
 				<key>UUID</key>
 				<string>6E7F4050-6157-438D-AAF4-F93E9097D30F</string>
 				<key>WFFilePath</key>
@@ -312,7 +320,7 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Created Folder</string>
+						<string>/src/shortcut</string>
 						<key>OutputUUID</key>
 						<string>200B415C-7253-4D42-8E2F-64AD25856ED6</string>
 						<key>Type</key>
@@ -362,6 +370,83 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>com.sindresorhus.Actions.PrettyPrintDictionariesIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>AppIntentDescriptor</key>
+				<dict>
+					<key>AppIntentIdentifier</key>
+					<string>PrettyPrintDictionariesIntent</string>
+					<key>BundleIdentifier</key>
+					<string>com.sindresorhus.Actions</string>
+					<key>Name</key>
+					<string>Actions</string>
+					<key>TeamIdentifier</key>
+					<string>YG56YK5RN5</string>
+				</dict>
+				<key>UUID</key>
+				<string>BF3847D2-4642-4BA7-923F-B0ABD46487EF</string>
+				<key>dictionaries</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>File of Type</string>
+						<key>OutputUUID</key>
+						<string>C1480435-13C5-4363-ABAD-FCD6EEDAEAD3</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setitemname</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>77D70ED6-0501-4521-AA06-0B5F5977C447</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Pretty Printed Dictionaries</string>
+						<key>OutputUUID</key>
+						<string>BF3847D2-4642-4BA7-923F-B0ABD46487EF</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFName</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>Repeat Item</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼.json</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.documentpicker.save</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -376,7 +461,7 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Created Folder</string>
+						<string>/src/json</string>
 						<key>OutputUUID</key>
 						<string>33FDCF74-D28B-4604-A1BE-40CCEE05563B</string>
 						<key>Type</key>
@@ -390,9 +475,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>File of Type</string>
+						<string>Renamed Item</string>
 						<key>OutputUUID</key>
-						<string>C1480435-13C5-4363-ABAD-FCD6EEDAEAD3</string>
+						<string>77D70ED6-0501-4521-AA06-0B5F5977C447</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -428,29 +513,11 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.documentpicker.save</string>
+			<string>is.workflow.actions.setitemname</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>516B5158-BF38-49E6-BBA5-9DF4CE8FF034</string>
-				<key>WFAskWhereToSave</key>
-				<false/>
-				<key>WFFileDestinationPath</key>
-				<string></string>
-				<key>WFFolder</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Created Folder</string>
-						<key>OutputUUID</key>
-						<string>772C9224-98E9-45C3-B3E0-9C6881477945</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
+				<string>360752E4-73F9-475E-90B1-57254EA5E5A2</string>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -465,24 +532,13 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
-				<key>WFSaveFileOverwrite</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.gettext</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>1F845ED7-7DD0-410D-99C6-D168E5E52A9E</string>
-				<key>WFTextActionText</key>
+				<key>WFName</key>
 				<dict>
 					<key>Value</key>
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{2, 1}</key>
+							<key>{0, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
@@ -491,14 +547,54 @@
 							</dict>
 						</dict>
 						<key>string</key>
-						<string># ￼
-
----
-</string>
+						<string>￼.xml</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.documentpicker.save</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>516B5158-BF38-49E6-BBA5-9DF4CE8FF034</string>
+				<key>WFAskWhereToSave</key>
+				<false/>
+				<key>WFFileDestinationPath</key>
+				<string></string>
+				<key>WFFolder</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>/src/xml</string>
+						<key>OutputUUID</key>
+						<string>772C9224-98E9-45C3-B3E0-9C6881477945</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Renamed Item</string>
+						<key>OutputUUID</key>
+						<string>360752E4-73F9-475E-90B1-57254EA5E5A2</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFSaveFileOverwrite</key>
+				<true/>
 			</dict>
 		</dict>
 		<dict>
@@ -526,6 +622,115 @@
 						</dict>
 						<key>string</key>
 						<string>￼.md</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.documentpicker.open</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>E93C5F63-B936-4468-BD2A-CE2D44932ED0</string>
+				<key>WFFile</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>/docs</string>
+						<key>OutputUUID</key>
+						<string>6E7F4050-6157-438D-AAF4-F93E9097D30F</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFFileErrorIfNotFound</key>
+				<false/>
+				<key>WFGetFilePath</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>filename</string>
+								<key>OutputUUID</key>
+								<string>6CB152BA-C255-41E9-BEEA-527697B8E481</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2CDEA887-8BF7-42B9-8CF2-5857A9ED1924</string>
+				<key>WFCondition</key>
+				<integer>101</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>File</string>
+							<key>OutputUUID</key>
+							<string>E93C5F63-B936-4468-BD2A-CE2D44932ED0</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>1F845ED7-7DD0-410D-99C6-D168E5E52A9E</string>
+				<key>WFTextActionText</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{2, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>Repeat Item</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string># ￼
+</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -593,7 +798,7 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Created Folder</string>
+						<string>/docs</string>
 						<key>OutputUUID</key>
 						<string>6E7F4050-6157-438D-AAF4-F93E9097D30F</string>
 						<key>Type</key>
@@ -622,6 +827,19 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2CDEA887-8BF7-42B9-8CF2-5857A9ED1924</string>
+				<key>UUID</key>
+				<string>F40FE808-17DD-45E4-A984-CCB03D96FCD7</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.repeat.each</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -644,6 +862,44 @@
 				<string>✅ Backup My iOS Shortcuts</string>
 				<key>WFNotificationActionSound</key>
 				<false/>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>531755A5-2303-4E3D-9C4D-9B4D3438B7F8</string>
+				<key>WFTextActionText</key>
+				<string>Git Commit iOS Shortcuts Backup</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>dk.simonbs.Scriptable.ParameterizedRunScriptIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>ShowWhenRun</key>
+				<false/>
+				<key>UUID</key>
+				<string>3FFCD617-CFE1-431B-AE08-9F4B9A74FB3B</string>
+				<key>fileName</key>
+				<string>Create Notification</string>
+				<key>parameter</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>531755A5-2303-4E3D-9C4D-9B4D3438B7F8</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
 			</dict>
 		</dict>
 	</array>

@@ -1,0 +1,163 @@
+{
+  "WFWorkflowMinimumClientVersionString" : "1113",
+  "WFWorkflowMinimumClientVersion" : 1113,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 61440
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowNoInputBehavior" : {
+    "Name" : "WFWorkflowNoInputBehaviorAskForInput",
+    "Parameters" : {
+      "ItemClass" : "WFStringContentItem"
+    }
+  },
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.documentpicker.open",
+      "WFWorkflowActionParameters" : {
+        "WFGetFilePath" : "last_sync_time.json",
+        "WFFile" : {
+          "fileLocation" : {
+            "appContainerBundleIdentifier" : "com.apple.shortcuts",
+            "fileProviderDomainID" : "com.apple.CloudDocs.iCloudDriveFileProvider\/8490D092-B665-44CE-B773-583DD8574185",
+            "crossDeviceItemID" : "docs.icloud.com:com.apple.CloudDocs\/5F8514BF-FF18-475D-8228-4DC2E7C545E0\/a0bad20b84b444f60045f020842869162977d5f7",
+            "WFFileLocationType" : "Shortcuts",
+            "relativeSubpath" : "Obsidian Vault Sync"
+          },
+          "filename" : "Obsidian Vault Sync",
+          "displayName" : "Obsidian Vault Sync"
+        },
+        "UUID" : "0C329885-4D0A-406A-BC9D-539428E11B2B"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.detect.dictionary",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "0C329885-4D0A-406A-BC9D-539428E11B2B",
+            "Type" : "ActionOutput",
+            "OutputName" : "File"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "ECE6BE62-3FE4-45CB-B849-526FD805BC59"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "ECE6BE62-3FE4-45CB-B849-526FD805BC59",
+            "Type" : "ActionOutput",
+            "OutputName" : "Dictionary"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "dict"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvalueforkey",
+      "WFWorkflowActionParameters" : {
+        "WFDictionaryKey" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "Type" : "ExtensionInput"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "UUID" : "85AF675D-AEB2-4536-8E90-A8160B18ADE3",
+        "WFDictionary" : {
+          "Value" : {
+            "VariableName" : "dict",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFDictionaryValue" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "Type" : "CurrentDate",
+                "Aggrandizements" : [
+                  {
+                    "WFDateFormatStyle" : "ISO 8601",
+                    "Type" : "WFDateFormatVariableAggrandizement",
+                    "WFISO8601IncludeTime" : true
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "85AF675D-AEB2-4536-8E90-A8160B18ADE3",
+            "Type" : "ActionOutput",
+            "OutputName" : "Dictionary"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "dict"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.documentpicker.save",
+      "WFWorkflowActionParameters" : {
+        "WFFolder" : {
+          "fileLocation" : {
+            "appContainerBundleIdentifier" : "com.apple.shortcuts",
+            "fileProviderDomainID" : "com.apple.CloudDocs.iCloudDriveFileProvider\/8490D092-B665-44CE-B773-583DD8574185",
+            "crossDeviceItemID" : "docs.icloud.com:com.apple.CloudDocs\/5F8514BF-FF18-475D-8228-4DC2E7C545E0\/a0bad20b84b444f60045f020842869162977d5f7",
+            "WFFileLocationType" : "Shortcuts",
+            "relativeSubpath" : "Obsidian Vault Sync"
+          },
+          "filename" : "Obsidian Vault Sync",
+          "displayName" : "Obsidian Vault Sync"
+        },
+        "WFAskWhereToSave" : false,
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "dict",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "359BC9DE-90F6-401B-AF14-4B35C095ABB2",
+        "WFSaveFileOverwrite" : true,
+        "WFFileDestinationPath" : "last_sync_time.json"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : true
+}

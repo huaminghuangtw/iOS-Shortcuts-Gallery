@@ -14,26 +14,6 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.runworkflow</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>87581601-9ECF-4985-B448-DD18FA5B6B8A</string>
-				<key>WFWorkflow</key>
-				<dict>
-					<key>isSelf</key>
-					<false/>
-					<key>workflowIdentifier</key>
-					<string>5F328E8A-7A15-44C8-9537-A1E55A6AE72D</string>
-					<key>workflowName</key>
-					<string>Power On Supercomputer</string>
-				</dict>
-				<key>WFWorkflowName</key>
-				<string>Power On Supercomputer</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -106,6 +86,26 @@
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
 				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runworkflow</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>87581601-9ECF-4985-B448-DD18FA5B6B8A</string>
+				<key>WFWorkflow</key>
+				<dict>
+					<key>isSelf</key>
+					<false/>
+					<key>workflowIdentifier</key>
+					<string>5F328E8A-7A15-44C8-9537-A1E55A6AE72D</string>
+					<key>workflowName</key>
+					<string>Power On Supercomputer</string>
+				</dict>
+				<key>WFWorkflowName</key>
+				<string>Power On Supercomputer</string>
 			</dict>
 		</dict>
 		<dict>

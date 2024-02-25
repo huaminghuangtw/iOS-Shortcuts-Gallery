@@ -1,1 +1,56 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61461},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFAppIdentifier":"com.taiwanmobile.TTNTapp","WFSelectedApp":{"BundleIdentifier":"com.taiwanmobile.TTNTapp","Name":"台灣大客服","TeamIdentifier":"TMPGCK6PC5"}}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 61461
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "WFAppIdentifier" : "com.taiwanmobile.TTNTapp",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.taiwanmobile.TTNTapp",
+          "Name" : "台灣大客服",
+          "TeamIdentifier" : "TMPGCK6PC5"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

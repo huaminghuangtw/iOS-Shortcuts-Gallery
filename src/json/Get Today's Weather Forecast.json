@@ -1,1 +1,89 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":59459},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":["WFWeatherDataContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.weather.forecast","WFWorkflowActionParameters":{"WFWeatherForecastType":"Daily","UUID":"DE823E58-904A-4354-93EB-5FF28E0957B3"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getitemfromlist","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"DE823E58-904A-4354-93EB-5FF28E0957B3","Type":"ActionOutput","OutputName":"Weather Conditions"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"228FA1B9-0A5C-49E9-8F96-717851D0EF01"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"228FA1B9-0A5C-49E9-8F96-717851D0EF01","Type":"ActionOutput","OutputName":"Item from List"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[{"Category":"Parameter","ParameterKey":"WFTextActionText","ActionIndex":0,"Text":"What is your first name?","DefaultValue":""}],"WFWorkflowTypes":["NCWidget"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 59459
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+    "WFWeatherDataContentItem"
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.weather.forecast",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "DE823E58-904A-4354-93EB-5FF28E0957B3",
+        "WFWeatherForecastType" : "Daily"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getitemfromlist",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "DE823E58-904A-4354-93EB-5FF28E0957B3",
+            "Type" : "ActionOutput",
+            "OutputName" : "Weather Conditions"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "228FA1B9-0A5C-49E9-8F96-717851D0EF01"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.output",
+      "WFWorkflowActionParameters" : {
+        "WFOutput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "228FA1B9-0A5C-49E9-8F96-717851D0EF01",
+                "Type" : "ActionOutput",
+                "OutputName" : "Item from List"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+    {
+      "Category" : "Parameter",
+      "ParameterKey" : "WFTextActionText",
+      "ActionIndex" : 0,
+      "Text" : "What is your first name?",
+      "DefaultValue" : ""
+    }
+  ],
+  "WFWorkflowTypes" : [
+    "NCWidget"
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

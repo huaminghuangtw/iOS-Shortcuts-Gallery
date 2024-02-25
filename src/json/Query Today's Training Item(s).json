@@ -1,1 +1,268 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":3679049983,"WFWorkflowIconGlyphNumber":59465},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":["WFDictionaryContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.date","WFWorkflowActionParameters":{"CustomOutputName":"Today","UUID":"D24A2F08-7C54-4718-A7BA-8E5E0F97A688","WFDateActionMode":"Specified Date","WFDateActionDate":"Today"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.dictionary","WFWorkflowActionParameters":{"WFItems":{"Value":{"WFDictionaryFieldValueItems":[{"WFItemType":0,"WFKey":{"Value":{"string":"Database ID"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"e9253732dc7e4b70b65f3f46f7cc8dde"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Notion API Token"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"secret_sfvTZzQGKeFmiydpPGPgv0pKDni9ILUz1lqKwD4o710"},"WFSerializationType":"WFTextTokenString"}}]},"WFSerializationType":"WFDictionaryFieldValue"},"UUID":"F5AD1B90-3420-4CFF-8D3D-32AEAABD63BA"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"{\n  \"filter\":{\n    \"property\":\"Do Date\",\n    \"date\":{\n      \"equals\":\"￼\"\n    }\n  }\n}","attachmentsByRange":{"{70, 1}":{"Type":"ActionOutput","OutputName":"Today","OutputUUID":"D24A2F08-7C54-4718-A7BA-8E5E0F97A688","Aggrandizements":[{"Type":"WFDateFormatVariableAggrandizement","WFISO8601IncludeTime":false,"WFDateFormatStyle":"ISO 8601"}]}}},"WFSerializationType":"WFTextTokenString"},"CustomOutputName":"Request Body","UUID":"0ACC8B74-C571-477B-B4B1-8BD66CF607FA"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.downloadurl","WFWorkflowActionParameters":{"WFRequestVariable":{"Value":{"OutputUUID":"0ACC8B74-C571-477B-B4B1-8BD66CF607FA","Type":"ActionOutput","OutputName":"Request Body"},"WFSerializationType":"WFTextTokenAttachment"},"WFHTTPHeaders":{"Value":{"WFDictionaryFieldValueItems":[{"WFItemType":0,"WFKey":{"Value":{"string":"Authorization"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"Bearer ￼","attachmentsByRange":{"{7, 1}":{"Type":"ActionOutput","OutputName":"Dictionary","OutputUUID":"F5AD1B90-3420-4CFF-8D3D-32AEAABD63BA","Aggrandizements":[{"Type":"WFDictionaryValueVariableAggrandizement","DictionaryKey":"Notion API Token"}]}}},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Notion-Version"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"2022-06-28"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Content-Type"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"application\/json"},"WFSerializationType":"WFTextTokenString"}}]},"WFSerializationType":"WFDictionaryFieldValue"},"UUID":"DFA226C6-C2A9-43C0-9D6B-861CE80814FF","ShowHeaders":true,"WFURL":{"Value":{"string":"https:\/\/api.notion.com\/v1\/databases\/￼\/query","attachmentsByRange":{"{36, 1}":{"Type":"ActionOutput","OutputName":"Dictionary","OutputUUID":"F5AD1B90-3420-4CFF-8D3D-32AEAABD63BA","Aggrandizements":[{"Type":"WFDictionaryValueVariableAggrandizement","DictionaryKey":"Database ID"}]}}},"WFSerializationType":"WFTextTokenString"},"WFHTTPMethod":"POST","WFHTTPBodyType":"File"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.detect.dictionary","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"DFA226C6-C2A9-43C0-9D6B-861CE80814FF","Type":"ActionOutput","OutputName":"Contents of URL"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"2E0FF5E6-E2F6-4896-8E1E-031AAD569980"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"2E0FF5E6-E2F6-4896-8E1E-031AAD569980","Type":"ActionOutput","OutputName":"Dictionary"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[{"ParameterKey":"WFTextActionText","Category":"Parameter","ActionIndex":3,"Text":"Notion API Key"},{"ParameterKey":"WFTextActionText","Category":"Parameter","ActionIndex":5,"Text":"Database ID"}],"WFWorkflowTypes":["Watch"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 3679049983,
+    "WFWorkflowIconGlyphNumber" : 59465
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+    "WFDictionaryContentItem"
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.date",
+      "WFWorkflowActionParameters" : {
+        "CustomOutputName" : "Today",
+        "UUID" : "D24A2F08-7C54-4718-A7BA-8E5E0F97A688",
+        "WFDateActionMode" : "Specified Date",
+        "WFDateActionDate" : "Today"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.dictionary",
+      "WFWorkflowActionParameters" : {
+        "WFItems" : {
+          "Value" : {
+            "WFDictionaryFieldValueItems" : [
+              {
+                "WFItemType" : 0,
+                "WFKey" : {
+                  "Value" : {
+                    "string" : "Database ID"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                },
+                "WFValue" : {
+                  "Value" : {
+                    "string" : "e9253732dc7e4b70b65f3f46f7cc8dde"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType" : 0,
+                "WFKey" : {
+                  "Value" : {
+                    "string" : "Notion API Token"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                },
+                "WFValue" : {
+                  "Value" : {
+                    "string" : "secret_sfvTZzQGKeFmiydpPGPgv0pKDni9ILUz1lqKwD4o710"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                }
+              }
+            ]
+          },
+          "WFSerializationType" : "WFDictionaryFieldValue"
+        },
+        "UUID" : "F5AD1B90-3420-4CFF-8D3D-32AEAABD63BA"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "0ACC8B74-C571-477B-B4B1-8BD66CF607FA",
+        "CustomOutputName" : "Request Body",
+        "WFTextActionText" : {
+          "Value" : {
+            "string" : "{\n  \"filter\":{\n    \"property\":\"Do Date\",\n    \"date\":{\n      \"equals\":\"￼\"\n    }\n  }\n}",
+            "attachmentsByRange" : {
+              "{70, 1}" : {
+                "Type" : "ActionOutput",
+                "OutputName" : "Today",
+                "OutputUUID" : "D24A2F08-7C54-4718-A7BA-8E5E0F97A688",
+                "Aggrandizements" : [
+                  {
+                    "WFDateFormatStyle" : "ISO 8601",
+                    "Type" : "WFDateFormatVariableAggrandizement",
+                    "WFISO8601IncludeTime" : false
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.downloadurl",
+      "WFWorkflowActionParameters" : {
+        "WFRequestVariable" : {
+          "Value" : {
+            "OutputUUID" : "0ACC8B74-C571-477B-B4B1-8BD66CF607FA",
+            "Type" : "ActionOutput",
+            "OutputName" : "Request Body"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFHTTPHeaders" : {
+          "Value" : {
+            "WFDictionaryFieldValueItems" : [
+              {
+                "WFItemType" : 0,
+                "WFKey" : {
+                  "Value" : {
+                    "string" : "Authorization"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                },
+                "WFValue" : {
+                  "Value" : {
+                    "string" : "Bearer ￼",
+                    "attachmentsByRange" : {
+                      "{7, 1}" : {
+                        "Type" : "ActionOutput",
+                        "OutputName" : "Dictionary",
+                        "OutputUUID" : "F5AD1B90-3420-4CFF-8D3D-32AEAABD63BA",
+                        "Aggrandizements" : [
+                          {
+                            "Type" : "WFDictionaryValueVariableAggrandizement",
+                            "DictionaryKey" : "Notion API Token"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType" : 0,
+                "WFKey" : {
+                  "Value" : {
+                    "string" : "Notion-Version"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                },
+                "WFValue" : {
+                  "Value" : {
+                    "string" : "2022-06-28"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType" : 0,
+                "WFKey" : {
+                  "Value" : {
+                    "string" : "Content-Type"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                },
+                "WFValue" : {
+                  "Value" : {
+                    "string" : "application\/json"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                }
+              }
+            ]
+          },
+          "WFSerializationType" : "WFDictionaryFieldValue"
+        },
+        "UUID" : "DFA226C6-C2A9-43C0-9D6B-861CE80814FF",
+        "ShowHeaders" : true,
+        "WFURL" : {
+          "Value" : {
+            "string" : "https:\/\/api.notion.com\/v1\/databases\/￼\/query",
+            "attachmentsByRange" : {
+              "{36, 1}" : {
+                "Type" : "ActionOutput",
+                "OutputName" : "Dictionary",
+                "OutputUUID" : "F5AD1B90-3420-4CFF-8D3D-32AEAABD63BA",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "Database ID"
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFHTTPMethod" : "POST",
+        "WFHTTPBodyType" : "File"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.detect.dictionary",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "DFA226C6-C2A9-43C0-9D6B-861CE80814FF",
+            "Type" : "ActionOutput",
+            "OutputName" : "Contents of URL"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "2E0FF5E6-E2F6-4896-8E1E-031AAD569980"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.output",
+      "WFWorkflowActionParameters" : {
+        "WFOutput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "2E0FF5E6-E2F6-4896-8E1E-031AAD569980",
+                "Type" : "ActionOutput",
+                "OutputName" : "Dictionary"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+    {
+      "ParameterKey" : "WFTextActionText",
+      "Category" : "Parameter",
+      "ActionIndex" : 3,
+      "Text" : "Notion API Key"
+    },
+    {
+      "ParameterKey" : "WFTextActionText",
+      "Category" : "Parameter",
+      "ActionIndex" : 5,
+      "Text" : "Database ID"
+    }
+  ],
+  "WFWorkflowTypes" : [
+    "Watch"
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

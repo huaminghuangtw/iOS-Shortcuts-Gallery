@@ -1,1 +1,219 @@
-{"WFWorkflowMinimumClientVersionString":"1106","WFWorkflowMinimumClientVersion":1106,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.filter.notes","WFWorkflowActionParameters":{"WFContentItemFilter":{"Value":{"WFActionParameterFilterPrefix":1,"WFContentPredicateBoundedDate":false,"WFActionParameterFilterTemplates":[{"Operator":99,"Values":{"Unit":4,"Enumeration":{"Value":{"Value":{"Type":"Ask"},"WFSerializationType":"WFTextTokenAttachment"},"WFSerializationType":"WFStringSubstitutableState"}},"Removable":true,"Property":"Tags"}]},"WFSerializationType":"WFContentPredicateTableTemplate"},"UUID":"4539AC27-75D0-4050-9337-835088417109"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.repeat.each","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"4539AC27-75D0-4050-9337-835088417109","Type":"ActionOutput","OutputName":"Notes"},"WFSerializationType":"WFTextTokenAttachment"},"GroupingIdentifier":"EEDAEF20-5D12-44FF-A2DF-14C0F934947C","WFControlFlowMode":0}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getmarkdownfromrichtext","WFWorkflowActionParameters":{"WFInput":{"Value":{"VariableName":"Repeat Item","Type":"Variable"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"D68EAD70-3DE8-4ED7-B22C-9B6660E3D753"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.file","WFWorkflowActionParameters":{"WFFile":{"Value":{"OutputUUID":"D68EAD70-3DE8-4ED7-B22C-9B6660E3D753","Type":"ActionOutput","OutputName":"Markdown from Rich Text"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"608EB41C-0780-43BD-B1D6-ABFF9B6F576F"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"VariableName":"Repeat Item","Type":"Variable"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"56BB0F26-2EE3-421F-8D56-B9455A339E70","workflowName":"Get Title of Apple Notes","isSelf":false},"UUID":"2E01BFD3-DA07-4A42-B392-EC48E58AE081","WFWorkflowName":"Get Title of Apple Notes"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"￼.md","attachmentsByRange":{"{0, 1}":{"OutputUUID":"2E01BFD3-DA07-4A42-B392-EC48E58AE081","Type":"ActionOutput","OutputName":"Shortcut Result"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"62DAADD3-E1F8-40E5-8D28-D9BAB54DC6C3"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.setitemname","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"608EB41C-0780-43BD-B1D6-ABFF9B6F576F","Type":"ActionOutput","OutputName":"File"},"WFSerializationType":"WFTextTokenAttachment"},"WFName":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"62DAADD3-E1F8-40E5-8D28-D9BAB54DC6C3","Type":"ActionOutput","OutputName":"Text"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"52475341-64EB-410D-A691-6571FE0A53B8"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.documentpicker.save","WFWorkflowActionParameters":{"WFFolder":{"fileLocation":{"crossDeviceItemID":"docs.icloud.com:com.apple.CloudDocs\/CDDBD55F-78BF-4616-8F36-5C43038B5909\/98b3d1d879c1c1d2d6513eeac98a7939be6386f6","fileProviderDomainID":"com.apple.CloudDocs.iCloudDriveFileProvider\/8490D092-B665-44CE-B773-583DD8574185","WFFileLocationType":"iCloud","relativeSubpath":"com~apple~CloudDocs\/Hua-Ming's Vault\/My Apple Notes"},"filename":"My Apple Notes","displayName":"My Apple Notes"},"WFAskWhereToSave":false,"WFInput":{"Value":{"OutputUUID":"52475341-64EB-410D-A691-6571FE0A53B8","Type":"ActionOutput","OutputName":"Renamed Item"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"B386A8CF-DDF6-4CE4-9999-238964E5A70F","WFSaveFileOverwrite":true}},{"WFWorkflowActionIdentifier":"is.workflow.actions.repeat.each","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"EEDAEF20-5D12-44FF-A2DF-14C0F934947C","UUID":"FAD4D926-65AB-4442-B532-1BF6E9435948"}}],"WFWorkflowInputContentItemClasses":["WFAppContentItem","WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString" : "1106",
+  "WFWorkflowMinimumClientVersion" : 1106,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 61440
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.filter.notes",
+      "WFWorkflowActionParameters" : {
+        "WFContentItemFilter" : {
+          "Value" : {
+            "WFActionParameterFilterPrefix" : 1,
+            "WFActionParameterFilterTemplates" : [
+              {
+                "Operator" : 99,
+                "Values" : {
+                  "Unit" : 4,
+                  "Enumeration" : {
+                    "Value" : {
+                      "Value" : {
+                        "Type" : "Ask"
+                      },
+                      "WFSerializationType" : "WFTextTokenAttachment"
+                    },
+                    "WFSerializationType" : "WFStringSubstitutableState"
+                  }
+                },
+                "Removable" : true,
+                "Property" : "Tags"
+              }
+            ],
+            "WFContentPredicateBoundedDate" : false
+          },
+          "WFSerializationType" : "WFContentPredicateTableTemplate"
+        },
+        "UUID" : "4539AC27-75D0-4050-9337-835088417109"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "4539AC27-75D0-4050-9337-835088417109",
+            "Type" : "ActionOutput",
+            "OutputName" : "Notes"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "GroupingIdentifier" : "EEDAEF20-5D12-44FF-A2DF-14C0F934947C",
+        "WFControlFlowMode" : 0
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getmarkdownfromrichtext",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "Repeat Item",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "D68EAD70-3DE8-4ED7-B22C-9B6660E3D753"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.file",
+      "WFWorkflowActionParameters" : {
+        "WFFile" : {
+          "Value" : {
+            "OutputUUID" : "D68EAD70-3DE8-4ED7-B22C-9B6660E3D753",
+            "Type" : "ActionOutput",
+            "OutputName" : "Markdown from Rich Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "608EB41C-0780-43BD-B1D6-ABFF9B6F576F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "Repeat Item",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "56BB0F26-2EE3-421F-8D56-B9455A339E70",
+          "isSelf" : false,
+          "workflowName" : "Get Title of Apple Notes"
+        },
+        "UUID" : "2E01BFD3-DA07-4A42-B392-EC48E58AE081",
+        "WFWorkflowName" : "Get Title of Apple Notes"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "62DAADD3-E1F8-40E5-8D28-D9BAB54DC6C3",
+        "WFTextActionText" : {
+          "Value" : {
+            "string" : "￼.md",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "2E01BFD3-DA07-4A42-B392-EC48E58AE081",
+                "Type" : "ActionOutput",
+                "OutputName" : "Shortcut Result"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setitemname",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "608EB41C-0780-43BD-B1D6-ABFF9B6F576F",
+            "Type" : "ActionOutput",
+            "OutputName" : "File"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFName" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "62DAADD3-E1F8-40E5-8D28-D9BAB54DC6C3",
+                "Type" : "ActionOutput",
+                "OutputName" : "Text"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "UUID" : "52475341-64EB-410D-A691-6571FE0A53B8"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.documentpicker.save",
+      "WFWorkflowActionParameters" : {
+        "WFFolder" : {
+          "fileLocation" : {
+            "WFFileLocationType" : "iCloud",
+            "fileProviderDomainID" : "com.apple.CloudDocs.iCloudDriveFileProvider\/8490D092-B665-44CE-B773-583DD8574185",
+            "relativeSubpath" : "com~apple~CloudDocs\/Hua-Ming's Vault\/My Apple Notes",
+            "crossDeviceItemID" : "docs.icloud.com:com.apple.CloudDocs\/CDDBD55F-78BF-4616-8F36-5C43038B5909\/98b3d1d879c1c1d2d6513eeac98a7939be6386f6"
+          },
+          "filename" : "My Apple Notes",
+          "displayName" : "My Apple Notes"
+        },
+        "WFAskWhereToSave" : false,
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "52475341-64EB-410D-A691-6571FE0A53B8",
+            "Type" : "ActionOutput",
+            "OutputName" : "Renamed Item"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "B386A8CF-DDF6-4CE4-9999-238964E5A70F",
+        "WFSaveFileOverwrite" : true
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "FAD4D926-65AB-4442-B532-1BF6E9435948",
+        "GroupingIdentifier" : "EEDAEF20-5D12-44FF-A2DF-14C0F934947C",
+        "WFControlFlowMode" : 2
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppContentItem",
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

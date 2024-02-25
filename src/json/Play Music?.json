@@ -1,1 +1,151 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.list","WFWorkflowActionParameters":{"WFItems":["✅ Yes","❌ No"],"UUID":"24C4B8BD-E7B7-43DB-B2D1-02C673237BA0"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"🤖 Play Music?\n───────────────\n\"￼\"","attachmentsByRange":{"{32, 1}":{"Type":"ExtensionInput"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"1BEF151A-203B-46F8-9399-88D25D9DB461"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefromlist","WFWorkflowActionParameters":{"WFChooseFromListActionPrompt":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"1BEF151A-203B-46F8-9399-88D25D9DB461","Type":"ActionOutput","OutputName":"Text"}}},"WFSerializationType":"WFTextTokenString"},"WFInput":{"Value":{"OutputUUID":"24C4B8BD-E7B7-43DB-B2D1-02C673237BA0","Type":"ActionOutput","OutputName":"List"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"07F84DBA-EEF8-4BBC-B860-DC42387A7C28"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"07F84DBA-EEF8-4BBC-B860-DC42387A7C28","Type":"ActionOutput","OutputName":"Chosen Item"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"3B9D2B28-AA2E-459A-9689-A0BBDAC4FBFE","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"D61A5E8D-FB4B-4944-AF1A-72FCE4804F77","workflowName":"Choose Audio Device","isSelf":false},"WFWorkflowName":"Choose Audio Device","UUID":"4E2709DD-EDCE-408D-9E2D-325661D8F545"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"Value":{"Type":"ExtensionInput"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflowName":{"Value":{"Type":"ExtensionInput"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"6F3A9702-A50C-4EA1-8FD6-180A711C8260"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.setvolume","WFWorkflowActionParameters":{"WFVolume":0.34646457433700562}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"3B9D2B28-AA2E-459A-9689-A0BBDAC4FBFE","WFControlFlowMode":2}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":true}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 61440
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.list",
+      "WFWorkflowActionParameters" : {
+        "WFItems" : [
+          "✅ Yes",
+          "❌ No"
+        ],
+        "UUID" : "24C4B8BD-E7B7-43DB-B2D1-02C673237BA0"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "1BEF151A-203B-46F8-9399-88D25D9DB461",
+        "WFTextActionText" : {
+          "Value" : {
+            "string" : "🤖 Play Music?\n───────────────\n\"￼\"",
+            "attachmentsByRange" : {
+              "{32, 1}" : {
+                "Type" : "ExtensionInput"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.choosefromlist",
+      "WFWorkflowActionParameters" : {
+        "WFChooseFromListActionPrompt" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "1BEF151A-203B-46F8-9399-88D25D9DB461",
+                "Type" : "ActionOutput",
+                "OutputName" : "Text"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "24C4B8BD-E7B7-43DB-B2D1-02C673237BA0",
+            "Type" : "ActionOutput",
+            "OutputName" : "List"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "07F84DBA-EEF8-4BBC-B860-DC42387A7C28"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "07F84DBA-EEF8-4BBC-B860-DC42387A7C28",
+              "Type" : "ActionOutput",
+              "OutputName" : "Chosen Item"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "3B9D2B28-AA2E-459A-9689-A0BBDAC4FBFE",
+        "WFCondition" : 99
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "4E2709DD-EDCE-408D-9E2D-325661D8F545",
+        "WFWorkflowName" : "Choose Audio Device",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "D61A5E8D-FB4B-4944-AF1A-72FCE4804F77",
+          "isSelf" : false,
+          "workflowName" : "Choose Audio Device"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "6F3A9702-A50C-4EA1-8FD6-180A711C8260",
+        "WFWorkflowName" : {
+          "Value" : {
+            "Type" : "ExtensionInput"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "Value" : {
+            "Type" : "ExtensionInput"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvolume",
+      "WFWorkflowActionParameters" : {
+        "WFVolume" : 0.34646457433700562
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "3B9D2B28-AA2E-459A-9689-A0BBDAC4FBFE",
+        "WFControlFlowMode" : 2
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : true
+}

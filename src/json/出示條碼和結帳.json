@@ -1,1 +1,438 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":1440408063,"WFWorkflowIconGlyphNumber":59747},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":["WFMKMapItemContentItem","WFEmailAddressContentItem","WFAVAssetContentItem","WFDateContentItem","WFFolderContentItem","WFiTunesProductContentItem","WFDCMapsLinkContentItem","WFContactContentItem","WFURLContentItem","WFArticleContentItem","WFAppContentItem","WFAppStoreAppContentItem","WFStringContentItem","WFSafariWebPageContentItem","WFRichTextContentItem","WFPhotoMediaContentItem","WFPhoneNumberContentItem","WFPDFContentItem","WFLocationContentItem","WFImageContentItem","WFGenericFileContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.setvariable","WFWorkflowActionParameters":{"WFInput":{"Value":{"Type":"ExtensionInput"},"WFSerializationType":"WFTextTokenAttachment"},"WFVariableName":"Shop Name"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.setbrightness","WFWorkflowActionParameters":{"WFBrightness":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"VariableName":"Shop Name","Type":"Variable","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFStringContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"REWE","GroupingIdentifier":"EFC97B33-DC5C-4811-AA25-ABD8F15BC318","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"com.plumit.widgetnotes","Name":"PhotoLink","TeamIdentifier":"DX7WK2WMGE"},"WFAppIdentifier":"com.plumit.widgetnotes","UUID":"EAE024D1-FF1E-4228-9DE3-1A15FB5AEEA8"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFAppIdentifier":"com.rewe.iosapp","WFSelectedApp":{"BundleIdentifier":"com.rewe.iosapp","Name":"REWE","TeamIdentifier":"66K3R64ZBU"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"EFC97B33-DC5C-4811-AA25-ABD8F15BC318","UUID":"9DEE8911-3D76-4959-86E3-49B6160234A6"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"VariableName":"Shop Name","Type":"Variable","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFStringContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"PENNY","GroupingIdentifier":"002401B8-C4E2-477E-8A0B-B4ACAE739855","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFAppIdentifier":"com.plumit.widgetnotes","WFSelectedApp":{"BundleIdentifier":"com.plumit.widgetnotes","Name":"PhotoLink","TeamIdentifier":"DX7WK2WMGE"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"002401B8-C4E2-477E-8A0B-B4ACAE739855","UUID":"B388330E-D9BF-4EFC-BA39-448134C8D39B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"VariableName":"Shop Name","Type":"Variable","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFStringContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"NETTO","GroupingIdentifier":"4CDABDA4-21D8-4F58-B6CB-69566E96E6AE","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFAppIdentifier":"com.plumit.widgetnotes","WFSelectedApp":{"BundleIdentifier":"com.plumit.widgetnotes","Name":"PhotoLink","TeamIdentifier":"DX7WK2WMGE"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"4CDABDA4-21D8-4F58-B6CB-69566E96E6AE","UUID":"29D2ACBE-D414-4307-BF84-037DD5B15D85"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"VariableName":"Shop Name","Type":"Variable","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFStringContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"EDEKA","GroupingIdentifier":"E2BB5D7D-8302-4CB9-BD2B-1D4AB7F64E31","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"com.plumit.widgetnotes","Name":"PhotoLink","TeamIdentifier":"DX7WK2WMGE"},"WFAppIdentifier":"com.plumit.widgetnotes","UUID":"AF1EB388-DF26-4768-8686-D0CA7BC3C1FE"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"de.edeka.Genusskonto","Name":"EDEKA","TeamIdentifier":"DD58GDN9KA"},"WFAppIdentifier":"de.edeka.Genusskonto","UUID":"98EA40E2-7149-45F7-882F-9728645B38B9"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"E2BB5D7D-8302-4CB9-BD2B-1D4AB7F64E31","UUID":"C79DF807-AF68-4524-908E-79BF5D60555B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"VariableName":"Shop Name","Type":"Variable","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFStringContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"LIDL","GroupingIdentifier":"C13E05F7-6F4A-468A-AFDB-FF6BA9C8FB76","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"com.lidl.eci.lidl.plus","Name":"Lidl Plus","TeamIdentifier":"P593BEJ5Y8"},"WFAppIdentifier":"com.lidl.eci.lidl.plus","UUID":"2AB0F5D2-B608-404E-BE9E-4FC04A295DED"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"C13E05F7-6F4A-468A-AFDB-FF6BA9C8FB76","UUID":"79D172C4-5BBD-4877-8674-371F76F15BCA"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"VariableName":"Shop Name","Type":"Variable","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFStringContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"DM","GroupingIdentifier":"EDB366FC-9CF0-4294-AF57-764E01B5FB40","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"de.dm.meindm","Name":"Mein dm","TeamIdentifier":"V7PYJ2FTTJ"},"WFAppIdentifier":"de.dm.meindm","UUID":"2C560B5A-A2E9-43B5-90CA-74458334A09D"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"EDB366FC-9CF0-4294-AF57-764E01B5FB40","UUID":"806389DD-F755-495C-9174-0CCFE51581FB"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"VariableName":"Shop Name","Type":"Variable","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFStringContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"ROSSMANN","GroupingIdentifier":"D784C200-5504-4E94-AF18-988CEBCBFCE8","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"de.rossmann.app","Name":"Rossmann","TeamIdentifier":"G94C4ZHFJ9"},"WFAppIdentifier":"de.rossmann.app","UUID":"00AE3FA1-F1BF-4B21-8F53-5498FBAFBFBB"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"D784C200-5504-4E94-AF18-988CEBCBFCE8","UUID":"D64E992A-CC80-4BA0-9FFA-9F491FDAE831"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"D64E992A-CC80-4BA0-9FFA-9F491FDAE831","Type":"ActionOutput","OutputName":"If Result"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":true}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 1440408063,
+    "WFWorkflowIconGlyphNumber" : 59747
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+    "WFMKMapItemContentItem",
+    "WFEmailAddressContentItem",
+    "WFAVAssetContentItem",
+    "WFDateContentItem",
+    "WFFolderContentItem",
+    "WFiTunesProductContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFContactContentItem",
+    "WFURLContentItem",
+    "WFArticleContentItem",
+    "WFAppContentItem",
+    "WFAppStoreAppContentItem",
+    "WFStringContentItem",
+    "WFSafariWebPageContentItem",
+    "WFRichTextContentItem",
+    "WFPhotoMediaContentItem",
+    "WFPhoneNumberContentItem",
+    "WFPDFContentItem",
+    "WFLocationContentItem",
+    "WFImageContentItem",
+    "WFGenericFileContentItem"
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "Type" : "ExtensionInput"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "Shop Name"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setbrightness",
+      "WFWorkflowActionParameters" : {
+        "WFBrightness" : 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "VariableName" : "Shop Name",
+              "Type" : "Variable",
+              "Aggrandizements" : [
+                {
+                  "Type" : "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass" : "WFStringContentItem"
+                }
+              ]
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "REWE",
+        "GroupingIdentifier" : "EFC97B33-DC5C-4811-AA25-ABD8F15BC318",
+        "WFCondition" : 99
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "EAE024D1-FF1E-4228-9DE3-1A15FB5AEEA8",
+        "WFAppIdentifier" : "com.plumit.widgetnotes",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.plumit.widgetnotes",
+          "Name" : "PhotoLink",
+          "TeamIdentifier" : "DX7WK2WMGE"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "WFAppIdentifier" : "com.rewe.iosapp",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.rewe.iosapp",
+          "Name" : "REWE",
+          "TeamIdentifier" : "66K3R64ZBU"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "9DEE8911-3D76-4959-86E3-49B6160234A6",
+        "GroupingIdentifier" : "EFC97B33-DC5C-4811-AA25-ABD8F15BC318",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "VariableName" : "Shop Name",
+              "Type" : "Variable",
+              "Aggrandizements" : [
+                {
+                  "Type" : "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass" : "WFStringContentItem"
+                }
+              ]
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "PENNY",
+        "GroupingIdentifier" : "002401B8-C4E2-477E-8A0B-B4ACAE739855",
+        "WFCondition" : 99
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "WFAppIdentifier" : "com.plumit.widgetnotes",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.plumit.widgetnotes",
+          "Name" : "PhotoLink",
+          "TeamIdentifier" : "DX7WK2WMGE"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "B388330E-D9BF-4EFC-BA39-448134C8D39B",
+        "GroupingIdentifier" : "002401B8-C4E2-477E-8A0B-B4ACAE739855",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "VariableName" : "Shop Name",
+              "Type" : "Variable",
+              "Aggrandizements" : [
+                {
+                  "Type" : "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass" : "WFStringContentItem"
+                }
+              ]
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "NETTO",
+        "GroupingIdentifier" : "4CDABDA4-21D8-4F58-B6CB-69566E96E6AE",
+        "WFCondition" : 99
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "WFAppIdentifier" : "com.plumit.widgetnotes",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.plumit.widgetnotes",
+          "Name" : "PhotoLink",
+          "TeamIdentifier" : "DX7WK2WMGE"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "29D2ACBE-D414-4307-BF84-037DD5B15D85",
+        "GroupingIdentifier" : "4CDABDA4-21D8-4F58-B6CB-69566E96E6AE",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "VariableName" : "Shop Name",
+              "Type" : "Variable",
+              "Aggrandizements" : [
+                {
+                  "Type" : "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass" : "WFStringContentItem"
+                }
+              ]
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "EDEKA",
+        "GroupingIdentifier" : "E2BB5D7D-8302-4CB9-BD2B-1D4AB7F64E31",
+        "WFCondition" : 99
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "AF1EB388-DF26-4768-8686-D0CA7BC3C1FE",
+        "WFAppIdentifier" : "com.plumit.widgetnotes",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.plumit.widgetnotes",
+          "Name" : "PhotoLink",
+          "TeamIdentifier" : "DX7WK2WMGE"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "98EA40E2-7149-45F7-882F-9728645B38B9",
+        "WFAppIdentifier" : "de.edeka.Genusskonto",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "de.edeka.Genusskonto",
+          "Name" : "EDEKA",
+          "TeamIdentifier" : "DD58GDN9KA"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "C79DF807-AF68-4524-908E-79BF5D60555B",
+        "GroupingIdentifier" : "E2BB5D7D-8302-4CB9-BD2B-1D4AB7F64E31",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "VariableName" : "Shop Name",
+              "Type" : "Variable",
+              "Aggrandizements" : [
+                {
+                  "Type" : "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass" : "WFStringContentItem"
+                }
+              ]
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "LIDL",
+        "GroupingIdentifier" : "C13E05F7-6F4A-468A-AFDB-FF6BA9C8FB76",
+        "WFCondition" : 99
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "2AB0F5D2-B608-404E-BE9E-4FC04A295DED",
+        "WFAppIdentifier" : "com.lidl.eci.lidl.plus",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.lidl.eci.lidl.plus",
+          "Name" : "Lidl Plus",
+          "TeamIdentifier" : "P593BEJ5Y8"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "79D172C4-5BBD-4877-8674-371F76F15BCA",
+        "GroupingIdentifier" : "C13E05F7-6F4A-468A-AFDB-FF6BA9C8FB76",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "VariableName" : "Shop Name",
+              "Type" : "Variable",
+              "Aggrandizements" : [
+                {
+                  "Type" : "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass" : "WFStringContentItem"
+                }
+              ]
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "DM",
+        "GroupingIdentifier" : "EDB366FC-9CF0-4294-AF57-764E01B5FB40",
+        "WFCondition" : 99
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "2C560B5A-A2E9-43B5-90CA-74458334A09D",
+        "WFAppIdentifier" : "de.dm.meindm",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "de.dm.meindm",
+          "Name" : "Mein dm",
+          "TeamIdentifier" : "V7PYJ2FTTJ"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "806389DD-F755-495C-9174-0CCFE51581FB",
+        "GroupingIdentifier" : "EDB366FC-9CF0-4294-AF57-764E01B5FB40",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "VariableName" : "Shop Name",
+              "Type" : "Variable",
+              "Aggrandizements" : [
+                {
+                  "Type" : "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass" : "WFStringContentItem"
+                }
+              ]
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "ROSSMANN",
+        "GroupingIdentifier" : "D784C200-5504-4E94-AF18-988CEBCBFCE8",
+        "WFCondition" : 99
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "00AE3FA1-F1BF-4B21-8F53-5498FBAFBFBB",
+        "WFAppIdentifier" : "de.rossmann.app",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "de.rossmann.app",
+          "Name" : "Rossmann",
+          "TeamIdentifier" : "G94C4ZHFJ9"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "D64E992A-CC80-4BA0-9FFA-9F491FDAE831",
+        "GroupingIdentifier" : "D784C200-5504-4E94-AF18-988CEBCBFCE8",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.output",
+      "WFWorkflowActionParameters" : {
+        "WFOutput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "D64E992A-CC80-4BA0-9FFA-9F491FDAE831",
+                "Type" : "ActionOutput",
+                "OutputName" : "If Result"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : true
+}

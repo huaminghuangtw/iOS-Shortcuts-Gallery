@@ -762,9 +762,9 @@
 				<key>WFCalendarItemCalendar</key>
 				<string>My Training Calendar</string>
 				<key>WFCalendarItemEndDate</key>
-				<string>Tomorrow 09:20</string>
+				<string>Tomorrow 08:00</string>
 				<key>WFCalendarItemStartDate</key>
-				<string>Tomorrow 08:20</string>
+				<string>Tomorrow 07:00</string>
 				<key>WFCalendarItemTitle</key>
 				<string>🚴‍♂️ Indoor Cycling</string>
 			</dict>

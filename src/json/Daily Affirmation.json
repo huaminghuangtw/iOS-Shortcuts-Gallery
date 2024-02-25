@@ -1,1 +1,97 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"Daily Affirmation","UUID":"BB894680-3752-428B-BE3D-2422AC1BD0F7"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"BB894680-3752-428B-BE3D-2422AC1BD0F7","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"5E49063C-8B57-4727-A32F-95F1CCE8B3CE","workflowName":"Get Body of Apple Notes","isSelf":false},"UUID":"DCAC64CE-E55D-4159-B615-2A79764EC60E","WFWorkflowName":"Get Body of Apple Notes"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"DCAC64CE-E55D-4159-B615-2A79764EC60E","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"4038A604-81ED-499D-A74C-91D847B002CC","workflowName":"Text-to-Speech (English)","isSelf":false},"UUID":"466DB402-47AF-4D1F-A7B3-5A37FC1545B2","WFWorkflowName":"Text-to-Speech (English)"}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[{"Category":"Parameter","ParameterKey":"WFTextActionText","ActionIndex":0,"Text":"What is your first name?","DefaultValue":""}],"WFWorkflowTypes":["NCWidget"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 61440
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "BB894680-3752-428B-BE3D-2422AC1BD0F7",
+        "WFTextActionText" : "Daily Affirmation"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "BB894680-3752-428B-BE3D-2422AC1BD0F7",
+            "Type" : "ActionOutput",
+            "OutputName" : "Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "5E49063C-8B57-4727-A32F-95F1CCE8B3CE",
+          "isSelf" : false,
+          "workflowName" : "Get Body of Apple Notes"
+        },
+        "UUID" : "DCAC64CE-E55D-4159-B615-2A79764EC60E",
+        "WFWorkflowName" : "Get Body of Apple Notes"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "DCAC64CE-E55D-4159-B615-2A79764EC60E",
+            "Type" : "ActionOutput",
+            "OutputName" : "Shortcut Result"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "4038A604-81ED-499D-A74C-91D847B002CC",
+          "isSelf" : false,
+          "workflowName" : "Text-to-Speech (English)"
+        },
+        "UUID" : "466DB402-47AF-4D1F-A7B3-5A37FC1545B2",
+        "WFWorkflowName" : "Text-to-Speech (English)"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+    {
+      "Category" : "Parameter",
+      "ParameterKey" : "WFTextActionText",
+      "ActionIndex" : 0,
+      "Text" : "What is your first name?",
+      "DefaultValue" : ""
+    }
+  ],
+  "WFWorkflowTypes" : [
+    "NCWidget"
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

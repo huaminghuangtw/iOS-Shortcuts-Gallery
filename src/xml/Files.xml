@@ -14,15 +14,15 @@
 				<key>UUID</key>
 				<string>DC259D60-9704-40DB-9E85-F87EA08D3138</string>
 				<key>WFAppIdentifier</key>
-				<string>com.apple.DocumentsApp</string>
+				<string>ee.xero.Paper.Mobile</string>
 				<key>WFSelectedApp</key>
 				<dict>
 					<key>BundleIdentifier</key>
-					<string>com.apple.DocumentsApp</string>
+					<string>ee.xero.Paper.Mobile</string>
 					<key>Name</key>
-					<string>Files</string>
+					<string>Paper</string>
 					<key>TeamIdentifier</key>
-					<string>0000000000</string>
+					<string>8KQX9L3H8Q</string>
 				</dict>
 			</dict>
 		</dict>

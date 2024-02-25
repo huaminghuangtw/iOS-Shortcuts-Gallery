@@ -8,23 +8,17 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>AsheKube.app.a-Shell.ExecuteCommandIntent</string>
+			<string>is.workflow.actions.vibrate</string>
 			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>0AB2FE5A-9CFE-42BF-9E26-E22B9DA1BD5C</string>
-				<key>command</key>
-				<array>
-					<string>jump Obsidian</string>
-					<string>python -c "from helper import *; pull()"</string>
-				</array>
-			</dict>
+			<dict/>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.openapp</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>UUID</key>
+				<string>8B1A17B9-FCBD-4D87-BAE3-C08BCB16823B</string>
 				<key>WFAppIdentifier</key>
 				<string>md.obsidian</string>
 				<key>WFSelectedApp</key>

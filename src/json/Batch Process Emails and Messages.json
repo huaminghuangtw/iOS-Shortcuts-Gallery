@@ -1,1 +1,198 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":["WFRichTextContentItem","WFPhotoMediaContentItem","WFPhoneNumberContentItem","WFPDFContentItem","WFLocationContentItem","WFImageContentItem","WFGenericFileContentItem","WFEmailAddressContentItem","WFiTunesProductContentItem","WFDateContentItem","WFContactContentItem","WFMKMapItemContentItem","WFAVAssetContentItem","WFArticleContentItem","WFAppContentItem","WFURLContentItem","WFFolderContentItem","WFDCMapsLinkContentItem","WFAppStoreAppContentItem","WFStringContentItem","WFSafariWebPageContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"jp.naver.line","Name":"LINE","TeamIdentifier":"VUTU7AKEUR"},"WFAppIdentifier":"jp.naver.line","UUID":"48092DEA-861A-4008-8D35-DE8087B26528"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"com.facebook.Messenger","Name":"Messenger","TeamIdentifier":"V9WTTPBFK9"},"WFAppIdentifier":"com.facebook.Messenger","UUID":"1642B06D-C03A-4362-A3B6-4177D92AD371"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"net.whatsapp.WhatsApp","Name":"‎WhatsApp","TeamIdentifier":"57T9237FN3"},"WFAppIdentifier":"net.whatsapp.WhatsApp","UUID":"CA368FA9-05E8-48AA-8E6F-7F20DBA30517"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"com.apple.MobileSMS","Name":"Messages","TeamIdentifier":"0000000000"},"WFAppIdentifier":"com.apple.MobileSMS","UUID":"C8F67F99-04C1-4601-A722-AFD62B16CF4D"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"com.google.Gmail","Name":"Gmail","TeamIdentifier":"EQHXZ8M8AV"},"WFAppIdentifier":"com.google.Gmail","UUID":"462A4D18-D426-4F23-A9B1-A871A07302B3"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"462A4D18-D426-4F23-A9B1-A871A07302B3","Type":"ActionOutput","OutputName":"App"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFAppContentItem","WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 61440
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+    "WFRichTextContentItem",
+    "WFPhotoMediaContentItem",
+    "WFPhoneNumberContentItem",
+    "WFPDFContentItem",
+    "WFLocationContentItem",
+    "WFImageContentItem",
+    "WFGenericFileContentItem",
+    "WFEmailAddressContentItem",
+    "WFiTunesProductContentItem",
+    "WFDateContentItem",
+    "WFContactContentItem",
+    "WFMKMapItemContentItem",
+    "WFAVAssetContentItem",
+    "WFArticleContentItem",
+    "WFAppContentItem",
+    "WFURLContentItem",
+    "WFFolderContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAppStoreAppContentItem",
+    "WFStringContentItem",
+    "WFSafariWebPageContentItem"
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "48092DEA-861A-4008-8D35-DE8087B26528",
+        "WFAppIdentifier" : "jp.naver.line",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "jp.naver.line",
+          "Name" : "LINE",
+          "TeamIdentifier" : "VUTU7AKEUR"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.delay",
+      "WFWorkflowActionParameters" : {
+        "WFDelayTime" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "1642B06D-C03A-4362-A3B6-4177D92AD371",
+        "WFAppIdentifier" : "com.facebook.Messenger",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.facebook.Messenger",
+          "Name" : "Messenger",
+          "TeamIdentifier" : "V9WTTPBFK9"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.delay",
+      "WFWorkflowActionParameters" : {
+        "WFDelayTime" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "CA368FA9-05E8-48AA-8E6F-7F20DBA30517",
+        "WFAppIdentifier" : "net.whatsapp.WhatsApp",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "net.whatsapp.WhatsApp",
+          "Name" : "‎WhatsApp",
+          "TeamIdentifier" : "57T9237FN3"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.delay",
+      "WFWorkflowActionParameters" : {
+        "WFDelayTime" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "C8F67F99-04C1-4601-A722-AFD62B16CF4D",
+        "WFAppIdentifier" : "com.apple.MobileSMS",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.apple.MobileSMS",
+          "Name" : "Messages",
+          "TeamIdentifier" : "0000000000"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.delay",
+      "WFWorkflowActionParameters" : {
+        "WFDelayTime" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "462A4D18-D426-4F23-A9B1-A871A07302B3",
+        "WFAppIdentifier" : "com.google.Gmail",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.google.Gmail",
+          "Name" : "Gmail",
+          "TeamIdentifier" : "EQHXZ8M8AV"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.output",
+      "WFWorkflowActionParameters" : {
+        "WFOutput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "462A4D18-D426-4F23-A9B1-A871A07302B3",
+                "Type" : "ActionOutput",
+                "OutputName" : "App"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppContentItem",
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

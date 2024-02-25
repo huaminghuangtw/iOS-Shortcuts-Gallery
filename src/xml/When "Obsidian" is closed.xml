@@ -8,20 +8,15 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.runworkflow</string>
+			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>WFWorkflow</key>
-				<dict>
-					<key>isSelf</key>
-					<false/>
-					<key>workflowIdentifier</key>
-					<string>C9E98328-F7E4-4625-A9B7-C5678F274FAC</string>
-					<key>workflowName</key>
-					<string>Dim Screen</string>
-				</dict>
-				<key>WFWorkflowName</key>
-				<string>Dim Screen</string>
+				<key>CustomOutputName</key>
+				<string>push</string>
+				<key>UUID</key>
+				<string>FE0CF385-F34D-47AB-9DA3-A216FFEC517F</string>
+				<key>WFTextActionText</key>
+				<string>push</string>
 			</dict>
 		</dict>
 		<dict>
@@ -30,18 +25,125 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>D67A1152-9951-48E6-A8EC-DC14E23E00B8</string>
+				<string>A0662BD2-0BD7-4020-936C-5DCC3D0FA4AA</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>push</string>
+						<key>OutputUUID</key>
+						<string>FE0CF385-F34D-47AB-9DA3-A216FFEC517F</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
 				<key>WFWorkflow</key>
 				<dict>
 					<key>isSelf</key>
 					<false/>
 					<key>workflowIdentifier</key>
-					<string>DB53B8EE-E9F7-44E2-B523-098556EF3A38</string>
+					<string>6D6F04FC-40D0-47D1-9754-701A94CD9EBB</string>
 					<key>workflowName</key>
-					<string>Connect to Internet</string>
+					<string>getObsidianVaultLastSyncTime</string>
 				</dict>
 				<key>WFWorkflowName</key>
-				<string>Connect to Internet</string>
+				<string>getObsidianVaultLastSyncTime</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>153962B0-817F-4D7A-9A5C-FE3E12D558A7</string>
+				<key>WFCondition</key>
+				<integer>2</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>CoercionItemClass</key>
+									<string>WFNumberContentItem</string>
+									<key>Type</key>
+									<string>WFCoercionVariableAggrandizement</string>
+								</dict>
+							</array>
+							<key>OutputName</key>
+							<string>Shortcut Result</string>
+							<key>OutputUUID</key>
+							<string>A0662BD2-0BD7-4020-936C-5DCC3D0FA4AA</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+				<key>WFNumberValue</key>
+				<string>10</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>com.alexhay.ToolboxProForShortcuts.InternetConnectionIntent</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>A00C9EE0-B08A-457F-AFB7-F5F32F864A6A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>91163ED5-6CF9-4320-BE29-B21AA437BDF5</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>CoercionItemClass</key>
+									<string>WFBooleanContentItem</string>
+									<key>Type</key>
+									<string>WFCoercionVariableAggrandizement</string>
+								</dict>
+							</array>
+							<key>OutputName</key>
+							<string>Is Connected</string>
+							<key>OutputUUID</key>
+							<string>A00C9EE0-B08A-457F-AFB7-F5F32F864A6A</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
 			</dict>
 		</dict>
 		<dict>
@@ -54,32 +156,85 @@
 				<key>command</key>
 				<array>
 					<string>jump Obsidian</string>
-					<string>python -c "from helper import *; push()"</string>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>attachmentsByRange</key>
+							<dict>
+								<key>{33, 1}</key>
+								<dict>
+									<key>OutputName</key>
+									<string>push</string>
+									<key>OutputUUID</key>
+									<string>FE0CF385-F34D-47AB-9DA3-A216FFEC517F</string>
+									<key>Type</key>
+									<string>ActionOutput</string>
+								</dict>
+							</dict>
+							<key>string</key>
+							<string>python -c "from helper import *; ￼()"</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenString</string>
+					</dict>
+					<string>open  shortcuts://run-shortcut?name=Go%20to%20Home%20Screen</string>
 				</array>
 			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.returntohomescreen</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict/>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.runworkflow</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>UUID</key>
+				<string>BAC50E04-B112-414A-BBE4-790323AAA6CC</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>push</string>
+						<key>OutputUUID</key>
+						<string>FE0CF385-F34D-47AB-9DA3-A216FFEC517F</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
 				<key>WFWorkflow</key>
 				<dict>
 					<key>isSelf</key>
 					<false/>
 					<key>workflowIdentifier</key>
-					<string>C3771EC7-4647-4C64-8383-3A7C1F7B016E</string>
+					<string>EB8132AA-A608-4A67-914B-CF67B455F208</string>
 					<key>workflowName</key>
-					<string>Brighten Screen</string>
+					<string>updateObsidianVaultLastSyncTime</string>
 				</dict>
 				<key>WFWorkflowName</key>
-				<string>Brighten Screen</string>
+				<string>updateObsidianVaultLastSyncTime</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>91163ED5-6CF9-4320-BE29-B21AA437BDF5</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>153962B0-817F-4D7A-9A5C-FE3E12D558A7</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
 			</dict>
 		</dict>
 	</array>

@@ -1,1 +1,318 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":["WFGenericFileContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"com.TickTick.task","Name":"TickTick","TeamIdentifier":"75TY9UT8AY"},"WFAppIdentifier":"com.TickTick.task","UUID":"2522C758-4B43-4F8E-9700-9B4456CDD2F8"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"👇👇👇\n───────────────","UUID":"FD3C331D-76F1-4CD9-9A98-5FD650C48A5B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.list","WFWorkflowActionParameters":{"WFItems":["◻️ Edit","◻️ Set high priority"],"UUID":"3E00FA16-9F2E-489C-AA12-087BE22F0EC8"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.alert","WFWorkflowActionParameters":{"WFAlertActionCancelButtonShown":false,"WFAlertActionMessage":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"3E00FA16-9F2E-489C-AA12-087BE22F0EC8","Type":"ActionOutput","OutputName":"List"}}},"WFSerializationType":"WFTextTokenString"},"WFAlertActionTitle":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"FD3C331D-76F1-4CD9-9A98-5FD650C48A5B","Type":"ActionOutput","OutputName":"Text"}}},"WFSerializationType":"WFTextTokenString"}}},{"WFWorkflowActionIdentifier":"com.TickTick.task.TTIntentTaskAppEntity","WFWorkflowActionParameters":{"UUID":"6CA5179F-F24D-4DBE-8077-B0EBFBCE3ED1"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"6CA5179F-F24D-4DBE-8077-B0EBFBCE3ED1","Type":"ActionOutput","OutputName":"Task"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"GroupingIdentifier":"AD720E00-E438-4201-AF20-3286E6B1696E","WFCondition":100}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"歸納今日 Inbox","UUID":"FD05423E-E823-4E6F-8E9C-9FE446AECDFE"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Create Notification","UUID":"1B1FA9D2-5FC7-417A-964A-6C46F2CBC270","parameter":{"Value":{"OutputUUID":"FD05423E-E823-4E6F-8E9C-9FE446AECDFE","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"清空今日 Inbox","UUID":"538ABB54-5BCD-40BA-96BA-3E40FA642E38"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Create Notification","UUID":"44979B86-8ADA-4094-88A0-63D45E3B5602","parameter":{"Value":{"OutputUUID":"538ABB54-5BCD-40BA-96BA-3E40FA642E38","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"AD720E00-E438-4201-AF20-3286E6B1696E","WFControlFlowMode":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.alert","WFWorkflowActionParameters":{"WFAlertActionCancelButtonShown":false,"WFAlertActionMessage":"👌 You're all set! :-)"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"AD720E00-E438-4201-AF20-3286E6B1696E","WFControlFlowMode":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.urlencode","WFWorkflowActionParameters":{"WFInput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"Type":"ExtensionInput"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"3C137CAA-7AB7-4952-8D00-322509B62B6F"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Daily Routine","UUID":"9DCA9604-17C4-4AB7-A5C7-E4AAB79596F3","parameter":{"Value":{"OutputUUID":"3C137CAA-7AB7-4952-8D00-322509B62B6F","Type":"ActionOutput","OutputName":"URL Encoded Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"9DCA9604-17C4-4AB7-A5C7-E4AAB79596F3","Type":"ActionOutput","OutputName":"Output"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":true}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 61440
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+    "WFGenericFileContentItem"
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "FB5AE307-F30B-4C9A-96F3-F6EE54414C8D",
+        "WFWorkflowName" : "_Add Links to Inbox",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "B3353B2C-BC5C-4E06-9B96-6070B5821D96",
+          "isSelf" : false,
+          "workflowName" : "_Add Links to Inbox"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "2522C758-4B43-4F8E-9700-9B4456CDD2F8",
+        "WFAppIdentifier" : "com.TickTick.task",
+        "WFSelectedApp" : {
+          "BundleIdentifier" : "com.TickTick.task",
+          "Name" : "TickTick",
+          "TeamIdentifier" : "75TY9UT8AY"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "FD3C331D-76F1-4CD9-9A98-5FD650C48A5B",
+        "WFTextActionText" : "👇👇👇\n───────────────"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.list",
+      "WFWorkflowActionParameters" : {
+        "WFItems" : [
+          "◻️ Edit",
+          "◻️ Set high priority"
+        ],
+        "UUID" : "3E00FA16-9F2E-489C-AA12-087BE22F0EC8"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.alert",
+      "WFWorkflowActionParameters" : {
+        "WFAlertActionCancelButtonShown" : false,
+        "WFAlertActionMessage" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "3E00FA16-9F2E-489C-AA12-087BE22F0EC8",
+                "Type" : "ActionOutput",
+                "OutputName" : "List"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFAlertActionTitle" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "FD3C331D-76F1-4CD9-9A98-5FD650C48A5B",
+                "Type" : "ActionOutput",
+                "OutputName" : "Text"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "com.TickTick.task.TTIntentTaskAppEntity",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "6CA5179F-F24D-4DBE-8077-B0EBFBCE3ED1"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "6CA5179F-F24D-4DBE-8077-B0EBFBCE3ED1",
+              "Type" : "ActionOutput",
+              "OutputName" : "Task"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "GroupingIdentifier" : "AD720E00-E438-4201-AF20-3286E6B1696E",
+        "WFCondition" : 100
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "FD05423E-E823-4E6F-8E9C-9FE446AECDFE",
+        "WFTextActionText" : "歸納今日 Inbox"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters" : {
+        "fileName" : "Create Notification",
+        "UUID" : "1B1FA9D2-5FC7-417A-964A-6C46F2CBC270",
+        "parameter" : {
+          "Value" : {
+            "OutputUUID" : "FD05423E-E823-4E6F-8E9C-9FE446AECDFE",
+            "Type" : "ActionOutput",
+            "OutputName" : "Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "ShowWhenRun" : false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "538ABB54-5BCD-40BA-96BA-3E40FA642E38",
+        "WFTextActionText" : "清空今日 Inbox"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters" : {
+        "fileName" : "Create Notification",
+        "UUID" : "44979B86-8ADA-4094-88A0-63D45E3B5602",
+        "parameter" : {
+          "Value" : {
+            "OutputUUID" : "538ABB54-5BCD-40BA-96BA-3E40FA642E38",
+            "Type" : "ActionOutput",
+            "OutputName" : "Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "ShowWhenRun" : false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "9E147E7E-F9C7-4FFB-8FFE-4015094DA905",
+        "WFWorkflowName" : "isTodaySunday",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "D638BDED-56B8-489E-8B00-A86A62AD474E",
+          "isSelf" : false,
+          "workflowName" : "isTodaySunday"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "9E147E7E-F9C7-4FFB-8FFE-4015094DA905",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "C8349AFB-BEDE-4CB9-8D1C-A1838EFC1AA0",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "0C564A38-12D0-4454-AB65-A0B2CC851170",
+        "WFTextActionText" : "Weekly Mindware Update"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters" : {
+        "fileName" : "Create Notification",
+        "UUID" : "CE85BBF9-CC78-4801-AE13-26074B1328C7",
+        "parameter" : {
+          "Value" : {
+            "OutputUUID" : "0C564A38-12D0-4454-AB65-A0B2CC851170",
+            "Type" : "ActionOutput",
+            "OutputName" : "Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "ShowWhenRun" : false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "C8349AFB-BEDE-4CB9-8D1C-A1838EFC1AA0",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "AD720E00-E438-4201-AF20-3286E6B1696E",
+        "WFControlFlowMode" : 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.alert",
+      "WFWorkflowActionParameters" : {
+        "WFAlertActionCancelButtonShown" : false,
+        "WFAlertActionMessage" : "👌 You're all set! :-)"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "AD720E00-E438-4201-AF20-3286E6B1696E",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.urlencode",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "Type" : "ExtensionInput"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "UUID" : "3C137CAA-7AB7-4952-8D00-322509B62B6F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters" : {
+        "fileName" : "Daily Routine",
+        "UUID" : "9DCA9604-17C4-4AB7-A5C7-E4AAB79596F3",
+        "parameter" : {
+          "Value" : {
+            "OutputUUID" : "3C137CAA-7AB7-4952-8D00-322509B62B6F",
+            "Type" : "ActionOutput",
+            "OutputName" : "URL Encoded Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "ShowWhenRun" : false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.output",
+      "WFWorkflowActionParameters" : {
+        "WFOutput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "9DCA9604-17C4-4AB7-A5C7-E4AAB79596F3",
+                "Type" : "ActionOutput",
+                "OutputName" : "Output"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : true
+}

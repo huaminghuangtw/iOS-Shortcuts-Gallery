@@ -1,0 +1,1 @@
+# When "Obsidian" is opened

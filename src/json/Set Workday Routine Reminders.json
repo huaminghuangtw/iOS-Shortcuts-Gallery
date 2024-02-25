@@ -1,1 +1,963 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61461},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"87A3C08C-B72F-4788-9AC4-61BB309BBD7D","workflowName":"isTodayWorkday","isSelf":false},"WFWorkflowName":"isTodayWorkday","UUID":"7484EDC6-6F04-477C-9F0A-42C50768D36B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"7484EDC6-6F04-477C-9F0A-42C50768D36B","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"7AB43D3A-9394-43AC-813B-2DE7A71A0426","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"💻 LeetCode","WFCalendarItemNotes":"","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"0CC2ABE1-2138-4167-B40B-6DD3D5DB34B0","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"10:00","WFAlertEnabled":"Alert","WFURL":""}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"BE5BD6A4-8A27-4AD1-89B6-D80DC6CB921A","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"9D5BB19E-8AAA-4585-BAC1-2FC519656A4A","workflowName":"isTodayWFH","isSelf":false},"UUID":"EF0369FE-7508-4A09-A3CE-8BEA6C3A3AC7","WFWorkflowName":"isTodayWFH"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"EF0369FE-7508-4A09-A3CE-8BEA6C3A3AC7","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"No","GroupingIdentifier":"64322534-23DB-4C72-A48E-5611DFAC099C","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"14B8938F-A6C0-4AD3-BFA3-BC684866544D","workflowName":"Do I Need An Umbrella?","isSelf":false},"WFWorkflowName":"Do I Need An Umbrella?","UUID":"80297E2B-429E-4766-B95F-3D033AA6318B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"D0481D04-1A87-451D-8E02-9C6C7744BA2F","WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"80297E2B-429E-4766-B95F-3D033AA6318B","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","WFNumberValue":"10","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"☔️ 帶雨傘出門","WFCalendarItemNotes":"","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"70D69C2C-AA52-4D99-9BAC-66D4A1A1BD76","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"06:00","WFAlertEnabled":"Alert","WFURL":""}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"🌂 帶雨傘回家","WFCalendarItemNotes":"","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"CECF6794-A640-46BD-8048-A449486D97CC","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"16:00","WFAlertEnabled":"Alert","WFURL":""}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"D0481D04-1A87-451D-8E02-9C6C7744BA2F","UUID":"0D9B68F8-2F26-423C-B7E5-0125D6728470"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.url","WFWorkflowActionParameters":{"WFURLActionURL":"shortcuts:\/\/run-shortcut?name=Learn%20from%20My%20Colleagues","UUID":"EB905917-72FF-4391-9B07-91A97FF89B1C"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"👨‍🏫 Learn from My Colleagues","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"FA9E26E1-A659-47AD-B04C-BB3851DE8EC4","WFCalendarItemCalendar":"💼 Work Routines","WFURL":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"EB905917-72FF-4391-9B07-91A97FF89B1C","Type":"ActionOutput","OutputName":"URL"}}},"WFSerializationType":"WFTextTokenString"},"WFAlertEnabled":"Alert","WFAlertCustomTime":"12:50"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"🔳 牛奶\n🔳 洗碗錠\n🔳 廚房紙巾\n🔳 廁所衛生紙","UUID":"3C022F2F-16A3-46B7-9DC7-ADEC09AE051A"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"💁‍♂️ 拿家用品","WFCalendarItemNotes":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"3C022F2F-16A3-46B7-9DC7-ADEC09AE051A","Type":"ActionOutput","OutputName":"Text"}}},"WFSerializationType":"WFTextTokenString"},"WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"2C284ABC-42A9-4011-AF36-5A8A7254FD84","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"15:30","WFAlertEnabled":"Alert","WFURL":""}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"🥗 思考冰箱個人食物","WFCalendarItemNotes":"","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"EF61CEBB-7C34-436C-972B-5B15099A209B","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"15:30","WFAlertEnabled":"Alert","WFURL":""}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"💧 拿一罐氣泡水","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"935815DE-09F8-44F1-8A85-55ACDFB98C4E","WFCalendarItemCalendar":"💼 Work Routines","WFURL":"","WFAlertEnabled":"Alert","WFAlertCustomTime":"15:30"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"6F815F11-0DB0-4C0F-BD15-B75DF8F2D159","workflowName":"isTodayInTheLastWeekOfTheMonth","isSelf":false},"WFWorkflowName":"isTodayInTheLastWeekOfTheMonth","UUID":"1C703DBC-E0E9-48FA-9783-2B3220399625"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"1C703DBC-E0E9-48FA-9783-2B3220399625","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"E9AAECD2-CC60-41A8-9354-6659AE3773C9","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"🔋 Charge 耳機 & 鍵盤","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"A33C0805-FE07-4BAB-8E30-2E60A3DA3178","WFCalendarItemCalendar":"💼 Work Routines","WFURL":"","WFAlertEnabled":"Alert","WFAlertCustomTime":"16:00"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"E9AAECD2-CC60-41A8-9354-6659AE3773C9","WFControlFlowMode":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"🔑 還鑰匙","WFCalendarItemNotes":"","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"A743DD8B-5649-442A-835E-B4B4E56BD4AD","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"16:00","WFAlertEnabled":"Alert","WFURL":""}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"64322534-23DB-4C72-A48E-5611DFAC099C","UUID":"940D87A3-9D89-4191-B43A-D70F67DB577B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"7AB43D3A-9394-43AC-813B-2DE7A71A0426","UUID":"1452DBD7-7732-490F-8243-BA3E21D705FF"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"CB0DCA2E-5DDE-4505-9AC3-A8C2ADA08F02","workflowName":"isTomorrowWorkday","isSelf":false},"WFWorkflowName":"isTomorrowWorkday","UUID":"BD747752-5B59-4C19-B7B2-56F4C9791EED"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"BD747752-5B59-4C19-B7B2-56F4C9791EED","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"F4993965-6FD5-4F18-ACBE-CF41399ECAEB","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"BD747752-5B59-4C19-B7B2-56F4C9791EED","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"C958AFDD-778D-4545-8A69-2F7CF86A34B4","workflowName":"isTomorrowWFH","isSelf":false},"UUID":"369DC718-D3D6-4C17-A083-85AAB795470E","WFWorkflowName":"isTomorrowWFH"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"369DC718-D3D6-4C17-A083-85AAB795470E","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"19E332FA-F59A-4E9F-83F0-51CB996FD9EB","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewevent","WFWorkflowActionParameters":{"WFCalendarItemTitle":"🚴‍♂️ Indoor Cycling","WFCalendarDescriptor":{"Identifier":"F51ACFC9-AEC2-4F48-8687-ECEA0D9BF387","RGBAValue":4291559679,"Title":"My Training Calendar","IsAllCalendar":false},"UUID":"7F995C99-6922-4A4D-ABC7-9BD98BFB8042","WFCalendarItemEndDate":"Tomorrow 09:20","WFCalendarItemStartDate":"Tomorrow 08:20","WFCalendarItemCalendar":"My Training Calendar","ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.setters.calendarevents","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"7F995C99-6922-4A4D-ABC7-9BD98BFB8042","Type":"ActionOutput","OutputName":"New Event"},"WFSerializationType":"WFTextTokenAttachment"},"WFContentItemPropertyName":"URL","Mode":"Set","UUID":"94D558C8-AEE1-485F-99C1-39A1DBC67D23","WFCalendarEventContentItemURL":"shortcuts:\/\/run-shortcut?name=Let's%20Go%20Indoor%20Cycling"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"19E332FA-F59A-4E9F-83F0-51CB996FD9EB","WFControlFlowMode":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"🎒 Prepare Backpack","WFCalendarItemNotes":"","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"050546DA-BF31-40D8-8775-C9902738E74E","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"19:30","WFAlertEnabled":"Alert","WFURL":""}},{"WFWorkflowActionIdentifier":"is.workflow.actions.url","WFWorkflowActionParameters":{"WFURLActionURL":"shortcuts:\/\/run-shortcut?name=DB%20Navigator","UUID":"137A6EFC-2A75-4D7D-A96F-B0CBB29215B1"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"🚉 Check DB Schedule","WFCalendarItemNotes":"","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"D3403D34-C610-41A1-B785-62F524C3C00F","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"19:30","WFAlertEnabled":"Alert","WFURL":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"137A6EFC-2A75-4D7D-A96F-B0CBB29215B1","Type":"ActionOutput","OutputName":"URL"}}},"WFSerializationType":"WFTextTokenString"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewevent","WFWorkflowActionParameters":{"WFCalendarItemTitle":"🏋️ Strength Training","WFCalendarDescriptor":{"Identifier":"F51ACFC9-AEC2-4F48-8687-ECEA0D9BF387","RGBAValue":4291559679,"Title":"My Training Calendar","IsAllCalendar":false},"UUID":"339BF569-35CD-40FC-B80F-635E4F7672B2","WFCalendarItemEndDate":"Tomorrow 06:40","WFCalendarItemStartDate":"Tomorrow 06:00","WFCalendarItemCalendar":"My Training Calendar","ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.setters.calendarevents","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"339BF569-35CD-40FC-B80F-635E4F7672B2","Type":"ActionOutput","OutputName":"New Event"},"WFSerializationType":"WFTextTokenAttachment"},"WFContentItemPropertyName":"URL","Mode":"Set","UUID":"3DA58157-8C0F-4052-A0C8-5BDFEDA1CFF2","WFCalendarEventContentItemURL":"shortcuts:\/\/run-shortcut?name=%E2%97%BB%EF%B8%8F%20Workout"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"19E332FA-F59A-4E9F-83F0-51CB996FD9EB","WFControlFlowMode":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"F4993965-6FD5-4F18-ACBE-CF41399ECAEB","UUID":"50C6C120-D91B-4050-9B5E-9E7E008EF538"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"87A3C08C-B72F-4788-9AC4-61BB309BBD7D","workflowName":"isTodayWorkday","isSelf":false},"WFWorkflowName":"isTodayWorkday","UUID":"8ACFCF8E-D6D8-44FD-AB47-FCB77A4FF440"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"8ACFCF8E-D6D8-44FD-AB47-FCB77A4FF440","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"48FFA35A-7EF8-42B0-A040-593CDC1A3B1E","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"8ACFCF8E-D6D8-44FD-AB47-FCB77A4FF440","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"9D5BB19E-8AAA-4585-BAC1-2FC519656A4A","workflowName":"isTodayWFH","isSelf":false},"UUID":"B561D7A0-9468-4F21-8A1F-FE9B5138886C","WFWorkflowName":"isTodayWFH"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"B561D7A0-9468-4F21-8A1F-FE9B5138886C","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"9F33D992-3D11-4334-B821-150A6822E1B4","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.url","WFWorkflowActionParameters":{"WFURLActionURL":"shortcuts:\/\/run-shortcut?name=Start%20the%20WFH%20Day","UUID":"F5B33F53-1856-4AF3-8D76-CEA89D8DD97F"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"🚀 Start the WFH Day","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"894EE01E-04CC-4E5E-A4B6-498D19FF4FF4","WFCalendarItemCalendar":"💼 Work Routines","WFURL":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"F5B33F53-1856-4AF3-8D76-CEA89D8DD97F","Type":"ActionOutput","OutputName":"URL"}}},"WFSerializationType":"WFTextTokenString"},"WFAlertEnabled":"Alert","WFAlertCustomTime":"09:15"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"9F33D992-3D11-4334-B821-150A6822E1B4","UUID":"166D7933-7BE5-4EE4-A123-50E0FA5198DA"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.url","WFWorkflowActionParameters":{"WFURLActionURL":"shortcuts:\/\/run-shortcut?name=Lunch%20Break%20Me%20Time","UUID":"B44979C5-B8F2-409C-BB5A-F60B9009B9D7"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFCalendarItemTitle":"📵 Lunch Break Me Time","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"AF3A9021-2553-4F0C-B067-F84576FE9818","WFCalendarItemCalendar":"💼 Work Routines","WFURL":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"B44979C5-B8F2-409C-BB5A-F60B9009B9D7","Type":"ActionOutput","OutputName":"URL"}}},"WFSerializationType":"WFTextTokenString"},"WFAlertEnabled":"Alert","WFAlertCustomTime":"12:45"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"23E24134-D49E-49C6-8FC9-99CC39F7BB19","workflowName":"isTodayFriday","isSelf":false},"WFWorkflowName":"isTodayFriday","UUID":"4F585A95-28AE-4FF2-99C9-B1AEA7BF704A"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"4F585A95-28AE-4FF2-99C9-B1AEA7BF704A","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"No","GroupingIdentifier":"F41F624D-2FA6-4051-BD80-9340A4E7C3CD","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.url","WFWorkflowActionParameters":{"WFURLActionURL":"shortcuts:\/\/run-shortcut?name=End%20the%20Work%20Day","UUID":"6FE667C6-3DE7-4783-952F-314E66449879"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFAlertCondition":"At Time","WFCalendarItemTitle":"🚫 End the Work Day","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"2A9BF6E2-53E9-42F3-A4A6-F08009FFAD68","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"17:30","WFAlertEnabled":"Alert","WFURL":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"6FE667C6-3DE7-4783-952F-314E66449879","Type":"ActionOutput","OutputName":"URL"}}},"WFSerializationType":"WFTextTokenString"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"F41F624D-2FA6-4051-BD80-9340A4E7C3CD","WFControlFlowMode":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"48FFA35A-7EF8-42B0-A040-593CDC1A3B1E","UUID":"0D6D728F-2EDB-4BF8-BD8D-4B75D3BAF8CB"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"0D6D728F-2EDB-4BF8-BD8D-4B75D3BAF8CB","Type":"ActionOutput","OutputName":"If Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"87A3C08C-B72F-4788-9AC4-61BB309BBD7D","workflowName":"isTodayWorkday","isSelf":false},"UUID":"533E307D-7CF9-4E98-A5E6-B9288C907E96","WFWorkflowName":"isTodayWorkday"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"533E307D-7CF9-4E98-A5E6-B9288C907E96","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"C7D96096-2195-4624-98F7-7FF19EE3278A","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"533E307D-7CF9-4E98-A5E6-B9288C907E96","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"23E24134-D49E-49C6-8FC9-99CC39F7BB19","workflowName":"isTodayFriday","isSelf":false},"UUID":"FE3010CD-DE14-4DCE-9A7C-90AD9D9651AF","WFWorkflowName":"isTodayFriday"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"FE3010CD-DE14-4DCE-9A7C-90AD9D9651AF","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"9CA4DB49-3DAA-4FFD-A77F-E6DECC7CF40A","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.url","WFWorkflowActionParameters":{"WFURLActionURL":"shortcuts:\/\/run-shortcut?name=Outlook","UUID":"6863B893-9322-4040-A730-B8119DC3BDE6"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.addnewreminder","WFWorkflowActionParameters":{"WFAlertCondition":"At Time","WFCalendarItemTitle":"🗓️ 安排下周工作行事曆 * 2","WFCalendarDescriptor":{"Identifier":"<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>","Title":"💼 Work Routines","IsAllCalendar":false},"UUID":"840D34C3-2B1C-401C-AA79-87B6F3A8DBEC","WFCalendarItemCalendar":"💼 Work Routines","WFAlertCustomTime":"15:00","WFAlertEnabled":"Alert","WFURL":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"6863B893-9322-4040-A730-B8119DC3BDE6","Type":"ActionOutput","OutputName":"URL"}}},"WFSerializationType":"WFTextTokenString"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"9CA4DB49-3DAA-4FFD-A77F-E6DECC7CF40A","WFControlFlowMode":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"C7D96096-2195-4624-98F7-7FF19EE3278A","UUID":"4B079142-9C4A-436D-9804-EA8AF9D46AB9"}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":["Watch"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 2846468607,
+    "WFWorkflowIconGlyphNumber" : 61461
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "7484EDC6-6F04-477C-9F0A-42C50768D36B",
+        "WFWorkflowName" : "isTodayWorkday",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "87A3C08C-B72F-4788-9AC4-61BB309BBD7D",
+          "isSelf" : false,
+          "workflowName" : "isTodayWorkday"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "7484EDC6-6F04-477C-9F0A-42C50768D36B",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "7AB43D3A-9394-43AC-813B-2DE7A71A0426",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "💻 LeetCode",
+        "WFCalendarItemNotes" : "",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "0CC2ABE1-2138-4167-B40B-6DD3D5DB34B0",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "10:00",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : ""
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "BE5BD6A4-8A27-4AD1-89B6-D80DC6CB921A",
+            "Type" : "ActionOutput",
+            "OutputName" : "Shortcut Result"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "9D5BB19E-8AAA-4585-BAC1-2FC519656A4A",
+          "isSelf" : false,
+          "workflowName" : "isTodayWFH"
+        },
+        "UUID" : "EF0369FE-7508-4A09-A3CE-8BEA6C3A3AC7",
+        "WFWorkflowName" : "isTodayWFH"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "EF0369FE-7508-4A09-A3CE-8BEA6C3A3AC7",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "No",
+        "GroupingIdentifier" : "64322534-23DB-4C72-A48E-5611DFAC099C",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "80297E2B-429E-4766-B95F-3D033AA6318B",
+        "WFWorkflowName" : "Do I Need An Umbrella?",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "14B8938F-A6C0-4AD3-BFA3-BC684866544D",
+          "isSelf" : false,
+          "workflowName" : "Do I Need An Umbrella?"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFCondition" : 4,
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "80297E2B-429E-4766-B95F-3D033AA6318B",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "D0481D04-1A87-451D-8E02-9C6C7744BA2F",
+        "WFNumberValue" : "10"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "☔️ 帶雨傘出門",
+        "WFCalendarItemNotes" : "",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "70D69C2C-AA52-4D99-9BAC-66D4A1A1BD76",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "06:00",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : ""
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "🌂 帶雨傘回家",
+        "WFCalendarItemNotes" : "",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "CECF6794-A640-46BD-8048-A449486D97CC",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "16:00",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : ""
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "0D9B68F8-2F26-423C-B7E5-0125D6728470",
+        "GroupingIdentifier" : "D0481D04-1A87-451D-8E02-9C6C7744BA2F",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.url",
+      "WFWorkflowActionParameters" : {
+        "WFURLActionURL" : "shortcuts:\/\/run-shortcut?name=Learn%20from%20My%20Colleagues",
+        "UUID" : "EB905917-72FF-4391-9B07-91A97FF89B1C"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "👨‍🏫 Learn from My Colleagues",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "FA9E26E1-A659-47AD-B04C-BB3851DE8EC4",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFURL" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "EB905917-72FF-4391-9B07-91A97FF89B1C",
+                "Type" : "ActionOutput",
+                "OutputName" : "URL"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFAlertEnabled" : "Alert",
+        "WFAlertCustomTime" : "12:50"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "3C022F2F-16A3-46B7-9DC7-ADEC09AE051A",
+        "WFTextActionText" : "🔳 牛奶\n🔳 洗碗錠\n🔳 廚房紙巾\n🔳 廁所衛生紙"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "💁‍♂️ 拿家用品",
+        "WFCalendarItemNotes" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "3C022F2F-16A3-46B7-9DC7-ADEC09AE051A",
+                "Type" : "ActionOutput",
+                "OutputName" : "Text"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "2C284ABC-42A9-4011-AF36-5A8A7254FD84",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "15:30",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : ""
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "🥗 思考冰箱個人食物",
+        "WFCalendarItemNotes" : "",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "EF61CEBB-7C34-436C-972B-5B15099A209B",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "15:30",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : ""
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "💧 拿一罐氣泡水",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "935815DE-09F8-44F1-8A85-55ACDFB98C4E",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFURL" : "",
+        "WFAlertEnabled" : "Alert",
+        "WFAlertCustomTime" : "15:30"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "1C703DBC-E0E9-48FA-9783-2B3220399625",
+        "WFWorkflowName" : "isTodayInTheLastWeekOfTheMonth",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "6F815F11-0DB0-4C0F-BD15-B75DF8F2D159",
+          "isSelf" : false,
+          "workflowName" : "isTodayInTheLastWeekOfTheMonth"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "1C703DBC-E0E9-48FA-9783-2B3220399625",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "E9AAECD2-CC60-41A8-9354-6659AE3773C9",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "🔋 Charge 耳機 & 鍵盤",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "A33C0805-FE07-4BAB-8E30-2E60A3DA3178",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFURL" : "",
+        "WFAlertEnabled" : "Alert",
+        "WFAlertCustomTime" : "16:00"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "E9AAECD2-CC60-41A8-9354-6659AE3773C9",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "🔑 還鑰匙",
+        "WFCalendarItemNotes" : "",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "A743DD8B-5649-442A-835E-B4B4E56BD4AD",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "16:00",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : ""
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "940D87A3-9D89-4191-B43A-D70F67DB577B",
+        "GroupingIdentifier" : "64322534-23DB-4C72-A48E-5611DFAC099C",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "1452DBD7-7732-490F-8243-BA3E21D705FF",
+        "GroupingIdentifier" : "7AB43D3A-9394-43AC-813B-2DE7A71A0426",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "BD747752-5B59-4C19-B7B2-56F4C9791EED",
+        "WFWorkflowName" : "isTomorrowWorkday",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "CB0DCA2E-5DDE-4505-9AC3-A8C2ADA08F02",
+          "isSelf" : false,
+          "workflowName" : "isTomorrowWorkday"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "BD747752-5B59-4C19-B7B2-56F4C9791EED",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "F4993965-6FD5-4F18-ACBE-CF41399ECAEB",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "BD747752-5B59-4C19-B7B2-56F4C9791EED",
+            "Type" : "ActionOutput",
+            "OutputName" : "Shortcut Result"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "C958AFDD-778D-4545-8A69-2F7CF86A34B4",
+          "isSelf" : false,
+          "workflowName" : "isTomorrowWFH"
+        },
+        "UUID" : "369DC718-D3D6-4C17-A083-85AAB795470E",
+        "WFWorkflowName" : "isTomorrowWFH"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "369DC718-D3D6-4C17-A083-85AAB795470E",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "19E332FA-F59A-4E9F-83F0-51CB996FD9EB",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewevent",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "🚴‍♂️ Indoor Cycling",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "F51ACFC9-AEC2-4F48-8687-ECEA0D9BF387",
+          "RGBAValue" : 4291559679,
+          "Title" : "My Training Calendar",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "7F995C99-6922-4A4D-ABC7-9BD98BFB8042",
+        "WFCalendarItemEndDate" : "Tomorrow 08:00",
+        "WFCalendarItemStartDate" : "Tomorrow 07:00",
+        "WFCalendarItemCalendar" : "My Training Calendar",
+        "ShowWhenRun" : false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setters.calendarevents",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "7F995C99-6922-4A4D-ABC7-9BD98BFB8042",
+            "Type" : "ActionOutput",
+            "OutputName" : "New Event"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFContentItemPropertyName" : "URL",
+        "Mode" : "Set",
+        "UUID" : "94D558C8-AEE1-485F-99C1-39A1DBC67D23",
+        "WFCalendarEventContentItemURL" : "shortcuts:\/\/run-shortcut?name=Let's%20Go%20Indoor%20Cycling"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "19E332FA-F59A-4E9F-83F0-51CB996FD9EB",
+        "WFControlFlowMode" : 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "🎒 Prepare Backpack",
+        "WFCalendarItemNotes" : "",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "050546DA-BF31-40D8-8775-C9902738E74E",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "19:30",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : ""
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.url",
+      "WFWorkflowActionParameters" : {
+        "WFURLActionURL" : "shortcuts:\/\/run-shortcut?name=DB%20Navigator",
+        "UUID" : "137A6EFC-2A75-4D7D-A96F-B0CBB29215B1"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "🚉 Check DB Schedule",
+        "WFCalendarItemNotes" : "",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "D3403D34-C610-41A1-B785-62F524C3C00F",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "19:30",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "137A6EFC-2A75-4D7D-A96F-B0CBB29215B1",
+                "Type" : "ActionOutput",
+                "OutputName" : "URL"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewevent",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "🏋️ Strength Training",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "F51ACFC9-AEC2-4F48-8687-ECEA0D9BF387",
+          "RGBAValue" : 4291559679,
+          "Title" : "My Training Calendar",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "339BF569-35CD-40FC-B80F-635E4F7672B2",
+        "WFCalendarItemEndDate" : "Tomorrow 06:40",
+        "WFCalendarItemStartDate" : "Tomorrow 06:00",
+        "WFCalendarItemCalendar" : "My Training Calendar",
+        "ShowWhenRun" : false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setters.calendarevents",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "339BF569-35CD-40FC-B80F-635E4F7672B2",
+            "Type" : "ActionOutput",
+            "OutputName" : "New Event"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFContentItemPropertyName" : "URL",
+        "Mode" : "Set",
+        "UUID" : "3DA58157-8C0F-4052-A0C8-5BDFEDA1CFF2",
+        "WFCalendarEventContentItemURL" : "shortcuts:\/\/run-shortcut?name=%E2%97%BB%EF%B8%8F%20Workout"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "19E332FA-F59A-4E9F-83F0-51CB996FD9EB",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "50C6C120-D91B-4050-9B5E-9E7E008EF538",
+        "GroupingIdentifier" : "F4993965-6FD5-4F18-ACBE-CF41399ECAEB",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "8ACFCF8E-D6D8-44FD-AB47-FCB77A4FF440",
+        "WFWorkflowName" : "isTodayWorkday",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "87A3C08C-B72F-4788-9AC4-61BB309BBD7D",
+          "isSelf" : false,
+          "workflowName" : "isTodayWorkday"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "8ACFCF8E-D6D8-44FD-AB47-FCB77A4FF440",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "48FFA35A-7EF8-42B0-A040-593CDC1A3B1E",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "8ACFCF8E-D6D8-44FD-AB47-FCB77A4FF440",
+            "Type" : "ActionOutput",
+            "OutputName" : "Shortcut Result"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "9D5BB19E-8AAA-4585-BAC1-2FC519656A4A",
+          "isSelf" : false,
+          "workflowName" : "isTodayWFH"
+        },
+        "UUID" : "B561D7A0-9468-4F21-8A1F-FE9B5138886C",
+        "WFWorkflowName" : "isTodayWFH"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "B561D7A0-9468-4F21-8A1F-FE9B5138886C",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "9F33D992-3D11-4334-B821-150A6822E1B4",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.url",
+      "WFWorkflowActionParameters" : {
+        "WFURLActionURL" : "shortcuts:\/\/run-shortcut?name=Start%20the%20WFH%20Day",
+        "UUID" : "F5B33F53-1856-4AF3-8D76-CEA89D8DD97F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "🚀 Start the WFH Day",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "894EE01E-04CC-4E5E-A4B6-498D19FF4FF4",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFURL" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "F5B33F53-1856-4AF3-8D76-CEA89D8DD97F",
+                "Type" : "ActionOutput",
+                "OutputName" : "URL"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFAlertEnabled" : "Alert",
+        "WFAlertCustomTime" : "09:15"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "166D7933-7BE5-4EE4-A123-50E0FA5198DA",
+        "GroupingIdentifier" : "9F33D992-3D11-4334-B821-150A6822E1B4",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.url",
+      "WFWorkflowActionParameters" : {
+        "WFURLActionURL" : "shortcuts:\/\/run-shortcut?name=Lunch%20Break%20Me%20Time",
+        "UUID" : "B44979C5-B8F2-409C-BB5A-F60B9009B9D7"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFCalendarItemTitle" : "📵 Lunch Break Me Time",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "AF3A9021-2553-4F0C-B067-F84576FE9818",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFURL" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "B44979C5-B8F2-409C-BB5A-F60B9009B9D7",
+                "Type" : "ActionOutput",
+                "OutputName" : "URL"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFAlertEnabled" : "Alert",
+        "WFAlertCustomTime" : "12:45"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "4F585A95-28AE-4FF2-99C9-B1AEA7BF704A",
+        "WFWorkflowName" : "isTodayFriday",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "23E24134-D49E-49C6-8FC9-99CC39F7BB19",
+          "isSelf" : false,
+          "workflowName" : "isTodayFriday"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "4F585A95-28AE-4FF2-99C9-B1AEA7BF704A",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "No",
+        "GroupingIdentifier" : "F41F624D-2FA6-4051-BD80-9340A4E7C3CD",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.url",
+      "WFWorkflowActionParameters" : {
+        "WFURLActionURL" : "shortcuts:\/\/run-shortcut?name=End%20the%20Work%20Day",
+        "UUID" : "6FE667C6-3DE7-4783-952F-314E66449879"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFAlertCondition" : "At Time",
+        "WFCalendarItemTitle" : "🚫 End the Work Day",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "2A9BF6E2-53E9-42F3-A4A6-F08009FFAD68",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "17:30",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "6FE667C6-3DE7-4783-952F-314E66449879",
+                "Type" : "ActionOutput",
+                "OutputName" : "URL"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "F41F624D-2FA6-4051-BD80-9340A4E7C3CD",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "0D6D728F-2EDB-4BF8-BD8D-4B75D3BAF8CB",
+        "GroupingIdentifier" : "48FFA35A-7EF8-42B0-A040-593CDC1A3B1E",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "0D6D728F-2EDB-4BF8-BD8D-4B75D3BAF8CB",
+            "Type" : "ActionOutput",
+            "OutputName" : "If Result"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "87A3C08C-B72F-4788-9AC4-61BB309BBD7D",
+          "isSelf" : false,
+          "workflowName" : "isTodayWorkday"
+        },
+        "UUID" : "533E307D-7CF9-4E98-A5E6-B9288C907E96",
+        "WFWorkflowName" : "isTodayWorkday"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "533E307D-7CF9-4E98-A5E6-B9288C907E96",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "C7D96096-2195-4624-98F7-7FF19EE3278A",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "533E307D-7CF9-4E98-A5E6-B9288C907E96",
+            "Type" : "ActionOutput",
+            "OutputName" : "Shortcut Result"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "23E24134-D49E-49C6-8FC9-99CC39F7BB19",
+          "isSelf" : false,
+          "workflowName" : "isTodayFriday"
+        },
+        "UUID" : "FE3010CD-DE14-4DCE-9A7C-90AD9D9651AF",
+        "WFWorkflowName" : "isTodayFriday"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "FE3010CD-DE14-4DCE-9A7C-90AD9D9651AF",
+              "Type" : "ActionOutput",
+              "OutputName" : "Shortcut Result"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "Yes",
+        "GroupingIdentifier" : "9CA4DB49-3DAA-4FFD-A77F-E6DECC7CF40A",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.url",
+      "WFWorkflowActionParameters" : {
+        "WFURLActionURL" : "shortcuts:\/\/run-shortcut?name=Outlook",
+        "UUID" : "6863B893-9322-4040-A730-B8119DC3BDE6"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.addnewreminder",
+      "WFWorkflowActionParameters" : {
+        "WFAlertCondition" : "At Time",
+        "WFCalendarItemTitle" : "🗓️ 安排下周工作行事曆 * 2",
+        "WFCalendarDescriptor" : {
+          "Identifier" : "<x-apple-reminderkit:\/\/REMCDList\/236CA15E-0473-401E-91CD-CC60DF6A9C95>",
+          "Title" : "💼 Work Routines",
+          "IsAllCalendar" : false
+        },
+        "UUID" : "840D34C3-2B1C-401C-AA79-87B6F3A8DBEC",
+        "WFCalendarItemCalendar" : "💼 Work Routines",
+        "WFAlertCustomTime" : "15:00",
+        "WFAlertEnabled" : "Alert",
+        "WFURL" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "6863B893-9322-4040-A730-B8119DC3BDE6",
+                "Type" : "ActionOutput",
+                "OutputName" : "URL"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "9CA4DB49-3DAA-4FFD-A77F-E6DECC7CF40A",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "4B079142-9C4A-436D-9804-EA8AF9D46AB9",
+        "GroupingIdentifier" : "C7D96096-2195-4624-98F7-7FF19EE3278A",
+        "WFControlFlowMode" : 2
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+    "Watch"
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

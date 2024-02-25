@@ -1,1 +1,145 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":3679049983,"WFWorkflowIconGlyphNumber":59465},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":["WFContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"￼|CAgE","attachmentsByRange":{"{0, 1}":{"Type":"ExtensionInput"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"38C201F5-0DB5-4F51-B29A-A9E73022A2B4"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"38C201F5-0DB5-4F51-B29A-A9E73022A2B4","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"2E57F56D-8D50-4AED-906F-AC96B6EDE789","workflowName":"Retrieve a page property item","isSelf":false},"UUID":"6E42B1B2-BCAA-480D-BF17-962C28B62E24","WFWorkflowName":"Retrieve a page property item"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getvalueforkey","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"6E42B1B2-BCAA-480D-BF17-962C28B62E24","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFDictionaryKey":"results","UUID":"1A3CC7A5-792C-41AC-A946-66F0888D3222"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getvalueforkey","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"1A3CC7A5-792C-41AC-A946-66F0888D3222","Type":"ActionOutput","OutputName":"Dictionary Value"},"WFSerializationType":"WFTextTokenAttachment"},"WFDictionaryKey":"rich_text","UUID":"9459BA3B-D180-4897-A72C-47E3072E0482"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"9459BA3B-D180-4897-A72C-47E3072E0482","Type":"ActionOutput","OutputName":"Dictionary Value"},"WFSerializationType":"WFTextTokenAttachment"},"CustomOutputName":"Notes","UUID":"88B60A8E-AEF2-4885-BCD9-A54CFBF6FD0F","WFWorkflow":{"workflowIdentifier":"19938FDB-6FC7-49FB-90F3-9438F09E93D3","workflowName":"Combine Plain Text","isSelf":false},"WFWorkflowName":"Combine Plain Text"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"88B60A8E-AEF2-4885-BCD9-A54CFBF6FD0F","Type":"ActionOutput","OutputName":"Notes"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[{"ParameterKey":"WFTextActionText","Category":"Parameter","ActionIndex":3,"Text":"Notion API Key"},{"ParameterKey":"WFTextActionText","Category":"Parameter","ActionIndex":5,"Text":"Database ID"}],"WFWorkflowTypes":["Watch"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":true}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 3679049983,
+    "WFWorkflowIconGlyphNumber" : 59465
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+    "WFContentItem"
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "38C201F5-0DB5-4F51-B29A-A9E73022A2B4",
+        "WFTextActionText" : {
+          "Value" : {
+            "string" : "￼|CAgE",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "Type" : "ExtensionInput"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "38C201F5-0DB5-4F51-B29A-A9E73022A2B4",
+            "Type" : "ActionOutput",
+            "OutputName" : "Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "2E57F56D-8D50-4AED-906F-AC96B6EDE789",
+          "isSelf" : false,
+          "workflowName" : "Retrieve a page property item"
+        },
+        "UUID" : "6E42B1B2-BCAA-480D-BF17-962C28B62E24",
+        "WFWorkflowName" : "Retrieve a page property item"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "6E42B1B2-BCAA-480D-BF17-962C28B62E24",
+            "Type" : "ActionOutput",
+            "OutputName" : "Shortcut Result"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "1A3CC7A5-792C-41AC-A946-66F0888D3222",
+        "WFDictionaryKey" : "results"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "1A3CC7A5-792C-41AC-A946-66F0888D3222",
+            "Type" : "ActionOutput",
+            "OutputName" : "Dictionary Value"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "9459BA3B-D180-4897-A72C-47E3072E0482",
+        "WFDictionaryKey" : "rich_text"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "9459BA3B-D180-4897-A72C-47E3072E0482",
+            "Type" : "ActionOutput",
+            "OutputName" : "Dictionary Value"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "CustomOutputName" : "Notes",
+        "UUID" : "88B60A8E-AEF2-4885-BCD9-A54CFBF6FD0F",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "19938FDB-6FC7-49FB-90F3-9438F09E93D3",
+          "isSelf" : false,
+          "workflowName" : "Combine Plain Text"
+        },
+        "WFWorkflowName" : "Combine Plain Text"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.output",
+      "WFWorkflowActionParameters" : {
+        "WFOutput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "88B60A8E-AEF2-4885-BCD9-A54CFBF6FD0F",
+                "Type" : "ActionOutput",
+                "OutputName" : "Notes"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+    {
+      "ParameterKey" : "WFTextActionText",
+      "Category" : "Parameter",
+      "ActionIndex" : 3,
+      "Text" : "Notion API Key"
+    },
+    {
+      "ParameterKey" : "WFTextActionText",
+      "Category" : "Parameter",
+      "ActionIndex" : 5,
+      "Text" : "Database ID"
+    }
+  ],
+  "WFWorkflowTypes" : [
+    "Watch"
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : true
+}

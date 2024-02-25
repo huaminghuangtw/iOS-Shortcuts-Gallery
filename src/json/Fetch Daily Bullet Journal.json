@@ -1,1 +1,373 @@
-{"WFWorkflowMinimumClientVersionString":"1106","WFWorkflowMinimumClientVersion":1106,"WFWorkflowIcon":{"WFWorkflowIconStartColor":3679049983,"WFWorkflowIconGlyphNumber":59465},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.text.split","WFWorkflowActionParameters":{"WFTextCustomSeparator":"|","UUID":"6CAB8828-D56A-4561-A759-316F8D9213FC","WFTextSeparator":"Custom","text":{"Value":{"Type":"ExtensionInput"},"WFSerializationType":"WFTextTokenAttachment"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getitemfromlist","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"6CAB8828-D56A-4561-A759-316F8D9213FC","Type":"ActionOutput","OutputName":"Split Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFItemIndex":"1","UUID":"5629AE4E-3B5C-405F-932C-00E387FC2F18","WFItemSpecifier":"Item At Index"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getitemfromlist","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"6CAB8828-D56A-4561-A759-316F8D9213FC","Type":"ActionOutput","OutputName":"Split Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFItemIndex":"2","UUID":"C0B28690-BF4A-44E5-B2CD-8AC236C79B5E","WFItemSpecifier":"Item At Index"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.dictionary","WFWorkflowActionParameters":{"WFItems":{"Value":{"WFDictionaryFieldValueItems":[{"WFItemType":0,"WFKey":{"Value":{"string":"Daily Bullet Journal Page ID"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"5629AE4E-3B5C-405F-932C-00E387FC2F18","Type":"ActionOutput","OutputName":"Item from List"}}},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Property ID"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"C0B28690-BF4A-44E5-B2CD-8AC236C79B5E","Type":"ActionOutput","OutputName":"Item from List"}}},"WFSerializationType":"WFTextTokenString"}}]},"WFSerializationType":"WFDictionaryFieldValue"},"UUID":"5A3674A2-B6AD-4819-856F-14FDB32BBFE1"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"temp.txt","CustomOutputName":"temp.txt","UUID":"175C5325-AF64-4699-B195-3A1E3EC10CF2"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"175C5325-AF64-4699-B195-3A1E3EC10CF2","Type":"ActionOutput","OutputName":"temp.txt"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"1029D410-13E8-4039-A996-2EADC73F11FB","workflowName":"Create Empty File or Clear File","isSelf":false},"UUID":"3E6912DB-DE33-4F45-A6A5-763CADC45137","WFWorkflowName":"Create Empty File or Clear File"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"￼|￼","attachmentsByRange":{"{2, 1}":{"Type":"ActionOutput","OutputName":"Dictionary","OutputUUID":"5A3674A2-B6AD-4819-856F-14FDB32BBFE1","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFDictionaryContentItem"},{"Type":"WFDictionaryValueVariableAggrandizement","DictionaryKey":"Property ID"}]},"{0, 1}":{"Type":"ActionOutput","OutputName":"Dictionary","OutputUUID":"5A3674A2-B6AD-4819-856F-14FDB32BBFE1","Aggrandizements":[{"Type":"WFDictionaryValueVariableAggrandizement","DictionaryKey":"Daily Bullet Journal Page ID"}]}}},"WFSerializationType":"WFTextTokenString"},"UUID":"BBF99B9E-B15F-48AE-8C77-BAFEC51EADF5"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"BBF99B9E-B15F-48AE-8C77-BAFEC51EADF5","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"2E57F56D-8D50-4AED-906F-AC96B6EDE789","workflowName":"Retrieve a page property item","isSelf":false},"UUID":"94F75D94-09F3-462F-B26E-57DC1DF85885","WFWorkflowName":"Retrieve a page property item"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.detect.dictionary","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"94F75D94-09F3-462F-B26E-57DC1DF85885","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"7164D4BD-F948-4609-8A7D-2903A039DB83"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.repeat.each","WFWorkflowActionParameters":{"WFInput":{"Value":{"Type":"ActionOutput","OutputName":"Dictionary","OutputUUID":"7164D4BD-F948-4609-8A7D-2903A039DB83","Aggrandizements":[{"Type":"WFDictionaryValueVariableAggrandizement","DictionaryKey":"results"}]},"WFSerializationType":"WFTextTokenAttachment"},"GroupingIdentifier":"C1B8AEF9-E639-4CB9-A70A-9E3F15CE8BF2","WFControlFlowMode":0}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getvalueforkey","WFWorkflowActionParameters":{"WFInput":{"Value":{"VariableName":"Repeat Item","Type":"Variable"},"WFSerializationType":"WFTextTokenAttachment"},"WFDictionaryKey":"rich_text","UUID":"D02BF47E-6F95-418A-8B48-2F33659D9482"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.file.append","WFWorkflowActionParameters":{"WFFile":{"fileLocation":{"crossDeviceItemID":"docs.icloud.com:com.apple.CloudDocs\/ACE8113D-789C-4614-A1EA-1EA4F0A6DA68\/9355e871942bdca7011f42dcdefecd210114c36c","fileProviderDomainID":"com.apple.CloudDocs.iCloudDriveFileProvider\/8490D092-B665-44CE-B773-583DD8574185","WFFileLocationType":"iCloud","relativeSubpath":"com~apple~CloudDocs\/MyFiles"},"filename":"MyFiles","displayName":"MyFiles"},"WFInput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"Type":"ActionOutput","OutputName":"Dictionary Value","OutputUUID":"D02BF47E-6F95-418A-8B48-2F33659D9482","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFDictionaryContentItem"},{"Type":"WFDictionaryValueVariableAggrandizement","DictionaryKey":"plain_text"}]}}},"WFSerializationType":"WFTextTokenString"},"WFAppendOnNewLine":false,"UUID":"77412913-4027-4287-BAB6-35CE22C440DD","WFFilePath":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"175C5325-AF64-4699-B195-3A1E3EC10CF2","Type":"ActionOutput","OutputName":"temp.txt"}}},"WFSerializationType":"WFTextTokenString"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.repeat.each","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"C1B8AEF9-E639-4CB9-A70A-9E3F15CE8BF2","UUID":"ADECE525-9322-4B44-AF8F-F70CB994BBC7"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.documentpicker.open","WFWorkflowActionParameters":{"WFFileErrorIfNotFound":false,"WFFile":{"fileLocation":{"crossDeviceItemID":"docs.icloud.com:com.apple.CloudDocs\/ACE8113D-789C-4614-A1EA-1EA4F0A6DA68\/9355e871942bdca7011f42dcdefecd210114c36c","fileProviderDomainID":"com.apple.CloudDocs.iCloudDriveFileProvider\/8490D092-B665-44CE-B773-583DD8574185","WFFileLocationType":"iCloud","relativeSubpath":"com~apple~CloudDocs\/MyFiles"},"filename":"MyFiles","displayName":"MyFiles"},"WFGetFilePath":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"175C5325-AF64-4699-B195-3A1E3EC10CF2","Type":"ActionOutput","OutputName":"temp.txt"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"E1E590EF-74D8-4643-9375-5D2F79330DE6"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.setclipboard","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"E1E590EF-74D8-4643-9375-5D2F79330DE6","Type":"ActionOutput","OutputName":"File"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"23D7CCD8-21CD-411E-9D55-1AFB9AFC4933"}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":true}
+{
+  "WFWorkflowMinimumClientVersionString" : "1106",
+  "WFWorkflowMinimumClientVersion" : 1106,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 3679049983,
+    "WFWorkflowIconGlyphNumber" : 59465
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.text.split",
+      "WFWorkflowActionParameters" : {
+        "WFTextCustomSeparator" : "|",
+        "UUID" : "6CAB8828-D56A-4561-A759-316F8D9213FC",
+        "WFTextSeparator" : "Custom",
+        "text" : {
+          "Value" : {
+            "Type" : "ExtensionInput"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getitemfromlist",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "6CAB8828-D56A-4561-A759-316F8D9213FC",
+            "Type" : "ActionOutput",
+            "OutputName" : "Split Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFItemIndex" : "1",
+        "UUID" : "5629AE4E-3B5C-405F-932C-00E387FC2F18",
+        "WFItemSpecifier" : "Item At Index"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getitemfromlist",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "6CAB8828-D56A-4561-A759-316F8D9213FC",
+            "Type" : "ActionOutput",
+            "OutputName" : "Split Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFItemIndex" : "2",
+        "UUID" : "C0B28690-BF4A-44E5-B2CD-8AC236C79B5E",
+        "WFItemSpecifier" : "Item At Index"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.dictionary",
+      "WFWorkflowActionParameters" : {
+        "WFItems" : {
+          "Value" : {
+            "WFDictionaryFieldValueItems" : [
+              {
+                "WFItemType" : 0,
+                "WFKey" : {
+                  "Value" : {
+                    "string" : "Daily Bullet Journal Page ID"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                },
+                "WFValue" : {
+                  "Value" : {
+                    "string" : "￼",
+                    "attachmentsByRange" : {
+                      "{0, 1}" : {
+                        "OutputUUID" : "5629AE4E-3B5C-405F-932C-00E387FC2F18",
+                        "Type" : "ActionOutput",
+                        "OutputName" : "Item from List"
+                      }
+                    }
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType" : 0,
+                "WFKey" : {
+                  "Value" : {
+                    "string" : "Property ID"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                },
+                "WFValue" : {
+                  "Value" : {
+                    "string" : "￼",
+                    "attachmentsByRange" : {
+                      "{0, 1}" : {
+                        "OutputUUID" : "C0B28690-BF4A-44E5-B2CD-8AC236C79B5E",
+                        "Type" : "ActionOutput",
+                        "OutputName" : "Item from List"
+                      }
+                    }
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                }
+              }
+            ]
+          },
+          "WFSerializationType" : "WFDictionaryFieldValue"
+        },
+        "UUID" : "5A3674A2-B6AD-4819-856F-14FDB32BBFE1"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "175C5325-AF64-4699-B195-3A1E3EC10CF2",
+        "CustomOutputName" : "temp.txt",
+        "WFTextActionText" : "temp.txt"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "175C5325-AF64-4699-B195-3A1E3EC10CF2",
+            "Type" : "ActionOutput",
+            "OutputName" : "temp.txt"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "1029D410-13E8-4039-A996-2EADC73F11FB",
+          "isSelf" : false,
+          "workflowName" : "Create Empty File or Clear File"
+        },
+        "UUID" : "3E6912DB-DE33-4F45-A6A5-763CADC45137",
+        "WFWorkflowName" : "Create Empty File or Clear File"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "BBF99B9E-B15F-48AE-8C77-BAFEC51EADF5",
+        "WFTextActionText" : {
+          "Value" : {
+            "string" : "￼|￼",
+            "attachmentsByRange" : {
+              "{2, 1}" : {
+                "Type" : "ActionOutput",
+                "OutputName" : "Dictionary",
+                "OutputUUID" : "5A3674A2-B6AD-4819-856F-14FDB32BBFE1",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFCoercionVariableAggrandizement",
+                    "CoercionItemClass" : "WFDictionaryContentItem"
+                  },
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "Property ID"
+                  }
+                ]
+              },
+              "{0, 1}" : {
+                "Type" : "ActionOutput",
+                "OutputName" : "Dictionary",
+                "OutputUUID" : "5A3674A2-B6AD-4819-856F-14FDB32BBFE1",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "Daily Bullet Journal Page ID"
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "BBF99B9E-B15F-48AE-8C77-BAFEC51EADF5",
+            "Type" : "ActionOutput",
+            "OutputName" : "Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "2E57F56D-8D50-4AED-906F-AC96B6EDE789",
+          "isSelf" : false,
+          "workflowName" : "Retrieve a page property item"
+        },
+        "UUID" : "94F75D94-09F3-462F-B26E-57DC1DF85885",
+        "WFWorkflowName" : "Retrieve a page property item"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.detect.dictionary",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "94F75D94-09F3-462F-B26E-57DC1DF85885",
+            "Type" : "ActionOutput",
+            "OutputName" : "Shortcut Result"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "7164D4BD-F948-4609-8A7D-2903A039DB83"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "Type" : "ActionOutput",
+            "OutputName" : "Dictionary",
+            "OutputUUID" : "7164D4BD-F948-4609-8A7D-2903A039DB83",
+            "Aggrandizements" : [
+              {
+                "Type" : "WFDictionaryValueVariableAggrandizement",
+                "DictionaryKey" : "results"
+              }
+            ]
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "GroupingIdentifier" : "C1B8AEF9-E639-4CB9-A70A-9E3F15CE8BF2",
+        "WFControlFlowMode" : 0
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "Repeat Item",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "D02BF47E-6F95-418A-8B48-2F33659D9482",
+        "WFDictionaryKey" : "rich_text"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.file.append",
+      "WFWorkflowActionParameters" : {
+        "WFFile" : {
+          "fileLocation" : {
+            "WFFileLocationType" : "iCloud",
+            "fileProviderDomainID" : "com.apple.CloudDocs.iCloudDriveFileProvider\/8490D092-B665-44CE-B773-583DD8574185",
+            "relativeSubpath" : "com~apple~CloudDocs\/MyFiles",
+            "crossDeviceItemID" : "docs.icloud.com:com.apple.CloudDocs\/ACE8113D-789C-4614-A1EA-1EA4F0A6DA68\/9355e871942bdca7011f42dcdefecd210114c36c"
+          },
+          "filename" : "MyFiles",
+          "displayName" : "MyFiles"
+        },
+        "WFInput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "Type" : "ActionOutput",
+                "OutputName" : "Dictionary Value",
+                "OutputUUID" : "D02BF47E-6F95-418A-8B48-2F33659D9482",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFCoercionVariableAggrandizement",
+                    "CoercionItemClass" : "WFDictionaryContentItem"
+                  },
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "plain_text"
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFAppendOnNewLine" : false,
+        "UUID" : "77412913-4027-4287-BAB6-35CE22C440DD",
+        "WFFilePath" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "175C5325-AF64-4699-B195-3A1E3EC10CF2",
+                "Type" : "ActionOutput",
+                "OutputName" : "temp.txt"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "ADECE525-9322-4B44-AF8F-F70CB994BBC7",
+        "GroupingIdentifier" : "C1B8AEF9-E639-4CB9-A70A-9E3F15CE8BF2",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.documentpicker.open",
+      "WFWorkflowActionParameters" : {
+        "WFFileErrorIfNotFound" : false,
+        "WFFile" : {
+          "fileLocation" : {
+            "WFFileLocationType" : "iCloud",
+            "fileProviderDomainID" : "com.apple.CloudDocs.iCloudDriveFileProvider\/8490D092-B665-44CE-B773-583DD8574185",
+            "relativeSubpath" : "com~apple~CloudDocs\/MyFiles",
+            "crossDeviceItemID" : "docs.icloud.com:com.apple.CloudDocs\/ACE8113D-789C-4614-A1EA-1EA4F0A6DA68\/9355e871942bdca7011f42dcdefecd210114c36c"
+          },
+          "filename" : "MyFiles",
+          "displayName" : "MyFiles"
+        },
+        "WFGetFilePath" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "175C5325-AF64-4699-B195-3A1E3EC10CF2",
+                "Type" : "ActionOutput",
+                "OutputName" : "temp.txt"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "UUID" : "E1E590EF-74D8-4643-9375-5D2F79330DE6"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setclipboard",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "E1E590EF-74D8-4643-9375-5D2F79330DE6",
+            "Type" : "ActionOutput",
+            "OutputName" : "File"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "23D7CCD8-21CD-411E-9D55-1AFB9AFC4933"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : true
+}

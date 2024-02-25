@@ -1,0 +1,708 @@
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 4271458815,
+    "WFWorkflowIconGlyphNumber" : 61507
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.comment",
+      "WFWorkflowActionParameters" : {
+        "WFCommentActionText" : "⚠️ 使用前 聲明⚠️ \n先透過下方輸入手機型號代碼（例如：iPhone 14 Pro 直接在下方輸入”1”）\n\n📱 機型與代碼：\n\n1️⃣ iPhone 14 Pro、iPhone 14 Pro Max\n2️⃣ iPhone 12 mini、12、12 Pro、12 Pro Max、13 mini、13、13 Pro、13 Pro Max、14、14 Plus\n3️⃣ iPhone XR、11\n4️⃣ iPhoneX、Xs、Xs Max、11 Pro、11 Pro Max\n5️⃣ 非劉海Plus機型\n6️⃣ 非劉海非 Plus 機型\n7️⃣ iPad 機型\n\n作者：瘋先生\n更多捷徑腳本都在 MRMAD.com.tw"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "C510EC32-170A-422F-A720-5C2313C9EF16",
+        "WFTextActionText" : "1"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.detect.number",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "C510EC32-170A-422F-A720-5C2313C9EF16",
+            "Type" : "ActionOutput",
+            "OutputName" : "文本"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "E48A3D88-EDF5-486F-BC4B-1DE219CDE1A0"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "E48A3D88-EDF5-486F-BC4B-1DE219CDE1A0",
+            "Type" : "ActionOutput",
+            "OutputName" : "数字"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "机型"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.dictionary",
+      "WFWorkflowActionParameters" : {
+        "WFItems" : {
+          "Value" : {
+            "WFDictionaryFieldValueItems" : [
+              {
+                "WFItemType" : 0,
+                "WFKey" : {
+                  "Value" : {
+                    "string" : "版本"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                },
+                "WFValue" : {
+                  "Value" : {
+                    "string" : "1.0"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType" : 0,
+                "WFKey" : {
+                  "Value" : {
+                    "string" : "名称"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                },
+                "WFValue" : {
+                  "Value" : {
+                    "string" : "捷徑腳本：刪除截圖狀態欄"
+                  },
+                  "WFSerializationType" : "WFTextTokenString"
+                }
+              }
+            ]
+          },
+          "WFSerializationType" : "WFDictionaryFieldValue"
+        },
+        "UUID" : "186A357B-8FB6-410E-A950-49A095BD96E3"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "186A357B-8FB6-410E-A950-49A095BD96E3",
+            "Type" : "ActionOutput",
+            "OutputName" : "词典"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "版本信息"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "833602A4-1DF7-42EC-9475-B590FA922586",
+        "WFTextActionText" : "aHR0cHM6Ly9tcm1hZC5jb20udHcvd3AtY29udGVudC91cGxvYWRzL3Nob3J0Y3V0cy9zY3JlZW5zaG90LXNob3J0Y3V0Lmpzb24="
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.base64encode",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "833602A4-1DF7-42EC-9475-B590FA922586",
+            "Type" : "ActionOutput",
+            "OutputName" : "文本"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "2158AA24-2826-4817-94DB-BD68D9E792D0",
+        "WFEncodeMode" : "Decode"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.downloadurl",
+      "WFWorkflowActionParameters" : {
+        "WFURL" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "2158AA24-2826-4817-94DB-BD68D9E792D0",
+                "Type" : "ActionOutput",
+                "OutputName" : "Base64已编码内容"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "UUID" : "87A8684B-1882-4A93-A2F8-9DE9E3C2A679"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.detect.dictionary",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "87A8684B-1882-4A93-A2F8-9DE9E3C2A679",
+            "Type" : "ActionOutput",
+            "OutputName" : "URL的内容"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "90803BA0-8CE5-4F5D-9BD2-A8BD0AEC4402"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "90803BA0-8CE5-4F5D-9BD2-A8BD0AEC4402",
+            "Type" : "ActionOutput",
+            "OutputName" : "词典"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "更新"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "更新",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "A36DA328-0232-45FE-9E06-11B3522B25F8",
+        "WFDictionaryKey" : {
+          "Value" : {
+            "string" : "￼.版本",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "VariableName" : "版本信息",
+                "Type" : "Variable",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "名称"
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.detect.number",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "A36DA328-0232-45FE-9E06-11B3522B25F8",
+            "Type" : "ActionOutput",
+            "OutputName" : "词典值"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "F803FEE3-A1F3-49B8-811B-9369E877EEE0"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFCondition" : 5,
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "F803FEE3-A1F3-49B8-811B-9369E877EEE0",
+              "Type" : "ActionOutput",
+              "OutputName" : "数字"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "GroupingIdentifier" : "F988C56D-974C-4C93-B9EC-4BB1492048AE",
+        "WFNumberValue" : {
+          "Value" : {
+            "VariableName" : "版本信息",
+            "Type" : "Variable",
+            "Aggrandizements" : [
+              {
+                "Type" : "WFDictionaryValueVariableAggrandizement",
+                "DictionaryKey" : "版本"
+              }
+            ]
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "更新",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "A4BA0206-D28A-40BB-B6EE-1CCB404DF28D",
+        "WFDictionaryKey" : {
+          "Value" : {
+            "string" : "￼.描述",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "VariableName" : "版本信息",
+                "Type" : "Variable",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "名称"
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "A4BA0206-D28A-40BB-B6EE-1CCB404DF28D",
+            "Type" : "ActionOutput",
+            "OutputName" : "词典值"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "描述"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "更新",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "9D995697-02EA-447A-85D8-7DF8C8404BC1",
+        "WFDictionaryKey" : {
+          "Value" : {
+            "string" : "￼.日期",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "VariableName" : "版本信息",
+                "Type" : "Variable",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "名称"
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "EAFD3999-95DC-4DD1-B0F1-85D3071A0099",
+        "WFTextActionText" : {
+          "Value" : {
+            "string" : "当前版本为：￼\n可新版本至：￼（发布于：￼）\n更新描述：￼",
+            "attachmentsByRange" : {
+              "{6, 1}" : {
+                "VariableName" : "版本信息",
+                "Type" : "Variable",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "版本"
+                  }
+                ]
+              },
+              "{28, 1}" : {
+                "VariableName" : "描述",
+                "Type" : "Variable"
+              },
+              "{20, 1}" : {
+                "OutputUUID" : "9D995697-02EA-447A-85D8-7DF8C8404BC1",
+                "Type" : "ActionOutput",
+                "OutputName" : "词典值"
+              },
+              "{14, 1}" : {
+                "OutputUUID" : "A36DA328-0232-45FE-9E06-11B3522B25F8",
+                "Type" : "ActionOutput",
+                "OutputName" : "词典值"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.alert",
+      "WFWorkflowActionParameters" : {
+        "WFAlertActionMessage" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "EAFD3999-95DC-4DD1-B0F1-85D3071A0099",
+                "Type" : "ActionOutput",
+                "OutputName" : "文本"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFAlertActionTitle" : "检测到新版本，是否立即更新？"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "更新",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "2DD84B2C-F4DC-485D-99DC-3CF693A11C82",
+        "WFDictionaryKey" : {
+          "Value" : {
+            "string" : "￼.url",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "VariableName" : "版本信息",
+                "Type" : "Variable",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "名称"
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openurl",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "2DD84B2C-F4DC-485D-99DC-3CF693A11C82",
+            "Type" : "ActionOutput",
+            "OutputName" : "词典值"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "87320C7C-796A-415A-95FB-836B4DF3B866"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "F988C56D-974C-4C93-B9EC-4BB1492048AE",
+        "WFControlFlowMode" : 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "更新",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "5849A4CE-0BC8-4F5B-97AE-BD16E4DEC751",
+        "WFDictionaryKey" : {
+          "Value" : {
+            "string" : "￼.机型￼",
+            "attachmentsByRange" : {
+              "{4, 1}" : {
+                "VariableName" : "机型",
+                "Type" : "Variable"
+              },
+              "{0, 1}" : {
+                "VariableName" : "版本信息",
+                "Type" : "Variable",
+                "Aggrandizements" : [
+                  {
+                    "Type" : "WFDictionaryValueVariableAggrandizement",
+                    "DictionaryKey" : "名称"
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "5849A4CE-0BC8-4F5B-97AE-BD16E4DEC751",
+            "Type" : "ActionOutput",
+            "OutputName" : "词典值"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "机型值"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.selectphoto",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "ACD39D1A-07D5-45ED-A8AC-5184EB75083C",
+        "WFPhotoPickerTypes" : [
+          "Images",
+          "Live Photos"
+        ],
+        "WFSelectMultiplePhotos" : true
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "ACD39D1A-07D5-45ED-A8AC-5184EB75083C",
+            "Type" : "ActionOutput",
+            "OutputName" : "照片"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "截图"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.properties.images",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "截图",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "75FF5D95-6BCF-440A-B1D2-BCFDB85ADB82",
+        "WFContentItemPropertyName" : "Width"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "75FF5D95-6BCF-440A-B1D2-BCFDB85ADB82",
+            "Type" : "ActionOutput",
+            "OutputName" : "宽度"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFVariableName" : "图片宽度"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.math",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "机型值",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFMathOperand" : "1",
+        "UUID" : "298D6BCD-6D0C-488F-B14F-BB139E524C8B",
+        "WFMathOperation" : "-"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.image.crop",
+      "WFWorkflowActionParameters" : {
+        "WFImageCropY" : {
+          "Value" : {
+            "OutputUUID" : "298D6BCD-6D0C-488F-B14F-BB139E524C8B",
+            "Type" : "ActionOutput",
+            "OutputName" : "计算结果"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFImageCropHeight" : "1",
+        "UUID" : "05084160-9292-4CD4-A1C6-3E202695F2A6",
+        "WFImageCropWidth" : {
+          "Value" : {
+            "VariableName" : "图片宽度",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "截图",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFImageCropPosition" : "Custom"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.image.resize",
+      "WFWorkflowActionParameters" : {
+        "WFImageResizeHeight" : {
+          "Value" : {
+            "VariableName" : "机型值",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFImage" : {
+          "Value" : {
+            "OutputUUID" : "05084160-9292-4CD4-A1C6-3E202695F2A6",
+            "Type" : "ActionOutput",
+            "OutputName" : "裁剪后的图像"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "774C8E55-CD1D-4D0D-AAA3-8C9347BD45E8",
+        "WFImageResizeWidth" : {
+          "Value" : {
+            "VariableName" : "图片宽度",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.overlayimageonimage",
+      "WFWorkflowActionParameters" : {
+        "WFOverlayImageOpacity" : "100",
+        "UUID" : "2510EFE2-3062-4DDC-B6CD-8B044150D1A0",
+        "WFRotation" : "0",
+        "WFInput" : {
+          "Value" : {
+            "VariableName" : "截图",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFShouldShowImageEditor" : false,
+        "WFImagePosition" : "Custom",
+        "WFImage" : {
+          "Value" : {
+            "OutputUUID" : "774C8E55-CD1D-4D0D-AAA3-8C9347BD45E8",
+            "Type" : "ActionOutput",
+            "OutputName" : "调整大小后的图像"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.savetocameraroll",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "2510EFE2-3062-4DDC-B6CD-8B044150D1A0",
+            "Type" : "ActionOutput",
+            "OutputName" : "被叠放的图像"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "63C0B0C3-15D3-4C71-BC0F-3A21214E62FE"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.deletephotos",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "540448CC-5584-4BD7-8971-8C7EAF95CB9B",
+        "photos" : {
+          "Value" : {
+            "VariableName" : "截图",
+            "Type" : "Variable"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "GroupingIdentifier" : "F988C56D-974C-4C93-B9EC-4BB1492048AE",
+        "WFControlFlowMode" : 2
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

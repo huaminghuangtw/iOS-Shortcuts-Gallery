@@ -341,6 +341,11 @@
 				<dict>
 					<key>identifier</key>
 					<string>inbox120537671</string>
+					<key>subtitle</key>
+					<dict>
+						<key>key</key>
+						<string>Inbox</string>
+					</dict>
 					<key>title</key>
 					<dict>
 						<key>key</key>
@@ -493,6 +498,11 @@
 				<dict>
 					<key>identifier</key>
 					<string>inbox120537671</string>
+					<key>subtitle</key>
+					<dict>
+						<key>key</key>
+						<string>Inbox</string>
+					</dict>
 					<key>title</key>
 					<dict>
 						<key>key</key>

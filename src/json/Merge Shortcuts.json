@@ -1,0 +1,261 @@
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 4292093695,
+    "WFWorkflowIconGlyphNumber" : 59830
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.getmyworkflows",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "F620EBD1-754D-46B3-B279-4D8D33F8E3AF"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.choosefromlist",
+      "WFWorkflowActionParameters" : {
+        "WFChooseFromListActionPrompt" : "Choose first shortcut",
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "F620EBD1-754D-46B3-B279-4D8D33F8E3AF",
+            "Type" : "ActionOutput",
+            "OutputName" : "My Shortcuts"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "60AAFB89-CF58-4BAE-85F2-00E88B84EAA0"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "ke.bou.GizmoPack.EncodePlistIntent",
+      "WFWorkflowActionParameters" : {
+        "input" : {
+          "Value" : {
+            "OutputUUID" : "60AAFB89-CF58-4BAE-85F2-00E88B84EAA0",
+            "Type" : "ActionOutput",
+            "OutputName" : "Chosen Item"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "DB14B247-23AA-427E-9A7C-7A329FC2F6A4"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.choosefromlist",
+      "WFWorkflowActionParameters" : {
+        "WFChooseFromListActionPrompt" : "Choose shortcut to append",
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "F620EBD1-754D-46B3-B279-4D8D33F8E3AF",
+            "Type" : "ActionOutput",
+            "OutputName" : "My Shortcuts"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "45A74A9B-DC82-4155-8C69-FFCE80783A29"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "ke.bou.GizmoPack.EncodePlistIntent",
+      "WFWorkflowActionParameters" : {
+        "input" : {
+          "Value" : {
+            "OutputUUID" : "45A74A9B-DC82-4155-8C69-FFCE80783A29",
+            "Type" : "ActionOutput",
+            "OutputName" : "Chosen Item"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "F71BBAC3-598A-4AD6-8437-60D241689D53"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.list",
+      "WFWorkflowActionParameters" : {
+        "WFItems" : [
+          {
+            "WFItemType" : 0,
+            "WFValue" : {
+              "Value" : {
+                "string" : "￼",
+                "attachmentsByRange" : {
+                  "{0, 1}" : {
+                    "OutputUUID" : "DB14B247-23AA-427E-9A7C-7A329FC2F6A4",
+                    "Type" : "ActionOutput",
+                    "OutputName" : "Plist Encoded"
+                  }
+                }
+              },
+              "WFSerializationType" : "WFTextTokenString"
+            }
+          },
+          {
+            "WFItemType" : 0,
+            "WFValue" : {
+              "Value" : {
+                "string" : "￼",
+                "attachmentsByRange" : {
+                  "{0, 1}" : {
+                    "OutputUUID" : "F71BBAC3-598A-4AD6-8437-60D241689D53",
+                    "Type" : "ActionOutput",
+                    "OutputName" : "Plist Encoded"
+                  }
+                }
+              },
+              "WFSerializationType" : "WFTextTokenString"
+            }
+          }
+        ],
+        "UUID" : "7C51E107-733B-4337-8392-302952812F2F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "ke.bou.GizmoPack.QueryJSONIntent",
+      "WFWorkflowActionParameters" : {
+        "jqQuery" : "first * (map({WFWorkflowActions}) | reduce .[1:][] as $i (first; .[] += $i[]))",
+        "input" : {
+          "Value" : {
+            "OutputUUID" : "7C51E107-733B-4337-8392-302952812F2F",
+            "Type" : "ActionOutput",
+            "OutputName" : "List"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "B6EEB675-BB34-43B4-9627-DA3F3F70A548",
+        "queryType" : "jq",
+        "slurp" : true
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "ke.bou.GizmoPack.EncodePlistIntent",
+      "WFWorkflowActionParameters" : {
+        "input" : {
+          "Value" : {
+            "OutputUUID" : "B6EEB675-BB34-43B4-9627-DA3F3F70A548",
+            "Type" : "ActionOutput",
+            "OutputName" : "Result"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "operation" : "encode",
+        "UUID" : "AFA735B0-D33F-491A-952B-C3C8AF8B8F6C"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.setitemname",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "AFA735B0-D33F-491A-952B-C3C8AF8B8F6C",
+            "Type" : "ActionOutput",
+            "OutputName" : "Plist Encoded"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFName" : {
+          "Value" : {
+            "string" : "￼ + ￼",
+            "attachmentsByRange" : {
+              "{4, 1}" : {
+                "OutputUUID" : "45A74A9B-DC82-4155-8C69-FFCE80783A29",
+                "Type" : "ActionOutput",
+                "OutputName" : "Chosen Item"
+              },
+              "{0, 1}" : {
+                "OutputUUID" : "60AAFB89-CF58-4BAE-85F2-00E88B84EAA0",
+                "Type" : "ActionOutput",
+                "OutputName" : "Chosen Item"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "UUID" : "9B69054A-50FF-4999-AA99-54C152DD3492"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.file.getlink",
+      "WFWorkflowActionParameters" : {
+        "WFFile" : {
+          "Value" : {
+            "OutputUUID" : "9B69054A-50FF-4999-AA99-54C152DD3492",
+            "Type" : "ActionOutput",
+            "OutputName" : "Renamed Item"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "325F254B-FFBF-4E72-A37E-B518E49C44AC"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.text.replace",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "325F254B-FFBF-4E72-A37E-B518E49C44AC",
+                "Type" : "ActionOutput",
+                "OutputName" : "Link to File"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "WFReplaceTextReplace" : "shortcuts:\/",
+        "CustomOutputName" : "Shortcut URL",
+        "UUID" : "AE7921E7-DBEB-4C05-BBB0-0777661B831E",
+        "WFReplaceTextFind" : "https:\/\/www.icloud.com"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.openurl",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "AE7921E7-DBEB-4C05-BBB0-0777661B831E",
+            "Type" : "ActionOutput",
+            "OutputName" : "Updated Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+    "Watch"
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}

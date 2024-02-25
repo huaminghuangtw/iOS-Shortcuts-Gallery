@@ -1,1 +1,244 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":1440408063,"WFWorkflowIconGlyphNumber":59747},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":["WFStringContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.returntohomescreen","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"💝 Treat your body as the house you will live forever!","UUID":"0225A628-0D91-40A2-B1CD-A1C222B0F030"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"0225A628-0D91-40A2-B1CD-A1C222B0F030","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"DFE603DE-108A-4878-9D5C-7351EE4BDC99","workflowName":"Show (Vocal) Banner","isSelf":false},"UUID":"BF47FE81-CF29-4366-943E-C70BA31BBA84","WFWorkflowName":"Show (Vocal) Banner"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.list","WFWorkflowActionParameters":{"WFItems":["👉 REWE","👉 PENNY","👉 NETTO","👉 EDEKA","👉 LIDL","👉 ALDI","👉 DM","👉 ROSSMANN"],"UUID":"22DACDD9-1710-4AC8-8B8B-941F435FF360"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefromlist","WFWorkflowActionParameters":{"WFChooseFromListActionPrompt":"🤖 Which one?","WFInput":{"Value":{"OutputUUID":"22DACDD9-1710-4AC8-8B8B-941F435FF360","Type":"ActionOutput","OutputName":"List"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"FA35E3B2-6402-4A87-8319-5D4AD133D997"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"FA35E3B2-6402-4A87-8319-5D4AD133D997","Type":"ActionOutput","OutputName":"Chosen Item"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"ALDI","GroupingIdentifier":"ED4380F8-CE9A-4027-9E5B-81AC99819441","WFCondition":999}},{"WFWorkflowActionIdentifier":"com.alexhay.ToolboxProForShortcuts.InternetConnectionIntent","WFWorkflowActionParameters":{"UUID":"1FDB6CF7-F52E-4799-BF07-8ED30C703F9E"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"Type":"ActionOutput","OutputName":"Is Connected","OutputUUID":"1FDB6CF7-F52E-4799-BF07-8ED30C703F9E","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFStringContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"No","GroupingIdentifier":"00F3CEE1-C8B0-4D4D-B745-36403278C29E","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"AF6BD325-062A-4011-AC89-27EA01E9EFC3","workflowName":"Go to WiFi Setting","isSelf":false},"WFWorkflowName":"Go to WiFi Setting","UUID":"A967C0DE-499B-4224-920B-247264081328"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.wifi.set","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"00F3CEE1-C8B0-4D4D-B745-36403278C29E","UUID":"46306D5C-B813-46FB-9801-D732B6361693"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"ED4380F8-CE9A-4027-9E5B-81AC99819441","UUID":"F4C247B7-D3A9-47BD-BD31-A4DCE77F855E"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"743F72B9-3BDC-498D-A8F4-DEDCCA8C1BE7","workflowName":"Turn off Grayscale","isSelf":false},"WFWorkflowName":"Turn off Grayscale","UUID":"D7D0B220-4636-4A61-BE2B-4CC581C6448B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"C1FFE17B-1273-4224-8E48-768EEAC185A6","workflowName":"Set High Brightness","isSelf":false},"WFWorkflowName":"Set High Brightness","UUID":"3B0F7757-B6B1-43E5-9A27-9E3A2F4D0693"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"FA35E3B2-6402-4A87-8319-5D4AD133D997","Type":"ActionOutput","OutputName":"Chosen Item"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"D5107EA6-8B6B-4595-B1CC-0EB8CD1F9743"}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString" : "900",
+  "WFWorkflowMinimumClientVersion" : 900,
+  "WFWorkflowIcon" : {
+    "WFWorkflowIconStartColor" : 1440408063,
+    "WFWorkflowIconGlyphNumber" : 59747
+  },
+  "WFWorkflowClientVersion" : "2206.0.6",
+  "WFWorkflowOutputContentItemClasses" : [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowHasOutputFallback" : false,
+  "WFWorkflowActions" : [
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.returntohomescreen",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "0225A628-0D91-40A2-B1CD-A1C222B0F030",
+        "WFTextActionText" : "💝 Treat your body as the house you will live forever!"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "0225A628-0D91-40A2-B1CD-A1C222B0F030",
+            "Type" : "ActionOutput",
+            "OutputName" : "Text"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "WFWorkflow" : {
+          "workflowIdentifier" : "DFE603DE-108A-4878-9D5C-7351EE4BDC99",
+          "isSelf" : false,
+          "workflowName" : "Show (Vocal) Banner"
+        },
+        "UUID" : "BF47FE81-CF29-4366-943E-C70BA31BBA84",
+        "WFWorkflowName" : "Show (Vocal) Banner"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.list",
+      "WFWorkflowActionParameters" : {
+        "WFItems" : [
+          "👉 REWE",
+          "👉 PENNY",
+          "👉 NETTO",
+          "👉 EDEKA",
+          "👉 LIDL",
+          "👉 ALDI",
+          "👉 DM",
+          "👉 ROSSMANN"
+        ],
+        "UUID" : "22DACDD9-1710-4AC8-8B8B-941F435FF360"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.choosefromlist",
+      "WFWorkflowActionParameters" : {
+        "WFChooseFromListActionPrompt" : "🤖 Which one?",
+        "WFInput" : {
+          "Value" : {
+            "OutputUUID" : "22DACDD9-1710-4AC8-8B8B-941F435FF360",
+            "Type" : "ActionOutput",
+            "OutputName" : "List"
+          },
+          "WFSerializationType" : "WFTextTokenAttachment"
+        },
+        "UUID" : "FA35E3B2-6402-4A87-8319-5D4AD133D997"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "OutputUUID" : "FA35E3B2-6402-4A87-8319-5D4AD133D997",
+              "Type" : "ActionOutput",
+              "OutputName" : "Chosen Item"
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "ALDI",
+        "GroupingIdentifier" : "ED4380F8-CE9A-4027-9E5B-81AC99819441",
+        "WFCondition" : 999
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "com.alexhay.ToolboxProForShortcuts.InternetConnectionIntent",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "1FDB6CF7-F52E-4799-BF07-8ED30C703F9E"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "WFInput" : {
+          "Type" : "Variable",
+          "Variable" : {
+            "Value" : {
+              "Type" : "ActionOutput",
+              "OutputName" : "Is Connected",
+              "OutputUUID" : "1FDB6CF7-F52E-4799-BF07-8ED30C703F9E",
+              "Aggrandizements" : [
+                {
+                  "Type" : "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass" : "WFStringContentItem"
+                }
+              ]
+            },
+            "WFSerializationType" : "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode" : 0,
+        "WFConditionalActionString" : "No",
+        "GroupingIdentifier" : "00F3CEE1-C8B0-4D4D-B745-36403278C29E",
+        "WFCondition" : 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "A967C0DE-499B-4224-920B-247264081328",
+        "WFWorkflowName" : "Go to WiFi Setting",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "AF6BD325-062A-4011-AC89-27EA01E9EFC3",
+          "isSelf" : false,
+          "workflowName" : "Go to WiFi Setting"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.wifi.set",
+      "WFWorkflowActionParameters" : {
+
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "46306D5C-B813-46FB-9801-D732B6361693",
+        "GroupingIdentifier" : "00F3CEE1-C8B0-4D4D-B745-36403278C29E",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "F4C247B7-D3A9-47BD-BD31-A4DCE77F855E",
+        "GroupingIdentifier" : "ED4380F8-CE9A-4027-9E5B-81AC99819441",
+        "WFControlFlowMode" : 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "D7D0B220-4636-4A61-BE2B-4CC581C6448B",
+        "WFWorkflowName" : "Turn off Grayscale",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "743F72B9-3BDC-498D-A8F4-DEDCCA8C1BE7",
+          "isSelf" : false,
+          "workflowName" : "Turn off Grayscale"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters" : {
+        "UUID" : "3B0F7757-B6B1-43E5-9A27-9E3A2F4D0693",
+        "WFWorkflowName" : "Set High Brightness",
+        "WFWorkflow" : {
+          "workflowIdentifier" : "C1FFE17B-1273-4224-8E48-768EEAC185A6",
+          "isSelf" : false,
+          "workflowName" : "Set High Brightness"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier" : "is.workflow.actions.output",
+      "WFWorkflowActionParameters" : {
+        "WFOutput" : {
+          "Value" : {
+            "string" : "￼",
+            "attachmentsByRange" : {
+              "{0, 1}" : {
+                "OutputUUID" : "FA35E3B2-6402-4A87-8319-5D4AD133D997",
+                "Type" : "ActionOutput",
+                "OutputName" : "Chosen Item"
+              }
+            }
+          },
+          "WFSerializationType" : "WFTextTokenString"
+        },
+        "UUID" : "D5107EA6-8B6B-4595-B1CC-0EB8CD1F9743"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses" : [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions" : [
+
+  ],
+  "WFWorkflowTypes" : [
+
+  ],
+  "WFQuickActionSurfaces" : [
+
+  ],
+  "WFWorkflowHasShortcutInputVariables" : false
+}
