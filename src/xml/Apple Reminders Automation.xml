@@ -132,9 +132,23 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>E2E5D074-DF9D-43A1-85B7-DD483A6A9209</string>
+				<string>A77307BA-8881-45E7-B36F-0C88C51999CB</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Shortcut Result</string>
+						<key>OutputUUID</key>
+						<string>B0310A04-6E65-4ABD-89F2-0D76CE293832</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
 				<key>WFNotificationActionBody</key>
-				<string>✅ AReminders Automation</string>
+				<string>✅ Done</string>
 				<key>WFNotificationActionSound</key>
 				<false/>
 			</dict>

@@ -596,6 +596,8 @@
 			<string>is.workflow.actions.runworkflow</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>UUID</key>
+				<string>334A633E-D2E4-49AD-AEDD-0D9BCF398BBC</string>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -936,6 +938,74 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.vibrate</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.choosefrommenu</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7DEC515E-6151-486C-B151-6552DF20740B</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFMenuItems</key>
+				<array>
+					<string>✅ Yes</string>
+					<string>❌ No</string>
+				</array>
+				<key>WFMenuPrompt</key>
+				<string>🤖 Open Reminders?</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.choosefrommenu</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7DEC515E-6151-486C-B151-6552DF20740B</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+				<key>WFMenuItemTitle</key>
+				<string>✅ Yes</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.openapp</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFAppIdentifier</key>
+				<string>com.apple.reminders</string>
+				<key>WFSelectedApp</key>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.reminders</string>
+					<key>Name</key>
+					<string>Reminders</string>
+					<key>TeamIdentifier</key>
+					<string>0000000000</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.choosefrommenu</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7DEC515E-6151-486C-B151-6552DF20740B</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+				<key>WFMenuItemTitle</key>
+				<string>❌ No</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.runworkflow</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -952,6 +1022,17 @@
 				</dict>
 				<key>WFWorkflowName</key>
 				<string>You're all set</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.choosefrommenu</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7DEC515E-6151-486C-B151-6552DF20740B</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
 			</dict>
 		</dict>
 	</array>

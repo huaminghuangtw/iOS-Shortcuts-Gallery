@@ -328,7 +328,9 @@
 	<key>WFWorkflowMinimumClientVersionString</key>
 	<string>900</string>
 	<key>WFWorkflowOutputContentItemClasses</key>
-	<array/>
+	<array>
+		<string>WFContentItem</string>
+	</array>
 	<key>WFWorkflowTypes</key>
 	<array/>
 </dict>

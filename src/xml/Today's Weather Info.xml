@@ -423,7 +423,7 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>GroupingIdentifier</key>
-				<string>F2703471-2CD1-49A3-8037-E30BB0FBA7D7</string>
+				<string>619DDFB3-70B2-4DDF-8D61-8666F1C06774</string>
 				<key>WFCondition</key>
 				<integer>4</integer>
 				<key>WFConditionalActionString</key>
@@ -449,8 +449,28 @@
 						<string>WFTextTokenAttachment</string>
 					</dict>
 				</dict>
-				<key>WFNumberValue</key>
-				<string>10</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>8EE2DEF4-E9F9-429B-804E-C7DC523C5B03</string>
+				<key>WFTextActionText</key>
+				<string>有出門的話記得攜帶雨傘唷！</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>619DDFB3-70B2-4DDF-8D61-8666F1C06774</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -461,7 +481,20 @@
 				<key>UUID</key>
 				<string>F326F7FA-A83B-476C-B537-0F9E6D80D49D</string>
 				<key>WFTextActionText</key>
-				<string>有出門的話記得攜帶雨傘唷!</string>
+				<string>記得外出走走，曬曬太陽！</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>619DDFB3-70B2-4DDF-8D61-8666F1C06774</string>
+				<key>UUID</key>
+				<string>7A593EBF-9163-4041-ADC4-AB57D4B60561</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -474,9 +507,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>If Result</string>
 						<key>OutputUUID</key>
-						<string>F326F7FA-A83B-476C-B537-0F9E6D80D49D</string>
+						<string>7A593EBF-9163-4041-ADC4-AB57D4B60561</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -485,19 +518,6 @@
 				</dict>
 				<key>WFVariableName</key>
 				<string>myWeatherForecast</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.conditional</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>GroupingIdentifier</key>
-				<string>F2703471-2CD1-49A3-8037-E30BB0FBA7D7</string>
-				<key>UUID</key>
-				<string>4D74396B-0A3D-4CD7-B981-EF6D81EC0E3F</string>
-				<key>WFControlFlowMode</key>
-				<integer>2</integer>
 			</dict>
 		</dict>
 		<dict>

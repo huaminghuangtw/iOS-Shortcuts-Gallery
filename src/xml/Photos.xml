@@ -8,81 +8,45 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.useractivity.open</string>
+			<string>com.apple.mobileslideshow.OpenCollectionIntent</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>AppBundleIdentifier</key>
-				<string>com.apple.mobileslideshow</string>
-				<key>UUID</key>
-				<string>2F15019E-3382-4059-8346-FD763BEE9875</string>
-				<key>UserActivityData</key>
-				<data>
-				YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hp
-				dmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRB
-				cmNoaXZlctEICVRyb290gAGvEBMLDDE3PT4/Q0ZKT1BW
-				V1hcYGFkVSRudWxs3xASDQ4PEBESExQVFhcYGRobHB0e
-				HyAhIh8fJSYnKCkqKywtHx8wWGlzQWN0aXZlXxAUcGVy
-				c2lzdGVudElkZW50aWZpZXJXb3B0aW9uc1d2ZXJzaW9u
-				XxARZWxpZ2libGVGb3JTZWFyY2hfEBllbGlnaWJsZUZv
-				clB1YmxpY0luZGV4aW5nXHJlcXVpcmVkS2V5c1xhY3Rp
-				dml0eVR5cGVUd2hlblV0aXRsZVR0eXBlViRjbGFzc18Q
-				EmVsaWdpYmxlRm9ySGFuZG9mZl8QF2NvbnRlbnRBdHRy
-				aWJ1dGVTZXREYXRhWHBheWxvYWRzXxAUZWxpZ2libGVG
-				b3JSZW1pbmRlcnNfEBVlbGlnaWJsZUZvclByZWRpY3Rp
-				b25XcGF5bG9hZAiAAIACEAEICIAPgAWABoAEEAGAEgmA
-				CIALCAiACtMyMxg0NTZXTlMua2V5c1pOUy5vYmplY3Rz
-				oKCAA9I4OTo7WiRjbGFzc25hbWVYJGNsYXNzZXNcTlNE
-				aWN0aW9uYXJ5ojo8WE5TT2JqZWN0bxAeAFYAaQBlAHcA
-				IABhAGwAYgB1AG0AICAcAEYAbwByACAAVwBlAGUAawBs
-				AHkAIABSAGUAdgBpAGUAdyAdXxAfY29tLmFwcGxlLm1v
-				YmlsZXNsaWRlc2hvdy5hbGJ1bdJAGEFCV05TLnRpbWUj
-				QcWt+TC/n4iAB9I4OURFVk5TRGF0ZaJEPNJHGEhJV05T
-				LmRhdGFPEQG/YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNp
-				b25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8Q
-				D05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwRElUk
-				bnVsbNINDg8QWWNvbnRhaW5lclYkY2xhc3OAAoADTxCP
-				3roAAQAAjwAAAHgAAAAdAAAA8HgAAAAAAHgAAABXAAAA
-				AwBMAAAAJQAAAF9fY2xhc3M6Q1NTZWFyY2hhYmxlSXRl
-				bUF0dHJpYnV0ZVNldAAVAAAAAQAMAAAAAQAAAAEAAAAA
-				AAAAAADgJwAAAPQAAAAA4lAAAADxFABrTURJdGVtVGh1
-				bWJuYWlsRGF0YQDSExQVFlokY2xhc3NuYW1lWCRjbGFz
-				c2VzXxAcQ1NTZWFyY2hhYmxlSXRlbUF0dHJpYnV0ZVNl
-				dKIXGF8QHENTU2VhcmNoYWJsZUl0ZW1BdHRyaWJ1dGVT
-				ZXRYTlNPYmplY3QACAARABoAJAApADIANwBJAEwAUQBT
-				AFgAXgBjAG0AdAB2AHgBCgEPARoBIwFCAUUBZAAAAAAA
-				AAIBAAAAAAAAABkAAAAAAAAAAAAAAAAAAAFtgAnSODlL
-				TF1OU011dGFibGVEYXRho01OPF1OU011dGFibGVEYXRh
-				Vk5TRGF0YU8QME1QAwWBpHV1aWTZJDc2QkIxQ0VELTVD
-				N0MtNDBFNS1BNkFBLTE4RUU0ODg3NzgwONMyMxhRU1Wh
-				UoAMoVSADYAOXxAaVUFJbnRlbnRzSWRlbnRpZmllclBh
-				eWxvYWRPELBicGxpc3QwMNQBAgMEBQYHClgkdmVyc2lv
-				blkkYXJjaGl2ZXJUJHRvcFgkb2JqZWN0cxIAAYagXxAP
-				TlNLZXllZEFyY2hpdmVy0QgJVHJvb3SAAaILDFUkbnVs
-				bF8QJEI4QTA4RTQyLTAwNjYtNDc2NC05NjhBLTY5RThC
-				RTBBOURCMAgRGiQpMjdJTFFTVlwAAAAAAAABAQAAAAAA
-				AAANAAAAAAAAAAAAAAAAAAAAg9I4OVlaXxATTlNNdXRh
-				YmxlRGljdGlvbmFyeaNbOjxfEBNOU011dGFibGVEaWN0
-				aW9uYXJ50jMYXV+hXoAQgBFUdXVpZNI4OWJjVU5TU2V0
-				omI80jg5ZWZfEBJVQVVzZXJBY3Rpdml0eUluZm+iZzxf
-				EBJVQVVzZXJBY3Rpdml0eUluZm8ACAARABoAJAApADIA
-				NwBJAEwAUQBTAGkAbwCWAJ8AtgC+AMYA2gD2AQMBEAEV
-				ARsBIAEnATwBVgFfAXYBjgGWAZcBmQGbAZ0BngGfAaEB
-				owGlAacBqQGrAawBrgGwAbEBsgG0AbsBwwHOAc8B0AHS
-				AdcB4gHrAfgB+wIEAkMCZQJqAnICewJ9AoICiQKMApEC
-				mQRcBF4EYwRxBHUEgwSKBL0ExATGBMgEygTMBM4E6wWe
-				BaMFuQW9BdMF2AXaBdwF3gXjBegF7gXxBfYGCwYOAAAA
-				AAAAAgEAAAAAAAAAaAAAAAAAAAAAAAAAAAAABiM=
-				</data>
-				<key>UserActivityDescriptor</key>
+				<key>AppIntentDescriptor</key>
 				<dict>
+					<key>AppIntentIdentifier</key>
+					<string>OpenCollectionIntent</string>
 					<key>BundleIdentifier</key>
 					<string>com.apple.mobileslideshow</string>
 					<key>Name</key>
 					<string>Photos</string>
 					<key>TeamIdentifier</key>
 					<string>0000000000</string>
-					<key>UserActivityType</key>
-					<string>com.apple.mobileslideshow.album</string>
+				</dict>
+				<key>UUID</key>
+				<string>80E1C614-CA40-430C-994C-FEEB8A052836</string>
+				<key>target</key>
+				<dict>
+					<key>identifier</key>
+					<string>092E2015-A7EF-40EB-BFA2-2AF0D94D1B1B</string>
+					<key>image</key>
+					<dict>
+						<key>storageServiceIdentifier</key>
+						<string>com.apple.Intents.INImageServiceConnection</string>
+						<key>type</key>
+						<string>URL</string>
+						<key>uri</key>
+						<string>intents-remote-image-proxy:?proxyIdentifier=2178C0F3-7E92-FB4E-C5ED-9D9C5D4F36F9.png&amp;storageServiceIdentifier=com.apple.Intents.INImageServiceConnection</string>
+					</dict>
+					<key>subtitle</key>
+					<dict>
+						<key>key</key>
+						<string>Recents</string>
+					</dict>
+					<key>title</key>
+					<dict>
+						<key>key</key>
+						<string>Recents</string>
+					</dict>
 				</dict>
 			</dict>
 		</dict>

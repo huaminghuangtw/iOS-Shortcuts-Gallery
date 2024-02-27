@@ -62,9 +62,9 @@
 				<key>WFContentItemInputParameter</key>
 				<string>Library</string>
 				<key>WFContentItemLimitEnabled</key>
-				<true/>
+				<false/>
 				<key>WFContentItemLimitNumber</key>
-				<real>1</real>
+				<real>2</real>
 			</dict>
 		</dict>
 		<dict>
