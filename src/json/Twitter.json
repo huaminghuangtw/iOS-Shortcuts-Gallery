@@ -1,1 +1,59 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.dismisssiri","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.useractivity.open","WFWorkflowActionParameters":{"UserActivityData":{"__type__":"data","__value__":"YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBMLDDE3PT4\/Q0ZKT1BWV1hcYGFkVSRudWxs3xASDQ4PEBESExQVFhcYGRobHB0eHyAhIh8fJSYnKCkqKywtHyswWGlzQWN0aXZlXxAUcGVyc2lzdGVudElkZW50aWZpZXJXb3B0aW9uc1d2ZXJzaW9uXxARZWxpZ2libGVGb3JTZWFyY2hfEBllbGlnaWJsZUZvclB1YmxpY0luZGV4aW5nXHJlcXVpcmVkS2V5c1xhY3Rpdml0eVR5cGVUd2hlblV0aXRsZVR0eXBlViRjbGFzc18QEmVsaWdpYmxlRm9ySGFuZG9mZl8QF2NvbnRlbnRBdHRyaWJ1dGVTZXREYXRhWHBheWxvYWRzXxAUZWxpZ2libGVGb3JSZW1pbmRlcnNfEBVlbGlnaWJsZUZvclByZWRpY3Rpb25XcGF5bG9hZAiAAIACEAEICIAPgAWABoAEEAGAEgmACIALCAmACtMyMxg0NTZXTlMua2V5c1pOUy5vYmplY3RzoKCAA9I4OTo7WiRjbGFzc25hbWVYJGNsYXNzZXNcTlNEaWN0aW9uYXJ5ojo8WE5TT2JqZWN0V1R3aXR0ZXJfEBBTaWduSW5XaXRoSW50ZW500kAYQUJXTlMudGltZSNBxa2tItSO54AH0jg5REVWTlNEYXRlokQ80kcYSElXTlMuZGF0YU8RAppicGxpc3QwMNQBAgMEBQYHClgkdmVyc2lvblkkYXJjaGl2ZXJUJHRvcFgkb2JqZWN0cxIAAYagXxAPTlNLZXllZEFyY2hpdmVy0QgJVHJvb3SAAaQLDBESVSRudWxs0g0ODxBZY29udGFpbmVyViRjbGFzc4ACgANPEQFp3roAAQAAaQEAAN0AAAAdAAAA8N0AAAAAAN0AAAC8AAAAAwCxAAAAJQAAAF9fY2xhc3M6Q1NTZWFyY2hhYmxlSXRlbUF0dHJpYnV0ZVNldAB6AAAABgA0AAAACQAPAAAAcHVibGljLmNvbnRlbnQAEQAAAE9wZW4gaW4gRnJpZW5kbHkAAAAAAAEAAgADAAQABAAEAAYABgBrAAAAAAAAAOAAAAAAAAAAAOBUAAAAAAAAAOAWAAAAXAAAAPQ\/AAAAbwAAAPQrAAAAAAAAAOAnAAAA9AAAAADiUAAAAPETAGtNREl0ZW1UaHVtYm5haWxVUkwAEgBrTURJdGVtQ29udGVudFR5cGUAEQBrTURJdGVtQ29udGVudFVSTAASAGtNREl0ZW1EZXNjcmlwdGlvbgAUAGtNREl0ZW1UaHVtYm5haWxEYXRhAB4Aa01ESXRlbVJlbGF0ZWRVbmlxdWVJZGVudGlmaWVyANITFBUWWiRjbGFzc25hbWVYJGNsYXNzZXNfEBxDU1NlYXJjaGFibGVJdGVtQXR0cmlidXRlU2V0ohcYXxAcQ1NTZWFyY2hhYmxlSXRlbUF0dHJpYnV0ZVNldFhOU09iamVjdAAIABEAGgAkACkAMgA3AEkATABRAFMAWABeAGMAbQB0AHYAeAHlAeoB9QH+Ah0CIAI\/AAAAAAAAAgEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAkiACdI4OUtMXU5TTXV0YWJsZURhdGGjTU48XU5TTXV0YWJsZURhdGFWTlNEYXRhTxA1TVADBYGpcHJvZmlsZUlE2SQxMDlBOUNFMC1GOTY0LTREQTUtODUzOC1BNEQ3QTE2RTA1NkXTMjMYUVNVoVKADKFUgA2ADl8QGlVBSW50ZW50c0lkZW50aWZpZXJQYXlsb2FkTxCwYnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGiCwxVJG51bGxfECQzRDQ2MjI5RC00NTQxLTRDN0MtOTUwQS1GNjBERDU1RTVDNDUIERokKTI3SUxRU1ZcAAAAAAAAAQEAAAAAAAAADQAAAAAAAAAAAAAAAAAAAIPSODlZWl8QE05TTXV0YWJsZURpY3Rpb25hcnmjWzo8XxATTlNNdXRhYmxlRGljdGlvbmFyedIzGF1foV6AEIARWXByb2ZpbGVJRNI4OWJjVU5TU2V0omI80jg5ZWZfEBJVQVVzZXJBY3Rpdml0eUluZm+iZzxfEBJVQVVzZXJBY3Rpdml0eUluZm8ACAARABoAJAApADIANwBJAEwAUQBTAGkAbwCWAJ8AtgC+AMYA2gD2AQMBEAEVARsBIAEnATwBVgFfAXYBjgGWAZcBmQGbAZ0BngGfAaEBowGlAacBqQGrAawBrgGwAbEBsgG0AbsBwwHOAc8B0AHSAdcB4gHrAfgB+wIEAgwCHwIkAiwCNQI3AjwCQwJGAksCUwTxBPME+AUGBQoFGAUfBVcFXgVgBWIFZAVmBWgFhQY4Bj0GUwZXBm0GcgZ0BnYGeAaCBocGjQaQBpUGqgatAAAAAAAAAgEAAAAAAAAAaAAAAAAAAAAAAAAAAAAABsI="},"UUID":"E1B75B00-4BB6-4ADC-92A3-B894900A9CB5","UserActivityDescriptor":{"TeamIdentifier":"YJBX43BCVD","BundleIdentifier":"com.oecoway.friendlyLite","Name":"Friendly","UserActivityType":"SignInWithIntent"},"UserActivitySubtitle":"Open in Friendly","AppBundleIdentifier":"com.oecoway.friendlyLite"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.timer.start","WFWorkflowActionParameters":{"WFDuration":{"Value":{"Unit":"min","Magnitude":"10"},"WFSerializationType":"WFQuantityFieldValue"},"UUID":"D2944691-1ABD-4FB0-A67A-532527117C5F","AppIntentDescriptor":{"TeamIdentifier":"0000000000","BundleIdentifier":"com.apple.mobiletimer","Name":"Clock","AppIntentIdentifier":"INCreateTimerIntent"}}}],"WFWorkflowInputContentItemClasses":[],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2206.0.6",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.dismisssiri",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.useractivity.open",
+      "WFWorkflowActionParameters": {
+        "UserActivityData": {
+          "__type__": "data",
+          "__value__": "YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBMLDDE3PT4/Q0ZKT1BWV1hcYGFkVSRudWxs3xASDQ4PEBESExQVFhcYGRobHB0eHyAhIh8fJSYnKCkqKywtHyswWGlzQWN0aXZlXxAUcGVyc2lzdGVudElkZW50aWZpZXJXb3B0aW9uc1d2ZXJzaW9uXxARZWxpZ2libGVGb3JTZWFyY2hfEBllbGlnaWJsZUZvclB1YmxpY0luZGV4aW5nXHJlcXVpcmVkS2V5c1xhY3Rpdml0eVR5cGVUd2hlblV0aXRsZVR0eXBlViRjbGFzc18QEmVsaWdpYmxlRm9ySGFuZG9mZl8QF2NvbnRlbnRBdHRyaWJ1dGVTZXREYXRhWHBheWxvYWRzXxAUZWxpZ2libGVGb3JSZW1pbmRlcnNfEBVlbGlnaWJsZUZvclByZWRpY3Rpb25XcGF5bG9hZAiAAIACEAEICIAPgAWABoAEEAGAEgmACIALCAmACtMyMxg0NTZXTlMua2V5c1pOUy5vYmplY3RzoKCAA9I4OTo7WiRjbGFzc25hbWVYJGNsYXNzZXNcTlNEaWN0aW9uYXJ5ojo8WE5TT2JqZWN0V1R3aXR0ZXJfEBBTaWduSW5XaXRoSW50ZW500kAYQUJXTlMudGltZSNBxa2tItSO54AH0jg5REVWTlNEYXRlokQ80kcYSElXTlMuZGF0YU8RAppicGxpc3QwMNQBAgMEBQYHClgkdmVyc2lvblkkYXJjaGl2ZXJUJHRvcFgkb2JqZWN0cxIAAYagXxAPTlNLZXllZEFyY2hpdmVy0QgJVHJvb3SAAaQLDBESVSRudWxs0g0ODxBZY29udGFpbmVyViRjbGFzc4ACgANPEQFp3roAAQAAaQEAAN0AAAAdAAAA8N0AAAAAAN0AAAC8AAAAAwCxAAAAJQAAAF9fY2xhc3M6Q1NTZWFyY2hhYmxlSXRlbUF0dHJpYnV0ZVNldAB6AAAABgA0AAAACQAPAAAAcHVibGljLmNvbnRlbnQAEQAAAE9wZW4gaW4gRnJpZW5kbHkAAAAAAAEAAgADAAQABAAEAAYABgBrAAAAAAAAAOAAAAAAAAAAAOBUAAAAAAAAAOAWAAAAXAAAAPQ/AAAAbwAAAPQrAAAAAAAAAOAnAAAA9AAAAADiUAAAAPETAGtNREl0ZW1UaHVtYm5haWxVUkwAEgBrTURJdGVtQ29udGVudFR5cGUAEQBrTURJdGVtQ29udGVudFVSTAASAGtNREl0ZW1EZXNjcmlwdGlvbgAUAGtNREl0ZW1UaHVtYm5haWxEYXRhAB4Aa01ESXRlbVJlbGF0ZWRVbmlxdWVJZGVudGlmaWVyANITFBUWWiRjbGFzc25hbWVYJGNsYXNzZXNfEBxDU1NlYXJjaGFibGVJdGVtQXR0cmlidXRlU2V0ohcYXxAcQ1NTZWFyY2hhYmxlSXRlbUF0dHJpYnV0ZVNldFhOU09iamVjdAAIABEAGgAkACkAMgA3AEkATABRAFMAWABeAGMAbQB0AHYAeAHlAeoB9QH+Ah0CIAI/AAAAAAAAAgEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAkiACdI4OUtMXU5TTXV0YWJsZURhdGGjTU48XU5TTXV0YWJsZURhdGFWTlNEYXRhTxA1TVADBYGpcHJvZmlsZUlE2SQxMDlBOUNFMC1GOTY0LTREQTUtODUzOC1BNEQ3QTE2RTA1NkXTMjMYUVNVoVKADKFUgA2ADl8QGlVBSW50ZW50c0lkZW50aWZpZXJQYXlsb2FkTxCwYnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGiCwxVJG51bGxfECQzRDQ2MjI5RC00NTQxLTRDN0MtOTUwQS1GNjBERDU1RTVDNDUIERokKTI3SUxRU1ZcAAAAAAAAAQEAAAAAAAAADQAAAAAAAAAAAAAAAAAAAIPSODlZWl8QE05TTXV0YWJsZURpY3Rpb25hcnmjWzo8XxATTlNNdXRhYmxlRGljdGlvbmFyedIzGF1foV6AEIARWXByb2ZpbGVJRNI4OWJjVU5TU2V0omI80jg5ZWZfEBJVQVVzZXJBY3Rpdml0eUluZm+iZzxfEBJVQVVzZXJBY3Rpdml0eUluZm8ACAARABoAJAApADIANwBJAEwAUQBTAGkAbwCWAJ8AtgC+AMYA2gD2AQMBEAEVARsBIAEnATwBVgFfAXYBjgGWAZcBmQGbAZ0BngGfAaEBowGlAacBqQGrAawBrgGwAbEBsgG0AbsBwwHOAc8B0AHSAdcB4gHrAfgB+wIEAgwCHwIkAiwCNQI3AjwCQwJGAksCUwTxBPME+AUGBQoFGAUfBVcFXgVgBWIFZAVmBWgFhQY4Bj0GUwZXBm0GcgZ0BnYGeAaCBocGjQaQBpUGqgatAAAAAAAAAgEAAAAAAAAAaAAAAAAAAAAAAAAAAAAABsI="
+        },
+        "UUID": "E1B75B00-4BB6-4ADC-92A3-B894900A9CB5",
+        "UserActivityDescriptor": {
+          "TeamIdentifier": "YJBX43BCVD",
+          "BundleIdentifier": "com.oecoway.friendlyLite",
+          "Name": "Friendly",
+          "UserActivityType": "SignInWithIntent"
+        },
+        "UserActivitySubtitle": "Open in Friendly",
+        "AppBundleIdentifier": "com.oecoway.friendlyLite"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.timer.start",
+      "WFWorkflowActionParameters": {
+        "WFDuration": {
+          "Value": {
+            "Unit": "min",
+            "Magnitude": "10"
+          },
+          "WFSerializationType": "WFQuantityFieldValue"
+        },
+        "UUID": "D2944691-1ABD-4FB0-A67A-532527117C5F",
+        "AppIntentDescriptor": {
+          "TeamIdentifier": "0000000000",
+          "BundleIdentifier": "com.apple.mobiletimer",
+          "Name": "Clock",
+          "AppIntentIdentifier": "INCreateTimerIntent"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

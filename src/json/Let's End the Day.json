@@ -1,1 +1,112 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":["WFGenericFileContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.returntohomescreen","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"Relax On Exercise Mat","UUID":"3AFCAA42-AEC5-4EBA-8201-5889C48BC3D2"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Create Notification","UUID":"1B4B7D53-3EA4-4E49-A13F-C08C85E5564F","parameter":{"Value":{"OutputUUID":"3AFCAA42-AEC5-4EBA-8201-5889C48BC3D2","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"77993E4E-C1B7-4874-A852-39E52A6223AB","workflowName":"Power Off Supercomputer","isSelf":false},"WFWorkflowName":"Power Off Supercomputer","UUID":"07917CBA-FD0A-49E3-A796-6028F9F8D5DB"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.urlencode","WFWorkflowActionParameters":{"WFInput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"Type":"ExtensionInput"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"4560C3D4-4C97-484D-8A7D-234C25AA6C10"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Daily Routine","UUID":"03C1E6A9-73E1-4A16-A5D8-580536E74214","parameter":{"Value":{"OutputUUID":"4560C3D4-4C97-484D-8A7D-234C25AA6C10","Type":"ActionOutput","OutputName":"URL Encoded Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"03C1E6A9-73E1-4A16-A5D8-580536E74214","Type":"ActionOutput","OutputName":"Output"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":true}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [
+    "WFGenericFileContentItem"
+  ],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "Relax On Exercise Mat",
+        "UUID": "3AFCAA42-AEC5-4EBA-8201-5889C48BC3D2"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters": {
+        "fileName": "Create Notification",
+        "UUID": "1B4B7D53-3EA4-4E49-A13F-C08C85E5564F",
+        "parameter": {
+          "Value": {
+            "OutputUUID": "3AFCAA42-AEC5-4EBA-8201-5889C48BC3D2",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "ShowWhenRun": false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "77993E4E-C1B7-4874-A852-39E52A6223AB",
+          "workflowName": "Power Off Supercomputer",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Power Off Supercomputer",
+        "UUID": "07917CBA-FD0A-49E3-A796-6028F9F8D5DB"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "ExtensionInput"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "4560C3D4-4C97-484D-8A7D-234C25AA6C10"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters": {
+        "fileName": "Daily Routine",
+        "UUID": "03C1E6A9-73E1-4A16-A5D8-580536E74214",
+        "parameter": {
+          "Value": {
+            "OutputUUID": "4560C3D4-4C97-484D-8A7D-234C25AA6C10",
+            "Type": "ActionOutput",
+            "OutputName": "URL Encoded Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "ShowWhenRun": false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+      "WFWorkflowActionParameters": {
+        "WFOutput": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "03C1E6A9-73E1-4A16-A5D8-580536E74214",
+                "Type": "ActionOutput",
+                "OutputName": "Output"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": true
+}

@@ -1,1 +1,161 @@
-{"WFWorkflowMinimumClientVersionString":"1113","WFWorkflowMinimumClientVersion":1113,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowNoInputBehavior":{"Name":"WFWorkflowNoInputBehaviorAskForInput","Parameters":{"ItemClass":"WFDateContentItem","SerializedParameters":{"WFDateActionDate":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"Type":"Ask"}}},"WFSerializationType":"WFTextTokenString"},"WFDateActionMode":"Specified Date"}}},"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.returntohomescreen","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"C9E98328-F7E4-4625-A9B7-C5678F274FAC","workflowName":"Dim Screen","isSelf":false},"WFWorkflowName":"Dim Screen","UUID":"4BAB54CC-0EEB-4FAB-BDE0-AB8C0825D79F"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"com.google.calendar","Name":"Google Calendar","TeamIdentifier":"EQHXZ8M8AV"},"WFAppIdentifier":"com.google.calendar","UUID":"22F611D1-A50A-4D33-948B-FE388C57CF1E"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"com.microsoft.Office.Outlook","Name":"Outlook","TeamIdentifier":"UBF8T346G9"},"WFAppIdentifier":"com.microsoft.Office.Outlook","UUID":"E796C1AD-7643-47DD-9887-CD4B68104FE5"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"Type":"ExtensionInput"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"1E2755DC-5836-4B9E-964E-D0065687339F","workflowName":"Open Apple Calendar on Specific Date","isSelf":false},"UUID":"ABF9DDBA-8C60-46EE-BF19-C24FF93B4C01","WFWorkflowName":"Open Apple Calendar on Specific Date"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.useractivity.open","WFWorkflowActionParameters":{"UUID":"3F538CB8-5214-49AB-83E8-FAC41876C5B2","AppBundleIdentifier":"com.moleskine.timeline","UserActivityData":{"__type__":"data","__value__":"YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBELDC0zOTo7P0JGS1NUVVZXW1UkbnVsbN8QEA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmICgpICAhXxAUcGVyc2lzdGVudElkZW50aWZpZXJXb3B0aW9uc1d2ZXJzaW9uXxARZWxpZ2libGVGb3JTZWFyY2hfEBllbGlnaWJsZUZvclB1YmxpY0luZGV4aW5nXGFjdGl2aXR5VHlwZVR3aGVuVXRpdGxlVHR5cGVWJGNsYXNzXxASZWxpZ2libGVGb3JIYW5kb2ZmXxAXY29udGVudEF0dHJpYnV0ZVNldERhdGFYcGF5bG9hZHNfEBRlbGlnaWJsZUZvclJlbWluZGVyc18QFWVsaWdpYmxlRm9yUHJlZGljdGlvblhpc0FjdGl2ZYAAgAIQAQkIgAWABoAEEAGAEAmACIAKCQkI0y4vFjAxMldOUy5rZXlzWk5TLm9iamVjdHOgoIAD0jQ1NjdaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiNjhYTlNPYmplY3RaVmlldyBUb2RheV8QGGNvbS5ib25vYm9sYWJzLnRvZGF5LmRhedI8Fj0+V05TLnRpbWUjQcW0bkfSEvGAB9I0NUBBVk5TRGF0ZaJAONJDFkRFV05TLmRhdGFPEQG\/YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwRElUkbnVsbNINDg8QWWNvbnRhaW5lclYkY2xhc3OAAoADTxCP3roAAQAAjwAAAHgAAAAdAAAA8HgAAAAAAHgAAABXAAAAAwBMAAAAJQAAAF9fY2xhc3M6Q1NTZWFyY2hhYmxlSXRlbUF0dHJpYnV0ZVNldAAVAAAAAQAMAAAAAQAAAAEAAAAAAAAAAADgJwAAAPQAAAAA4lAAAADxFABrTURJdGVtVGh1bWJuYWlsRGF0YQDSExQVFlokY2xhc3NuYW1lWCRjbGFzc2VzXxAcQ1NTZWFyY2hhYmxlSXRlbUF0dHJpYnV0ZVNldKIXGF8QHENTU2VhcmNoYWJsZUl0ZW1BdHRyaWJ1dGVTZXRYTlNPYmplY3QACAARABoAJAApADIANwBJAEwAUQBTAFgAXgBjAG0AdAB2AHgBCgEPARoBIwFCAUUBZAAAAAAAAAIBAAAAAAAAABkAAAAAAAAAAAAAAAAAAAFtgAnSNDVHSF1OU011dGFibGVEYXRho0lKOF1OU011dGFibGVEYXRhVk5TRGF0YdMuLxZMT1KiTU6AC4AMolBRgA2ADoAPXxAaVUFJbnRlbnRzSWRlbnRpZmllclBheWxvYWRfECRVQUlOU3VnZ2VzdGVkSW52b2NhdGlvblBocmFzZVBheWxvYWRPELBicGxpc3QwMNQBAgMEBQYHClgkdmVyc2lvblkkYXJjaGl2ZXJUJHRvcFgkb2JqZWN0cxIAAYagXxAPTlNLZXllZEFyY2hpdmVy0QgJVHJvb3SAAaILDFUkbnVsbF8QJDVGQUEyQTE3LTI0ODktNDRFMC1BOUFGLTBFOTc5MDVCMThDOAgRGiQpMjdJTFFTVlwAAAAAAAABAQAAAAAAAAANAAAAAAAAAAAAAAAAAAAAg0pWaWV3IFRvZGF50jQ1WFlfEBNOU011dGFibGVEaWN0aW9uYXJ5o1o2OF8QE05TTXV0YWJsZURpY3Rpb25hcnnSNDVcXV8QElVBVXNlckFjdGl2aXR5SW5mb6JeOF8QElVBVXNlckFjdGl2aXR5SW5mbwAIABEAGgAkACkAMgA3AEkATABRAFMAZwBtAJAApwCvALcAywDnAPQA+QD\/AQQBCwEgAToBQwFaAXIBewF9AX8BgQGCAYMBhQGHAYkBiwGNAY4BkAGSAZMBlAGVAZwBpAGvAbABsQGzAbgBwwHMAdkB3AHlAfACCwIQAhgCIQIjAigCLwIyAjcCPwQCBAQECQQXBBsEKQQwBDcEOgQ8BD4EQQRDBEUERwRkBIsFPgVJBU4FZAVoBX4FgwWYBZsAAAAAAAACAQAAAAAAAABfAAAAAAAAAAAAAAAAAAAFsA=="},"UserActivityDescriptor":{"TeamIdentifier":"9M7AW744P4","BundleIdentifier":"com.moleskine.timeline","Name":"Timepage","UserActivityType":"com.bonobolabs.today.day"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"C3771EC7-4647-4C64-8383-3A7C1F7B016E","workflowName":"Brighten Screen","isSelf":false},"WFWorkflowName":"Brighten Screen","UUID":"233EF976-634C-4CA6-A0F5-A5EFA1C9BE55"}}],"WFWorkflowInputContentItemClasses":["WFDateContentItem"],"WFWorkflowImportQuestions":[],"WFQuickActionSurfaces":[],"WFWorkflowTypes":[],"WFWorkflowHasShortcutInputVariables":true}
+{
+  "WFWorkflowMinimumClientVersionString": "1113",
+  "WFWorkflowMinimumClientVersion": 1113,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowNoInputBehavior": {
+    "Name": "WFWorkflowNoInputBehaviorAskForInput",
+    "Parameters": {
+      "ItemClass": "WFDateContentItem",
+      "SerializedParameters": {
+        "WFDateActionDate": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Ask"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "WFDateActionMode": "Specified Date"
+      }
+    }
+  },
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "C9E98328-F7E4-4625-A9B7-C5678F274FAC",
+          "workflowName": "Dim Screen",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Dim Screen",
+        "UUID": "4BAB54CC-0EEB-4FAB-BDE0-AB8C0825D79F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters": {
+        "WFSelectedApp": {
+          "BundleIdentifier": "com.google.calendar",
+          "Name": "Google Calendar",
+          "TeamIdentifier": "EQHXZ8M8AV"
+        },
+        "WFAppIdentifier": "com.google.calendar",
+        "UUID": "22F611D1-A50A-4D33-948B-FE388C57CF1E"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+      "WFWorkflowActionParameters": {
+        "WFDelayTime": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters": {
+        "WFSelectedApp": {
+          "BundleIdentifier": "com.microsoft.Office.Outlook",
+          "Name": "Outlook",
+          "TeamIdentifier": "UBF8T346G9"
+        },
+        "WFAppIdentifier": "com.microsoft.Office.Outlook",
+        "UUID": "E796C1AD-7643-47DD-9887-CD4B68104FE5"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+      "WFWorkflowActionParameters": {
+        "WFDelayTime": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "Type": "ExtensionInput"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "1E2755DC-5836-4B9E-964E-D0065687339F",
+          "workflowName": "Open Apple Calendar on Specific Date",
+          "isSelf": false
+        },
+        "UUID": "ABF9DDBA-8C60-46EE-BF19-C24FF93B4C01",
+        "WFWorkflowName": "Open Apple Calendar on Specific Date"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+      "WFWorkflowActionParameters": {
+        "WFDelayTime": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.useractivity.open",
+      "WFWorkflowActionParameters": {
+        "UUID": "3F538CB8-5214-49AB-83E8-FAC41876C5B2",
+        "AppBundleIdentifier": "com.moleskine.timeline",
+        "UserActivityData": {
+          "__type__": "data",
+          "__value__": "YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBELDC0zOTo7P0JGS1NUVVZXW1UkbnVsbN8QEA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmICgpICAhXxAUcGVyc2lzdGVudElkZW50aWZpZXJXb3B0aW9uc1d2ZXJzaW9uXxARZWxpZ2libGVGb3JTZWFyY2hfEBllbGlnaWJsZUZvclB1YmxpY0luZGV4aW5nXGFjdGl2aXR5VHlwZVR3aGVuVXRpdGxlVHR5cGVWJGNsYXNzXxASZWxpZ2libGVGb3JIYW5kb2ZmXxAXY29udGVudEF0dHJpYnV0ZVNldERhdGFYcGF5bG9hZHNfEBRlbGlnaWJsZUZvclJlbWluZGVyc18QFWVsaWdpYmxlRm9yUHJlZGljdGlvblhpc0FjdGl2ZYAAgAIQAQkIgAWABoAEEAGAEAmACIAKCQkI0y4vFjAxMldOUy5rZXlzWk5TLm9iamVjdHOgoIAD0jQ1NjdaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiNjhYTlNPYmplY3RaVmlldyBUb2RheV8QGGNvbS5ib25vYm9sYWJzLnRvZGF5LmRhedI8Fj0+V05TLnRpbWUjQcW0bkfSEvGAB9I0NUBBVk5TRGF0ZaJAONJDFkRFV05TLmRhdGFPEQG/YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwRElUkbnVsbNINDg8QWWNvbnRhaW5lclYkY2xhc3OAAoADTxCP3roAAQAAjwAAAHgAAAAdAAAA8HgAAAAAAHgAAABXAAAAAwBMAAAAJQAAAF9fY2xhc3M6Q1NTZWFyY2hhYmxlSXRlbUF0dHJpYnV0ZVNldAAVAAAAAQAMAAAAAQAAAAEAAAAAAAAAAADgJwAAAPQAAAAA4lAAAADxFABrTURJdGVtVGh1bWJuYWlsRGF0YQDSExQVFlokY2xhc3NuYW1lWCRjbGFzc2VzXxAcQ1NTZWFyY2hhYmxlSXRlbUF0dHJpYnV0ZVNldKIXGF8QHENTU2VhcmNoYWJsZUl0ZW1BdHRyaWJ1dGVTZXRYTlNPYmplY3QACAARABoAJAApADIANwBJAEwAUQBTAFgAXgBjAG0AdAB2AHgBCgEPARoBIwFCAUUBZAAAAAAAAAIBAAAAAAAAABkAAAAAAAAAAAAAAAAAAAFtgAnSNDVHSF1OU011dGFibGVEYXRho0lKOF1OU011dGFibGVEYXRhVk5TRGF0YdMuLxZMT1KiTU6AC4AMolBRgA2ADoAPXxAaVUFJbnRlbnRzSWRlbnRpZmllclBheWxvYWRfECRVQUlOU3VnZ2VzdGVkSW52b2NhdGlvblBocmFzZVBheWxvYWRPELBicGxpc3QwMNQBAgMEBQYHClgkdmVyc2lvblkkYXJjaGl2ZXJUJHRvcFgkb2JqZWN0cxIAAYagXxAPTlNLZXllZEFyY2hpdmVy0QgJVHJvb3SAAaILDFUkbnVsbF8QJDVGQUEyQTE3LTI0ODktNDRFMC1BOUFGLTBFOTc5MDVCMThDOAgRGiQpMjdJTFFTVlwAAAAAAAABAQAAAAAAAAANAAAAAAAAAAAAAAAAAAAAg0pWaWV3IFRvZGF50jQ1WFlfEBNOU011dGFibGVEaWN0aW9uYXJ5o1o2OF8QE05TTXV0YWJsZURpY3Rpb25hcnnSNDVcXV8QElVBVXNlckFjdGl2aXR5SW5mb6JeOF8QElVBVXNlckFjdGl2aXR5SW5mbwAIABEAGgAkACkAMgA3AEkATABRAFMAZwBtAJAApwCvALcAywDnAPQA+QD/AQQBCwEgAToBQwFaAXIBewF9AX8BgQGCAYMBhQGHAYkBiwGNAY4BkAGSAZMBlAGVAZwBpAGvAbABsQGzAbgBwwHMAdkB3AHlAfACCwIQAhgCIQIjAigCLwIyAjcCPwQCBAQECQQXBBsEKQQwBDcEOgQ8BD4EQQRDBEUERwRkBIsFPgVJBU4FZAVoBX4FgwWYBZsAAAAAAAACAQAAAAAAAABfAAAAAAAAAAAAAAAAAAAFsA=="
+        },
+        "UserActivityDescriptor": {
+          "TeamIdentifier": "9M7AW744P4",
+          "BundleIdentifier": "com.moleskine.timeline",
+          "Name": "Timepage",
+          "UserActivityType": "com.bonobolabs.today.day"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "C3771EC7-4647-4C64-8383-3A7C1F7B016E",
+          "workflowName": "Brighten Screen",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Brighten Screen",
+        "UUID": "233EF976-634C-4CA6-A0F5-A5EFA1C9BE55"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFDateContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowTypes": [],
+  "WFWorkflowHasShortcutInputVariables": true
+}

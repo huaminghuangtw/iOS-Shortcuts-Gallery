@@ -1,1 +1,154 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":59844},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"timer.txt","UUID":"C7694C34-5887-4CF5-BF43-0BFABD110331"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"C7694C34-5887-4CF5-BF43-0BFABD110331","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"AC422212-708F-43CD-8F6C-FF39832EC7C2","workflowName":"isFileExist","isSelf":false},"UUID":"5B57EFD3-5E32-44AA-94F3-5DF079FAABEF","WFWorkflowName":"isFileExist"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"5B57EFD3-5E32-44AA-94F3-5DF079FAABEF","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"64684A2B-8A21-4870-989C-53280CEED80B","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.documentpicker.open","WFWorkflowActionParameters":{"WFGetFilePath":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"C7694C34-5887-4CF5-BF43-0BFABD110331","Type":"ActionOutput","OutputName":"Text"}}},"WFSerializationType":"WFTextTokenString"},"WFFile":{"fileLocation":{"fileProviderDomainID":"com.apple.CloudDocs.MobileDocumentsFileProvider","relativeSubpath":"com~apple~CloudDocs","WFFileLocationType":"iCloud"},"filename":"com~apple~CloudDocs","displayName":"iCloud Drive"},"UUID":"E2414B1E-3191-4C36-B847-56D7074E4588"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.file.delete","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"E2414B1E-3191-4C36-B847-56D7074E4588","Type":"ActionOutput","OutputName":"File"},"WFSerializationType":"WFTextTokenAttachment"},"WFDeleteImmediatelyDelete":true,"UUID":"3A4DCB0C-D76A-435A-BB59-DA67C118CE27"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"64684A2B-8A21-4870-989C-53280CEED80B","WFControlFlowMode":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"C7694C34-5887-4CF5-BF43-0BFABD110331","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"1029D410-13E8-4039-A996-2EADC73F11FB","workflowName":"Create Empty File or Clear File","isSelf":false},"UUID":"53264AB7-95AF-415E-B09F-3990A2F2E72A","WFWorkflowName":"Create Empty File or Clear File"}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 59844
+  },
+  "WFWorkflowClientVersion": "2206.0.6",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "timer.txt",
+        "UUID": "C7694C34-5887-4CF5-BF43-0BFABD110331"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "C7694C34-5887-4CF5-BF43-0BFABD110331",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "AC422212-708F-43CD-8F6C-FF39832EC7C2",
+          "workflowName": "isFileExist",
+          "isSelf": false
+        },
+        "UUID": "5B57EFD3-5E32-44AA-94F3-5DF079FAABEF",
+        "WFWorkflowName": "isFileExist"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Type": "Variable",
+          "Variable": {
+            "Value": {
+              "OutputUUID": "5B57EFD3-5E32-44AA-94F3-5DF079FAABEF",
+              "Type": "ActionOutput",
+              "OutputName": "Shortcut Result"
+            },
+            "WFSerializationType": "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode": 0,
+        "WFConditionalActionString": "Yes",
+        "GroupingIdentifier": "64684A2B-8A21-4870-989C-53280CEED80B",
+        "WFCondition": 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+      "WFWorkflowActionParameters": {
+        "WFGetFilePath": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "C7694C34-5887-4CF5-BF43-0BFABD110331",
+                "Type": "ActionOutput",
+                "OutputName": "Text"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "WFFile": {
+          "fileLocation": {
+            "fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+            "relativeSubpath": "com~apple~CloudDocs",
+            "WFFileLocationType": "iCloud"
+          },
+          "filename": "com~apple~CloudDocs",
+          "displayName": "iCloud Drive"
+        },
+        "UUID": "E2414B1E-3191-4C36-B847-56D7074E4588"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.file.delete",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "E2414B1E-3191-4C36-B847-56D7074E4588",
+            "Type": "ActionOutput",
+            "OutputName": "File"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFDeleteImmediatelyDelete": true,
+        "UUID": "3A4DCB0C-D76A-435A-BB59-DA67C118CE27"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "GroupingIdentifier": "64684A2B-8A21-4870-989C-53280CEED80B",
+        "WFControlFlowMode": 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "C7694C34-5887-4CF5-BF43-0BFABD110331",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "1029D410-13E8-4039-A996-2EADC73F11FB",
+          "workflowName": "Create Empty File or Clear File",
+          "isSelf": false
+        },
+        "UUID": "53264AB7-95AF-415E-B09F-3990A2F2E72A",
+        "WFWorkflowName": "Create Empty File or Clear File"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

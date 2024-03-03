@@ -1,1 +1,169 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61461},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"9D5BB19E-8AAA-4585-BAC1-2FC519656A4A","workflowName":"isTodayWFH","isSelf":false},"WFWorkflowName":"isTodayWFH","UUID":"DC63FCB1-4011-4CF2-B2E3-DD6DE1AEEE22"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"DC63FCB1-4011-4CF2-B2E3-DD6DE1AEEE22","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"34F1C1DF-859F-46FD-92DF-7AFB6CE4FD01","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"DC63FCB1-4011-4CF2-B2E3-DD6DE1AEEE22","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"5929E192-872A-4557-BCDE-83B0284CFC9B","workflowName":"Open General Channel in Slack","isSelf":false},"UUID":"438AA4AB-88BF-43A9-B378-08A85A89F087","WFWorkflowName":"Open General Channel in Slack"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"34F1C1DF-859F-46FD-92DF-7AFB6CE4FD01","WFControlFlowMode":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"74B0EC72-4816-4FFD-87B1-C85872FBBC38","workflowName":"Open Lunch Channel in Slack","isSelf":false},"WFWorkflowName":"Open Lunch Channel in Slack","UUID":"2A9D5272-F729-44E9-B563-01362778FDAE"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":3}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"CA3908B0-47D4-4727-856E-50D4C64BDA03","workflowName":"Slack Lunch Channel Messages","isSelf":false},"WFWorkflowName":"Slack Lunch Channel Messages","UUID":"0EB4400E-DE96-49AC-88E6-6392EFB493AD"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"34F1C1DF-859F-46FD-92DF-7AFB6CE4FD01","UUID":"23195AFC-EAED-49FA-8E21-705F1B56987A"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"👇👇👇\n───────────────","UUID":"E86D3A50-68CB-44C5-870F-D3375F7FC015"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.list","WFWorkflowActionParameters":{"WFItems":["◻️ Pause notifications"],"UUID":"680048C6-F5EA-46A3-B2BA-7FF433FD21BD"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.alert","WFWorkflowActionParameters":{"WFAlertActionCancelButtonShown":false,"WFAlertActionMessage":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"680048C6-F5EA-46A3-B2BA-7FF433FD21BD","Type":"ActionOutput","OutputName":"List"}}},"WFSerializationType":"WFTextTokenString"},"WFAlertActionTitle":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"E86D3A50-68CB-44C5-870F-D3375F7FC015","Type":"ActionOutput","OutputName":"Text"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61461
+  },
+  "WFWorkflowClientVersion": "2206.0.6",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "9D5BB19E-8AAA-4585-BAC1-2FC519656A4A",
+          "workflowName": "isTodayWFH",
+          "isSelf": false
+        },
+        "WFWorkflowName": "isTodayWFH",
+        "UUID": "DC63FCB1-4011-4CF2-B2E3-DD6DE1AEEE22"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Type": "Variable",
+          "Variable": {
+            "Value": {
+              "OutputUUID": "DC63FCB1-4011-4CF2-B2E3-DD6DE1AEEE22",
+              "Type": "ActionOutput",
+              "OutputName": "Shortcut Result"
+            },
+            "WFSerializationType": "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode": 0,
+        "WFConditionalActionString": "Yes",
+        "GroupingIdentifier": "34F1C1DF-859F-46FD-92DF-7AFB6CE4FD01",
+        "WFCondition": 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "DC63FCB1-4011-4CF2-B2E3-DD6DE1AEEE22",
+            "Type": "ActionOutput",
+            "OutputName": "Shortcut Result"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "5929E192-872A-4557-BCDE-83B0284CFC9B",
+          "workflowName": "Open General Channel in Slack",
+          "isSelf": false
+        },
+        "UUID": "438AA4AB-88BF-43A9-B378-08A85A89F087",
+        "WFWorkflowName": "Open General Channel in Slack"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "GroupingIdentifier": "34F1C1DF-859F-46FD-92DF-7AFB6CE4FD01",
+        "WFControlFlowMode": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "74B0EC72-4816-4FFD-87B1-C85872FBBC38",
+          "workflowName": "Open Lunch Channel in Slack",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Open Lunch Channel in Slack",
+        "UUID": "2A9D5272-F729-44E9-B563-01362778FDAE"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+      "WFWorkflowActionParameters": {
+        "WFDelayTime": 3
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "CA3908B0-47D4-4727-856E-50D4C64BDA03",
+          "workflowName": "Slack Lunch Channel Messages",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Slack Lunch Channel Messages",
+        "UUID": "0EB4400E-DE96-49AC-88E6-6392EFB493AD"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFControlFlowMode": 2,
+        "GroupingIdentifier": "34F1C1DF-859F-46FD-92DF-7AFB6CE4FD01",
+        "UUID": "23195AFC-EAED-49FA-8E21-705F1B56987A"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "👇👇👇\n───────────────",
+        "UUID": "E86D3A50-68CB-44C5-870F-D3375F7FC015"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+      "WFWorkflowActionParameters": {
+        "WFItems": [
+          "◻️ Pause notifications"
+        ],
+        "UUID": "680048C6-F5EA-46A3-B2BA-7FF433FD21BD"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+      "WFWorkflowActionParameters": {
+        "WFAlertActionCancelButtonShown": false,
+        "WFAlertActionMessage": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "680048C6-F5EA-46A3-B2BA-7FF433FD21BD",
+                "Type": "ActionOutput",
+                "OutputName": "List"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "WFAlertActionTitle": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "E86D3A50-68CB-44C5-870F-D3375F7FC015",
+                "Type": "ActionOutput",
+                "OutputName": "Text"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

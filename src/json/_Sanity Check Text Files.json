@@ -1,1 +1,85 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"Sanity Check Text Files","UUID":"91E2AE0D-EC91-45BD-9461-E679C6B55B64"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Create Notification","UUID":"9301A841-C630-41CC-B27E-BBDBBA2D718F","parameter":{"Value":{"OutputUUID":"91E2AE0D-EC91-45BD-9461-E679C6B55B64","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"ShowWhenRun":false,"UUID":"DBBAB1BE-DA8C-4F08-8D1E-FCB0C1A27F99","fileName":"Sanity Check Text Files"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.notification","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"DBBAB1BE-DA8C-4F08-8D1E-FCB0C1A27F99","Type":"ActionOutput","OutputName":"Output"},"WFSerializationType":"WFTextTokenAttachment"},"WFNotificationActionBody":"✅ Done","UUID":"5D62F126-7691-4ECB-A876-F1C5DAC0A5A5","WFNotificationActionSound":false}}],"WFWorkflowInputContentItemClasses":["WFAppContentItem","WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "Sanity Check Text Files",
+        "UUID": "91E2AE0D-EC91-45BD-9461-E679C6B55B64"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters": {
+        "fileName": "Create Notification",
+        "UUID": "9301A841-C630-41CC-B27E-BBDBBA2D718F",
+        "parameter": {
+          "Value": {
+            "OutputUUID": "91E2AE0D-EC91-45BD-9461-E679C6B55B64",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "ShowWhenRun": false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters": {
+        "ShowWhenRun": false,
+        "UUID": "DBBAB1BE-DA8C-4F08-8D1E-FCB0C1A27F99",
+        "fileName": "Sanity Check Text Files"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "DBBAB1BE-DA8C-4F08-8D1E-FCB0C1A27F99",
+            "Type": "ActionOutput",
+            "OutputName": "Output"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFNotificationActionBody": "✅ Done",
+        "UUID": "5D62F126-7691-4ECB-A876-F1C5DAC0A5A5",
+        "WFNotificationActionSound": false
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppContentItem",
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

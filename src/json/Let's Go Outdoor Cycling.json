@@ -1,1 +1,190 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":946986751,"WFWorkflowIconGlyphNumber":59668},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.returntohomescreen","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.list","WFWorkflowActionParameters":{"WFItems":["✅ Yes","❌ No"],"UUID":"266EEE9D-0BF3-4E8F-A2D8-F49196991414"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefromlist","WFWorkflowActionParameters":{"WFChooseFromListActionPrompt":"🤖 Open TrainerDay?","WFInput":{"Value":{"OutputUUID":"266EEE9D-0BF3-4E8F-A2D8-F49196991414","Type":"ActionOutput","OutputName":"List"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"20BF82AF-621F-4B36-BB58-6954C9AC1203"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"20BF82AF-621F-4B36-BB58-6954C9AC1203","Type":"ActionOutput","OutputName":"Chosen Item"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Yes","GroupingIdentifier":"53A481B2-9236-47C9-9F36-4BD648300730","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"AF55398D-2936-4DC1-B81F-8A1CDEAF31DF","workflowName":"Add TrainerDay Workout","isSelf":false},"WFWorkflowName":"Add TrainerDay Workout","UUID":"7709068E-7C9E-4450-BADA-76D7F3BABBD0"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"53A481B2-9236-47C9-9F36-4BD648300730","WFControlFlowMode":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"791C3E20-0B11-4C23-B010-893104ECB8C4","workflowName":"Training Preparation","isSelf":false},"WFWorkflowName":"Training Preparation","UUID":"194D3C80-A8AA-4A74-97CC-EB0F331E07B3"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"Route\/Workout → Device,Ride","UUID":"182B716C-BB9E-4FB4-8F3A-F92BDE047E9A"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Create Notification","UUID":"1EDC9183-9934-4002-99C9-A51297B2681F","parameter":{"Value":{"OutputUUID":"182B716C-BB9E-4FB4-8F3A-F92BDE047E9A","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"Before Going Outside","UUID":"6522A93D-7E75-4E59-B41A-4DD4EDC2A027"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Create Notification","UUID":"2EEC9122-4A8A-4A1A-B8F9-EB3E8A5EE9F3","parameter":{"Value":{"OutputUUID":"6522A93D-7E75-4E59-B41A-4DD4EDC2A027","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"Listen to Something","UUID":"775AE376-DBC3-4A1E-989B-51A33083EAA0"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Create Notification","UUID":"97EC5C3A-4F72-48F8-9ED4-581D2CCFAB41","parameter":{"Value":{"OutputUUID":"775AE376-DBC3-4A1E-989B-51A33083EAA0","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 946986751,
+    "WFWorkflowIconGlyphNumber": 59668
+  },
+  "WFWorkflowClientVersion": "2206.0.6",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.list",
+      "WFWorkflowActionParameters": {
+        "WFItems": [
+          "✅ Yes",
+          "❌ No"
+        ],
+        "UUID": "266EEE9D-0BF3-4E8F-A2D8-F49196991414"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+      "WFWorkflowActionParameters": {
+        "WFChooseFromListActionPrompt": "🤖 Open TrainerDay?",
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "266EEE9D-0BF3-4E8F-A2D8-F49196991414",
+            "Type": "ActionOutput",
+            "OutputName": "List"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "20BF82AF-621F-4B36-BB58-6954C9AC1203"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Type": "Variable",
+          "Variable": {
+            "Value": {
+              "OutputUUID": "20BF82AF-621F-4B36-BB58-6954C9AC1203",
+              "Type": "ActionOutput",
+              "OutputName": "Chosen Item"
+            },
+            "WFSerializationType": "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode": 0,
+        "WFConditionalActionString": "Yes",
+        "GroupingIdentifier": "53A481B2-9236-47C9-9F36-4BD648300730",
+        "WFCondition": 99
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "AF55398D-2936-4DC1-B81F-8A1CDEAF31DF",
+          "workflowName": "Add TrainerDay Workout",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Add TrainerDay Workout",
+        "UUID": "7709068E-7C9E-4450-BADA-76D7F3BABBD0"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "GroupingIdentifier": "53A481B2-9236-47C9-9F36-4BD648300730",
+        "WFControlFlowMode": 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "791C3E20-0B11-4C23-B010-893104ECB8C4",
+          "workflowName": "Training Preparation",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Training Preparation",
+        "UUID": "194D3C80-A8AA-4A74-97CC-EB0F331E07B3"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "Route/Workout → Device,Ride",
+        "UUID": "182B716C-BB9E-4FB4-8F3A-F92BDE047E9A"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters": {
+        "fileName": "Create Notification",
+        "UUID": "1EDC9183-9934-4002-99C9-A51297B2681F",
+        "parameter": {
+          "Value": {
+            "OutputUUID": "182B716C-BB9E-4FB4-8F3A-F92BDE047E9A",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "ShowWhenRun": false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "Before Going Outside",
+        "UUID": "6522A93D-7E75-4E59-B41A-4DD4EDC2A027"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters": {
+        "fileName": "Create Notification",
+        "UUID": "2EEC9122-4A8A-4A1A-B8F9-EB3E8A5EE9F3",
+        "parameter": {
+          "Value": {
+            "OutputUUID": "6522A93D-7E75-4E59-B41A-4DD4EDC2A027",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "ShowWhenRun": false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "Listen to Something",
+        "UUID": "775AE376-DBC3-4A1E-989B-51A33083EAA0"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters": {
+        "fileName": "Create Notification",
+        "UUID": "97EC5C3A-4F72-48F8-9ED4-581D2CCFAB41",
+        "parameter": {
+          "Value": {
+            "OutputUUID": "775AE376-DBC3-4A1E-989B-51A33083EAA0",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "ShowWhenRun": false
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

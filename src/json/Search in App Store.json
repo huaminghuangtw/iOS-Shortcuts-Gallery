@@ -1,1 +1,109 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":59772},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.ask","WFWorkflowActionParameters":{"UUID":"4BAF1662-D9C0-491D-A027-7023D0709CA0","WFAllowsMultilineText":false,"WFAskActionPrompt":"❓❓❓"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.searchappstore","WFWorkflowActionParameters":{"WFAttribute":"All","WFItemLimit":5,"WFCountry":"Germany","UUID":"7C9F2577-A27C-45F5-8BD2-B3BDB32E89F6","WFSearchTerm":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"4BAF1662-D9C0-491D-A027-7023D0709CA0","Type":"ActionOutput","OutputName":"Provided Input"}}},"WFSerializationType":"WFTextTokenString"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefromlist","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"7C9F2577-A27C-45F5-8BD2-B3BDB32E89F6","Type":"ActionOutput","OutputName":"App Store Apps"},"WFSerializationType":"WFTextTokenAttachment"},"WFChooseFromListActionPrompt":"🤖  Which one?","UUID":"241555F1-E828-42C8-9A6A-5289D38D6984","WFChooseFromListActionSelectMultiple":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.detect.link","WFWorkflowActionParameters":{"WFInput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"241555F1-E828-42C8-9A6A-5289D38D6984","Type":"ActionOutput","OutputName":"Chosen Item"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"3F45FCEE-A186-4653-8E7E-77903E13D594"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openurl","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"3F45FCEE-A186-4653-8E7E-77903E13D594","Type":"ActionOutput","OutputName":"URLs"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"3F978CB4-333A-47F4-B8FF-984AEE7B00E9"}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":["NCWidget"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 59772
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+      "WFWorkflowActionParameters": {
+        "UUID": "4BAF1662-D9C0-491D-A027-7023D0709CA0",
+        "WFAllowsMultilineText": false,
+        "WFAskActionPrompt": "❓❓❓"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.searchappstore",
+      "WFWorkflowActionParameters": {
+        "WFAttribute": "All",
+        "WFItemLimit": 5,
+        "WFCountry": "Germany",
+        "UUID": "7C9F2577-A27C-45F5-8BD2-B3BDB32E89F6",
+        "WFSearchTerm": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "4BAF1662-D9C0-491D-A027-7023D0709CA0",
+                "Type": "ActionOutput",
+                "OutputName": "Provided Input"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "7C9F2577-A27C-45F5-8BD2-B3BDB32E89F6",
+            "Type": "ActionOutput",
+            "OutputName": "App Store Apps"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFChooseFromListActionPrompt": "🤖  Which one?",
+        "UUID": "241555F1-E828-42C8-9A6A-5289D38D6984",
+        "WFChooseFromListActionSelectMultiple": false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.detect.link",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "241555F1-E828-42C8-9A6A-5289D38D6984",
+                "Type": "ActionOutput",
+                "OutputName": "Chosen Item"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "3F45FCEE-A186-4653-8E7E-77903E13D594"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "3F45FCEE-A186-4653-8E7E-77903E13D594",
+            "Type": "ActionOutput",
+            "OutputName": "URLs"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "3F978CB4-333A-47F4-B8FF-984AEE7B00E9"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [
+    "NCWidget"
+  ],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

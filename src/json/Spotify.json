@@ -1,1 +1,202 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.dismisssiri","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"com.alexhay.ToolboxProForShortcuts.InternetConnectionIntent","WFWorkflowActionParameters":{"UUID":"0ADC362E-5040-4825-86D8-10C1468597C1"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"Type":"ActionOutput","OutputName":"Is Connected","OutputUUID":"0ADC362E-5040-4825-86D8-10C1468597C1","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFBooleanContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"GroupingIdentifier":"271DA48B-09AB-44F7-8861-56A8583A1E55","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefrommenu","WFWorkflowActionParameters":{"WFMenuPrompt":"🤖 Which one?","WFControlFlowMode":0,"WFMenuItems":["🎶 Choose a topic","🎶 Search on Spotify"],"GroupingIdentifier":"7C7AEAA1-20F7-4F54-9507-15DCE862BD14"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefrommenu","WFWorkflowActionParameters":{"WFMenuItemTitle":"🎶 Choose a topic","GroupingIdentifier":"7C7AEAA1-20F7-4F54-9507-15DCE862BD14","WFControlFlowMode":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getmyworkflows","WFWorkflowActionParameters":{"UUID":"8503247F-72D4-481E-8381-5ECBB7B9301F","Folder":{"Identifier":"3F8F3751-6D4B-4BE2-A572-BBD6E9AF80CD","DisplayString":"My Spotify Topics"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefromlist","WFWorkflowActionParameters":{"WFChooseFromListActionPrompt":"🤖 Which one?","WFInput":{"Value":{"OutputUUID":"8503247F-72D4-481E-8381-5ECBB7B9301F","Type":"ActionOutput","OutputName":"My Shortcuts"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"355B3904-B388-43C9-9F30-E3171FF0EE37"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"Value":{"OutputUUID":"355B3904-B388-43C9-9F30-E3171FF0EE37","Type":"ActionOutput","OutputName":"Chosen Item"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflowName":{"Value":{"OutputUUID":"355B3904-B388-43C9-9F30-E3171FF0EE37","Type":"ActionOutput","OutputName":"Chosen Item"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"B6EED20F-C7BF-43A0-8B22-D9ADAC76A32A"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefrommenu","WFWorkflowActionParameters":{"WFMenuItemTitle":"🎶 Search on Spotify","GroupingIdentifier":"7C7AEAA1-20F7-4F54-9507-15DCE862BD14","WFControlFlowMode":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"9C246351-2BBA-4E82-90DC-A71A18BF1574","workflowName":"Search on Spotify","isSelf":false},"WFWorkflowName":"Search on Spotify","UUID":"E4F4E44A-B7D2-409F-99B4-6E66E203E2E5"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefrommenu","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"7C7AEAA1-20F7-4F54-9507-15DCE862BD14","UUID":"DB5B7839-F27D-4159-AD20-0567E8456717"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"271DA48B-09AB-44F7-8861-56A8583A1E55","WFControlFlowMode":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFAppIdentifier":"com.spotify.client","WFSelectedApp":{"BundleIdentifier":"com.spotify.client","Name":"Spotify","TeamIdentifier":"2FNC3A47ZF"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"271DA48B-09AB-44F7-8861-56A8583A1E55","UUID":"2E443167-FEBC-4684-BC24-218E0F28C513"}}],"WFWorkflowInputContentItemClasses":["WFAppContentItem","WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2206.0.6",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.dismisssiri",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.InternetConnectionIntent",
+      "WFWorkflowActionParameters": {
+        "UUID": "0ADC362E-5040-4825-86D8-10C1468597C1"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Type": "Variable",
+          "Variable": {
+            "Value": {
+              "Type": "ActionOutput",
+              "OutputName": "Is Connected",
+              "OutputUUID": "0ADC362E-5040-4825-86D8-10C1468597C1",
+              "Aggrandizements": [
+                {
+                  "Type": "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass": "WFBooleanContentItem"
+                }
+              ]
+            },
+            "WFSerializationType": "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode": 0,
+        "GroupingIdentifier": "271DA48B-09AB-44F7-8861-56A8583A1E55",
+        "WFCondition": 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFMenuPrompt": "🤖 Which one?",
+        "WFControlFlowMode": 0,
+        "WFMenuItems": [
+          "🎶 Choose a topic",
+          "🎶 Search on Spotify"
+        ],
+        "GroupingIdentifier": "7C7AEAA1-20F7-4F54-9507-15DCE862BD14"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFMenuItemTitle": "🎶 Choose a topic",
+        "GroupingIdentifier": "7C7AEAA1-20F7-4F54-9507-15DCE862BD14",
+        "WFControlFlowMode": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+      "WFWorkflowActionParameters": {
+        "UUID": "8503247F-72D4-481E-8381-5ECBB7B9301F",
+        "Folder": {
+          "Identifier": "3F8F3751-6D4B-4BE2-A572-BBD6E9AF80CD",
+          "DisplayString": "My Spotify Topics"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+      "WFWorkflowActionParameters": {
+        "WFChooseFromListActionPrompt": "🤖 Which one?",
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "8503247F-72D4-481E-8381-5ECBB7B9301F",
+            "Type": "ActionOutput",
+            "OutputName": "My Shortcuts"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "355B3904-B388-43C9-9F30-E3171FF0EE37"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "Value": {
+            "OutputUUID": "355B3904-B388-43C9-9F30-E3171FF0EE37",
+            "Type": "ActionOutput",
+            "OutputName": "Chosen Item"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflowName": {
+          "Value": {
+            "OutputUUID": "355B3904-B388-43C9-9F30-E3171FF0EE37",
+            "Type": "ActionOutput",
+            "OutputName": "Chosen Item"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "B6EED20F-C7BF-43A0-8B22-D9ADAC76A32A"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFMenuItemTitle": "🎶 Search on Spotify",
+        "GroupingIdentifier": "7C7AEAA1-20F7-4F54-9507-15DCE862BD14",
+        "WFControlFlowMode": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "9C246351-2BBA-4E82-90DC-A71A18BF1574",
+          "workflowName": "Search on Spotify",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Search on Spotify",
+        "UUID": "E4F4E44A-B7D2-409F-99B4-6E66E203E2E5"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFControlFlowMode": 2,
+        "GroupingIdentifier": "7C7AEAA1-20F7-4F54-9507-15DCE862BD14",
+        "UUID": "DB5B7839-F27D-4159-AD20-0567E8456717"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "GroupingIdentifier": "271DA48B-09AB-44F7-8861-56A8583A1E55",
+        "WFControlFlowMode": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters": {
+        "WFAppIdentifier": "com.spotify.client",
+        "WFSelectedApp": {
+          "BundleIdentifier": "com.spotify.client",
+          "Name": "Spotify",
+          "TeamIdentifier": "2FNC3A47ZF"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFControlFlowMode": 2,
+        "GroupingIdentifier": "271DA48B-09AB-44F7-8861-56A8583A1E55",
+        "UUID": "2E443167-FEBC-4684-BC24-218E0F28C513"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppContentItem",
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

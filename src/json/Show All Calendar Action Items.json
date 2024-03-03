@@ -1,1 +1,138 @@
-{"WFWorkflowMinimumClientVersionString":"1113","WFWorkflowMinimumClientVersion":1113,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":59681},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowNoInputBehavior":{"Name":"WFWorkflowNoInputBehaviorAskForInput","Parameters":{"ItemClass":"WFDateContentItem","SerializedParameters":{"WFDateActionDate":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"Type":"Ask"}}},"WFSerializationType":"WFTextTokenString"},"WFDateActionMode":"Specified Date"}}},"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"Type":"ExtensionInput"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"F2B07B25-C452-4010-A7C3-0CACC7C125AC","workflowName":"Get All Action Items","isSelf":false},"UUID":"68CD1B0D-1F04-4D9C-BD3B-5EFACCAFD29E","WFWorkflowName":"Get All Action Items"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.format.date","WFWorkflowActionParameters":{"WFDateFormatStyle":"Custom","WFDateFormat":"M\/d","UUID":"8EA47103-CABA-40E0-B1BF-8C9995BB8032","WFDate":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"Type":"ExtensionInput"}}},"WFSerializationType":"WFTextTokenString"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"👇Calendar Action Items (￼)👇","attachmentsByRange":{"{25, 1}":{"OutputUUID":"8EA47103-CABA-40E0-B1BF-8C9995BB8032","Type":"ActionOutput","OutputName":"Formatted Date"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"9BC12CD0-3A12-4516-B024-4AD47E7A7036"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefromlist","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"68CD1B0D-1F04-4D9C-BD3B-5EFACCAFD29E","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFChooseFromListActionPrompt":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"9BC12CD0-3A12-4516-B024-4AD47E7A7036","Type":"ActionOutput","OutputName":"Text"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"445B951E-36AA-4246-84AA-63F526B158CB","WFChooseFromListActionSelectMultiple":true}}],"WFWorkflowInputContentItemClasses":["WFDateContentItem"],"WFWorkflowImportQuestions":[{"Category":"Parameter","ParameterKey":"WFTextActionText","ActionIndex":0,"Text":"What is your first name?","DefaultValue":""}],"WFQuickActionSurfaces":[],"WFWorkflowTypes":["NCWidget"],"WFWorkflowHasShortcutInputVariables":true}
+{
+  "WFWorkflowMinimumClientVersionString": "1113",
+  "WFWorkflowMinimumClientVersion": 1113,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 59681
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowNoInputBehavior": {
+    "Name": "WFWorkflowNoInputBehaviorAskForInput",
+    "Parameters": {
+      "ItemClass": "WFDateContentItem",
+      "SerializedParameters": {
+        "WFDateActionDate": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Ask"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "WFDateActionMode": "Specified Date"
+      }
+    }
+  },
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "Type": "ExtensionInput"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "F2B07B25-C452-4010-A7C3-0CACC7C125AC",
+          "workflowName": "Get All Action Items",
+          "isSelf": false
+        },
+        "UUID": "68CD1B0D-1F04-4D9C-BD3B-5EFACCAFD29E",
+        "WFWorkflowName": "Get All Action Items"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.format.date",
+      "WFWorkflowActionParameters": {
+        "WFDateFormatStyle": "Custom",
+        "WFDateFormat": "M/d",
+        "UUID": "8EA47103-CABA-40E0-B1BF-8C9995BB8032",
+        "WFDate": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "ExtensionInput"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": {
+          "Value": {
+            "string": "👇Calendar Action Items (￼)👇",
+            "attachmentsByRange": {
+              "{25, 1}": {
+                "OutputUUID": "8EA47103-CABA-40E0-B1BF-8C9995BB8032",
+                "Type": "ActionOutput",
+                "OutputName": "Formatted Date"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "9BC12CD0-3A12-4516-B024-4AD47E7A7036"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "68CD1B0D-1F04-4D9C-BD3B-5EFACCAFD29E",
+            "Type": "ActionOutput",
+            "OutputName": "Shortcut Result"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFChooseFromListActionPrompt": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "9BC12CD0-3A12-4516-B024-4AD47E7A7036",
+                "Type": "ActionOutput",
+                "OutputName": "Text"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "445B951E-36AA-4246-84AA-63F526B158CB",
+        "WFChooseFromListActionSelectMultiple": true
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFDateContentItem"
+  ],
+  "WFWorkflowImportQuestions": [
+    {
+      "Category": "Parameter",
+      "ParameterKey": "WFTextActionText",
+      "ActionIndex": 0,
+      "Text": "What is your first name?",
+      "DefaultValue": ""
+    }
+  ],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowTypes": [
+    "NCWidget"
+  ],
+  "WFWorkflowHasShortcutInputVariables": true
+}

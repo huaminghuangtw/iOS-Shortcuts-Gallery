@@ -1,1 +1,307 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"64352340-E70F-4D72-8B10-9DCD65333E32","workflowName":"getDayOfWeek","isSelf":false},"WFWorkflowName":"getDayOfWeek","UUID":"B6838E42-06D9-4403-AFDD-98CC1071F201"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.setvariable","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"B6838E42-06D9-4403-AFDD-98CC1071F201","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFVariableName":"Day of Week"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"62486A0E-5C10-4249-9B8A-7A7DEDDD8A74","workflowName":"getCurentWeekNumber","isSelf":false},"WFWorkflowName":"getCurentWeekNumber","UUID":"546C7A6E-4F28-4C0A-BA8A-5E05F10AA472"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.setvariable","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"546C7A6E-4F28-4C0A-BA8A-5E05F10AA472","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFVariableName":"Week Number"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.dictionary","WFWorkflowActionParameters":{"WFItems":{"Value":{"WFDictionaryFieldValueItems":[{"WFItemType":0,"WFKey":{"Value":{"string":"Monday"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"星期一"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Tuesday"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"星期二"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Wednesday"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"星期三"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Thursday"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"星期四"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Friday"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"星期五"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Saturday"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"星期六"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"Sunday"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"星期日"},"WFSerializationType":"WFTextTokenString"}}]},"WFSerializationType":"WFDictionaryFieldValue"},"UUID":"D882EA13-F418-4B92-8727-695C3BED12BB"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getvalueforkey","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"D882EA13-F418-4B92-8727-695C3BED12BB","Type":"ActionOutput","OutputName":"Dictionary"},"WFSerializationType":"WFTextTokenAttachment"},"CustomOutputName":"Day of Week","UUID":"C8D5909B-AD75-40CF-B905-3F67D884E5A8","WFDictionaryKey":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"VariableName":"Day of Week","Type":"Variable"}}},"WFSerializationType":"WFTextTokenString"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"早安，樺明\n\n現在時間，早上￼\n\n今天將會是個美好的一天！記得和鏡子裡的自己擊掌，隨時把微笑掛在嘴邊！\n\n今天是￼，￼，第￼週","attachmentsByRange":{"{56, 1}":{"Type":"CurrentDate","Aggrandizements":[{"Type":"WFDateFormatVariableAggrandizement","WFISO8601IncludeTime":false,"WFDateFormatStyle":"Short"}]},"{58, 1}":{"OutputUUID":"C8D5909B-AD75-40CF-B905-3F67D884E5A8","Type":"ActionOutput","OutputName":"Day of Week"},"{61, 1}":{"VariableName":"Week Number","Type":"Variable"},"{14, 1}":{"Type":"CurrentDate","Aggrandizements":[{"WFDateFormatStyle":"None","WFISO8601IncludeTime":false,"Type":"WFDateFormatVariableAggrandizement","WFTimeFormatStyle":"Short"}]}}},"WFSerializationType":"WFTextTokenString"},"UUID":"D6D0BB7F-6CDC-4720-A7B7-AF1DAAFEDC60"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"D6D0BB7F-6CDC-4720-A7B7-AF1DAAFEDC60","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"D7AF0B28-A1FD-4894-9708-2E5281B59CB5","workflowName":"Text-to-Speech (Chinese)","isSelf":false},"UUID":"DD253285-6729-4013-BE41-2317E6108278","WFWorkflowName":"Text-to-Speech (Chinese)"}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[{"Category":"Parameter","ParameterKey":"WFTextActionText","ActionIndex":0,"Text":"What is your first name?","DefaultValue":""}],"WFWorkflowTypes":["NCWidget"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "64352340-E70F-4D72-8B10-9DCD65333E32",
+          "workflowName": "getDayOfWeek",
+          "isSelf": false
+        },
+        "WFWorkflowName": "getDayOfWeek",
+        "UUID": "B6838E42-06D9-4403-AFDD-98CC1071F201"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "B6838E42-06D9-4403-AFDD-98CC1071F201",
+            "Type": "ActionOutput",
+            "OutputName": "Shortcut Result"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFVariableName": "Day of Week"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "62486A0E-5C10-4249-9B8A-7A7DEDDD8A74",
+          "workflowName": "getCurentWeekNumber",
+          "isSelf": false
+        },
+        "WFWorkflowName": "getCurentWeekNumber",
+        "UUID": "546C7A6E-4F28-4C0A-BA8A-5E05F10AA472"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "546C7A6E-4F28-4C0A-BA8A-5E05F10AA472",
+            "Type": "ActionOutput",
+            "OutputName": "Shortcut Result"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFVariableName": "Week Number"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+      "WFWorkflowActionParameters": {
+        "WFItems": {
+          "Value": {
+            "WFDictionaryFieldValueItems": [
+              {
+                "WFItemType": 0,
+                "WFKey": {
+                  "Value": {
+                    "string": "Monday"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                },
+                "WFValue": {
+                  "Value": {
+                    "string": "星期一"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType": 0,
+                "WFKey": {
+                  "Value": {
+                    "string": "Tuesday"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                },
+                "WFValue": {
+                  "Value": {
+                    "string": "星期二"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType": 0,
+                "WFKey": {
+                  "Value": {
+                    "string": "Wednesday"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                },
+                "WFValue": {
+                  "Value": {
+                    "string": "星期三"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType": 0,
+                "WFKey": {
+                  "Value": {
+                    "string": "Thursday"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                },
+                "WFValue": {
+                  "Value": {
+                    "string": "星期四"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType": 0,
+                "WFKey": {
+                  "Value": {
+                    "string": "Friday"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                },
+                "WFValue": {
+                  "Value": {
+                    "string": "星期五"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType": 0,
+                "WFKey": {
+                  "Value": {
+                    "string": "Saturday"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                },
+                "WFValue": {
+                  "Value": {
+                    "string": "星期六"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                }
+              },
+              {
+                "WFItemType": 0,
+                "WFKey": {
+                  "Value": {
+                    "string": "Sunday"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                },
+                "WFValue": {
+                  "Value": {
+                    "string": "星期日"
+                  },
+                  "WFSerializationType": "WFTextTokenString"
+                }
+              }
+            ]
+          },
+          "WFSerializationType": "WFDictionaryFieldValue"
+        },
+        "UUID": "D882EA13-F418-4B92-8727-695C3BED12BB"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "D882EA13-F418-4B92-8727-695C3BED12BB",
+            "Type": "ActionOutput",
+            "OutputName": "Dictionary"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "CustomOutputName": "Day of Week",
+        "UUID": "C8D5909B-AD75-40CF-B905-3F67D884E5A8",
+        "WFDictionaryKey": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "VariableName": "Day of Week",
+                "Type": "Variable"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": {
+          "Value": {
+            "string": "早安，樺明\n\n現在時間，早上￼\n\n今天將會是個美好的一天！記得和鏡子裡的自己擊掌，隨時把微笑掛在嘴邊！\n\n今天是￼，￼，第￼週",
+            "attachmentsByRange": {
+              "{56, 1}": {
+                "Type": "CurrentDate",
+                "Aggrandizements": [
+                  {
+                    "Type": "WFDateFormatVariableAggrandizement",
+                    "WFISO8601IncludeTime": false,
+                    "WFDateFormatStyle": "Short"
+                  }
+                ]
+              },
+              "{58, 1}": {
+                "OutputUUID": "C8D5909B-AD75-40CF-B905-3F67D884E5A8",
+                "Type": "ActionOutput",
+                "OutputName": "Day of Week"
+              },
+              "{61, 1}": {
+                "VariableName": "Week Number",
+                "Type": "Variable"
+              },
+              "{14, 1}": {
+                "Type": "CurrentDate",
+                "Aggrandizements": [
+                  {
+                    "WFDateFormatStyle": "None",
+                    "WFISO8601IncludeTime": false,
+                    "Type": "WFDateFormatVariableAggrandizement",
+                    "WFTimeFormatStyle": "Short"
+                  }
+                ]
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "D6D0BB7F-6CDC-4720-A7B7-AF1DAAFEDC60"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "D6D0BB7F-6CDC-4720-A7B7-AF1DAAFEDC60",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "D7AF0B28-A1FD-4894-9708-2E5281B59CB5",
+          "workflowName": "Text-to-Speech (Chinese)",
+          "isSelf": false
+        },
+        "UUID": "DD253285-6729-4013-BE41-2317E6108278",
+        "WFWorkflowName": "Text-to-Speech (Chinese)"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions": [
+    {
+      "Category": "Parameter",
+      "ParameterKey": "WFTextActionText",
+      "ActionIndex": 0,
+      "Text": "What is your first name?",
+      "DefaultValue": ""
+    }
+  ],
+  "WFWorkflowTypes": [
+    "NCWidget"
+  ],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

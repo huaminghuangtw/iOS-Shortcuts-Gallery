@@ -1,1 +1,62 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.dismisssiri","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.url","WFWorkflowActionParameters":{"WFURLActionURL":"https:\/\/www.reddit.com","UUID":"021A8F85-AAEB-44E7-ADDE-0803CE7FB605"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openurl","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"021A8F85-AAEB-44E7-ADDE-0803CE7FB605","Type":"ActionOutput","OutputName":"URL"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"A09BF76C-F9DB-44B6-AA20-3150A2C49FF3"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.timer.start","WFWorkflowActionParameters":{"WFDuration":{"Value":{"Unit":"min","Magnitude":"10"},"WFSerializationType":"WFQuantityFieldValue"},"UUID":"C3E0A243-B788-4B27-B47C-269AF3036ED5","AppIntentDescriptor":{"TeamIdentifier":"0000000000","BundleIdentifier":"com.apple.mobiletimer","Name":"Clock","AppIntentIdentifier":"INCreateTimerIntent"}}}],"WFWorkflowInputContentItemClasses":[],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2206.0.6",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.dismisssiri",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+      "WFWorkflowActionParameters": {
+        "WFURLActionURL": "https://www.reddit.com",
+        "UUID": "021A8F85-AAEB-44E7-ADDE-0803CE7FB605"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "021A8F85-AAEB-44E7-ADDE-0803CE7FB605",
+            "Type": "ActionOutput",
+            "OutputName": "URL"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "A09BF76C-F9DB-44B6-AA20-3150A2C49FF3"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.timer.start",
+      "WFWorkflowActionParameters": {
+        "WFDuration": {
+          "Value": {
+            "Unit": "min",
+            "Magnitude": "10"
+          },
+          "WFSerializationType": "WFQuantityFieldValue"
+        },
+        "UUID": "C3E0A243-B788-4B27-B47C-269AF3036ED5",
+        "AppIntentDescriptor": {
+          "TeamIdentifier": "0000000000",
+          "BundleIdentifier": "com.apple.mobiletimer",
+          "Name": "Clock",
+          "AppIntentIdentifier": "INCreateTimerIntent"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

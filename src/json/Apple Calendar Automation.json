@@ -1,1 +1,50 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":946986751,"WFWorkflowIconGlyphNumber":59681},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"08E606EE-9C7C-487E-AB1F-C503304115E0","workflowName":"Sync Abfuhrkalendar to Reminders","isSelf":false},"WFWorkflowName":"Sync Abfuhrkalendar to Reminders","UUID":"16D39045-492F-4CC3-9B94-DB1FBF0EC4D0"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.notification","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"16D39045-492F-4CC3-9B94-DB1FBF0EC4D0","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFNotificationActionBody":"✅ Done","UUID":"EBF8BF18-E949-46BA-8FEF-49C64C6BE64A","WFNotificationActionSound":false}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":["Watch"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 946986751,
+    "WFWorkflowIconGlyphNumber": 59681
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "08E606EE-9C7C-487E-AB1F-C503304115E0",
+          "workflowName": "Sync Abfuhrkalendar to Reminders",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Sync Abfuhrkalendar to Reminders",
+        "UUID": "16D39045-492F-4CC3-9B94-DB1FBF0EC4D0"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "16D39045-492F-4CC3-9B94-DB1FBF0EC4D0",
+            "Type": "ActionOutput",
+            "OutputName": "Shortcut Result"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFNotificationActionBody": "✅ Done",
+        "UUID": "EBF8BF18-E949-46BA-8FEF-49C64C6BE64A",
+        "WFNotificationActionSound": false
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [
+    "Watch"
+  ],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

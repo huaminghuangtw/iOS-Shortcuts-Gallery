@@ -1,1 +1,1 @@
-# Route/Workout → Device
+# Route/Workout &rarr; Device

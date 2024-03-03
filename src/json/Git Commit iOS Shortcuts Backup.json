@@ -1,78 +1,76 @@
 {
-  "WFWorkflowMinimumClientVersionString" : "900",
-  "WFWorkflowMinimumClientVersion" : 900,
-  "WFWorkflowIcon" : {
-    "WFWorkflowIconStartColor" : 463140863,
-    "WFWorkflowIconGlyphNumber" : 61440
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 463140863,
+    "WFWorkflowIconGlyphNumber": 61440
   },
-  "WFWorkflowClientVersion" : "2206.0.6",
-  "WFWorkflowOutputContentItemClasses" : [
-
-  ],
-  "WFWorkflowHasOutputFallback" : false,
-  "WFWorkflowActions" : [
+  "WFWorkflowClientVersion": "2206.0.6",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
     {
-      "WFWorkflowActionIdentifier" : "is.workflow.actions.getmyworkflows",
-      "WFWorkflowActionParameters" : {
-        "UUID" : "6523F73E-9D35-4CBF-95A8-68828AA78F69"
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+      "WFWorkflowActionParameters": {
+        "UUID": "6523F73E-9D35-4CBF-95A8-68828AA78F69"
       }
     },
     {
-      "WFWorkflowActionIdentifier" : "is.workflow.actions.count",
-      "WFWorkflowActionParameters" : {
-        "Input" : {
-          "Value" : {
-            "OutputUUID" : "6523F73E-9D35-4CBF-95A8-68828AA78F69",
-            "Type" : "ActionOutput",
-            "OutputName" : "My Shortcuts"
+      "WFWorkflowActionIdentifier": "is.workflow.actions.count",
+      "WFWorkflowActionParameters": {
+        "Input": {
+          "Value": {
+            "OutputUUID": "6523F73E-9D35-4CBF-95A8-68828AA78F69",
+            "Type": "ActionOutput",
+            "OutputName": "My Shortcuts"
           },
-          "WFSerializationType" : "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID" : "6DB76AF0-8A51-46B6-87C5-BB80E3795A4F"
+        "UUID": "6DB76AF0-8A51-46B6-87C5-BB80E3795A4F"
       }
     },
     {
-      "WFWorkflowActionIdentifier" : "is.workflow.actions.setvariable",
-      "WFWorkflowActionParameters" : {
-        "WFInput" : {
-          "Value" : {
-            "OutputUUID" : "6DB76AF0-8A51-46B6-87C5-BB80E3795A4F",
-            "Type" : "ActionOutput",
-            "OutputName" : "Count"
+      "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "6DB76AF0-8A51-46B6-87C5-BB80E3795A4F",
+            "Type": "ActionOutput",
+            "OutputName": "Count"
           },
-          "WFSerializationType" : "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenAttachment"
         },
-        "WFVariableName" : "numShortcuts"
+        "WFVariableName": "numShortcuts"
       }
     },
     {
-      "WFWorkflowActionIdentifier" : "AsheKube.app.a-Shell.ExecuteCommandIntent",
-      "WFWorkflowActionParameters" : {
-        "command" : [
+      "WFWorkflowActionIdentifier": "AsheKube.app.a-Shell.ExecuteCommandIntent",
+      "WFWorkflowActionParameters": {
+        "command": [
           "jump Root",
           "cd iOS-Shortcuts-Gallery",
           "lg2 pull",
           "lg2 add .",
           {
-            "Value" : {
-              "string" : "lg2 commit -m \"Weekly iOS Shortcuts update (numShortcuts = ￼)\"",
-              "attachmentsByRange" : {
-                "{59, 1}" : {
-                  "VariableName" : "numShortcuts",
-                  "Type" : "Variable"
+            "Value": {
+              "string": "lg2 commit -m \"Weekly iOS Shortcuts update (numShortcuts = ￼)\"",
+              "attachmentsByRange": {
+                "{59, 1}": {
+                  "VariableName": "numShortcuts",
+                  "Type": "Variable"
                 }
               }
             },
-            "WFSerializationType" : "WFTextTokenString"
+            "WFSerializationType": "WFTextTokenString"
           },
           "lg2 push",
-          "open  shortcuts:\/\/run-shortcut?name=You%20Are%20All%20Set"
+          "open  shortcuts://run-shortcut?name=You%20Are%20All%20Set"
         ],
-        "UUID" : "4AA44A1A-4851-4DE1-973C-41C0BE8B202A"
+        "UUID": "4AA44A1A-4851-4DE1-973C-41C0BE8B202A"
       }
     }
   ],
-  "WFWorkflowInputContentItemClasses" : [
+  "WFWorkflowInputContentItemClasses": [
     "WFAppContentItem",
     "WFAppStoreAppContentItem",
     "WFArticleContentItem",
@@ -93,14 +91,8 @@
     "WFStringContentItem",
     "WFURLContentItem"
   ],
-  "WFWorkflowImportQuestions" : [
-
-  ],
-  "WFWorkflowTypes" : [
-
-  ],
-  "WFQuickActionSurfaces" : [
-
-  ],
-  "WFWorkflowHasShortcutInputVariables" : false
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
 }

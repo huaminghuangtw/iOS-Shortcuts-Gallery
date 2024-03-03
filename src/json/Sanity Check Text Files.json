@@ -1,1 +1,173 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.openapp","WFWorkflowActionParameters":{"WFSelectedApp":{"BundleIdentifier":"AsheKube.app.a-Shell","Name":"a-Shell","TeamIdentifier":"VG8Z23C8YL"},"WFAppIdentifier":"AsheKube.app.a-Shell","UUID":"084943D5-E520-40A4-AB44-85C2BD68BF80"}},{"WFWorkflowActionIdentifier":"dk.simonbs.DataJar.GetValueIntent","WFWorkflowActionParameters":{"keyPath":"FolderBookmarksForSanityCheck","UUID":"6A8CFC76-1F01-4EF5-AA43-EA4463EF9432"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.repeat.each","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"6A8CFC76-1F01-4EF5-AA43-EA4463EF9432","Type":"ActionOutput","OutputName":"Value"},"WFSerializationType":"WFTextTokenAttachment"},"GroupingIdentifier":"50F45FAE-B20F-40E4-82C0-9D8CEE0238B5","WFControlFlowMode":0}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getvalueforkey","WFWorkflowActionParameters":{"WFInput":{"Value":{"VariableName":"Repeat Item","Type":"Variable"},"WFSerializationType":"WFTextTokenAttachment"},"CustomOutputName":"bookmark","UUID":"6D895B6A-D36F-4E49-97A4-6890704F096C","WFDictionaryKey":"bookmark"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getvalueforkey","WFWorkflowActionParameters":{"WFInput":{"Value":{"VariableName":"Repeat Item","Type":"Variable"},"WFSerializationType":"WFTextTokenAttachment"},"CustomOutputName":"folder","UUID":"7A5230BC-E8E9-49A6-9EDD-859932321BDE","WFDictionaryKey":"folder"}},{"WFWorkflowActionIdentifier":"AsheKube.app.a-Shell.ExecuteCommandIntent","WFWorkflowActionParameters":{"command":[{"Value":{"string":"jump ￼","attachmentsByRange":{"{5, 1}":{"OutputUUID":"6D895B6A-D36F-4E49-97A4-6890704F096C","Type":"ActionOutput","OutputName":"bookmark"}}},"WFSerializationType":"WFTextTokenString"},{"Value":{"string":"cd ￼","attachmentsByRange":{"{3, 1}":{"OutputUUID":"7A5230BC-E8E9-49A6-9EDD-859932321BDE","Type":"ActionOutput","OutputName":"folder"}}},"WFSerializationType":"WFTextTokenString"},"lg2 add .",{"Value":{"string":"lg2 commit -m \"Sanity check text files journals (￼)\"","attachmentsByRange":{"{49, 1}":{"Type":"CurrentDate","Aggrandizements":[{"Type":"WFDateFormatVariableAggrandizement","WFISO8601IncludeTime":false,"WFDateFormatStyle":"ISO 8601"}]}}},"WFSerializationType":"WFTextTokenString"},"lg2 push"],"UUID":"2A83CB1C-D13A-4011-B36F-00E97441EF2A"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":3}},{"WFWorkflowActionIdentifier":"is.workflow.actions.repeat.each","WFWorkflowActionParameters":{"GroupingIdentifier":"50F45FAE-B20F-40E4-82C0-9D8CEE0238B5","WFControlFlowMode":2}}],"WFWorkflowInputContentItemClasses":["WFAppContentItem","WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFFolderContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters": {
+        "WFSelectedApp": {
+          "BundleIdentifier": "AsheKube.app.a-Shell",
+          "Name": "a-Shell",
+          "TeamIdentifier": "VG8Z23C8YL"
+        },
+        "WFAppIdentifier": "AsheKube.app.a-Shell",
+        "UUID": "084943D5-E520-40A4-AB44-85C2BD68BF80"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.DataJar.GetValueIntent",
+      "WFWorkflowActionParameters": {
+        "keyPath": "FolderBookmarksForSanityCheck",
+        "UUID": "6A8CFC76-1F01-4EF5-AA43-EA4463EF9432"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "6A8CFC76-1F01-4EF5-AA43-EA4463EF9432",
+            "Type": "ActionOutput",
+            "OutputName": "Value"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "GroupingIdentifier": "50F45FAE-B20F-40E4-82C0-9D8CEE0238B5",
+        "WFControlFlowMode": 0
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "VariableName": "Repeat Item",
+            "Type": "Variable"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "CustomOutputName": "bookmark",
+        "UUID": "6D895B6A-D36F-4E49-97A4-6890704F096C",
+        "WFDictionaryKey": "bookmark"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "VariableName": "Repeat Item",
+            "Type": "Variable"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "CustomOutputName": "folder",
+        "UUID": "7A5230BC-E8E9-49A6-9EDD-859932321BDE",
+        "WFDictionaryKey": "folder"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "AsheKube.app.a-Shell.ExecuteCommandIntent",
+      "WFWorkflowActionParameters": {
+        "command": [
+          {
+            "Value": {
+              "string": "jump ￼",
+              "attachmentsByRange": {
+                "{5, 1}": {
+                  "OutputUUID": "6D895B6A-D36F-4E49-97A4-6890704F096C",
+                  "Type": "ActionOutput",
+                  "OutputName": "bookmark"
+                }
+              }
+            },
+            "WFSerializationType": "WFTextTokenString"
+          },
+          {
+            "Value": {
+              "string": "cd ￼",
+              "attachmentsByRange": {
+                "{3, 1}": {
+                  "OutputUUID": "7A5230BC-E8E9-49A6-9EDD-859932321BDE",
+                  "Type": "ActionOutput",
+                  "OutputName": "folder"
+                }
+              }
+            },
+            "WFSerializationType": "WFTextTokenString"
+          },
+          "lg2 add .",
+          {
+            "Value": {
+              "string": "lg2 commit -m \"Sanity check text files journals (￼)\"",
+              "attachmentsByRange": {
+                "{49, 1}": {
+                  "Type": "CurrentDate",
+                  "Aggrandizements": [
+                    {
+                      "Type": "WFDateFormatVariableAggrandizement",
+                      "WFISO8601IncludeTime": false,
+                      "WFDateFormatStyle": "ISO 8601"
+                    }
+                  ]
+                }
+              }
+            },
+            "WFSerializationType": "WFTextTokenString"
+          },
+          "lg2 push"
+        ],
+        "UUID": "2A83CB1C-D13A-4011-B36F-00E97441EF2A"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+      "WFWorkflowActionParameters": {
+        "WFDelayTime": 3
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters": {
+        "GroupingIdentifier": "50F45FAE-B20F-40E4-82C0-9D8CEE0238B5",
+        "WFControlFlowMode": 2
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppContentItem",
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFFolderContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

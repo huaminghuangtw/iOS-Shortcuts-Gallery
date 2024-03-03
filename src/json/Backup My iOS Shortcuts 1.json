@@ -1,1 +1,313 @@
-{"WFWorkflowMinimumClientVersionString":"1106","WFWorkflowMinimumClientVersion":1106,"WFWorkflowIcon":{"WFWorkflowIconStartColor":946986751,"WFWorkflowIconGlyphNumber":59737},"WFWorkflowClientVersion":"2206.0.6","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"\/src\/shortcut","CustomOutputName":"\/src\/shortcut","UUID":"37B1CFA2-D58F-45D2-B083-E84C24577DA9"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.file.createfolder","WFWorkflowActionParameters":{"WFFilePath":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"37B1CFA2-D58F-45D2-B083-E84C24577DA9","Type":"ActionOutput","OutputName":"\/src\/shortcut"}}},"WFSerializationType":"WFTextTokenString"},"WFFolder":{"fileLocation":{"WFFileLocationType":"LocalStorage","fileProviderDomainID":"com.apple.FileProvider.LocalStorage","relativeSubpath":"iOS-Shortcuts-Gallery","appContainerBundleIdentifier":"AsheKube.app.a-Shell","crossDeviceItemID":"deviceSpecific:FE26B000-2CF4-4DFE-8FB6-71F1003739A7:fp:\/ook5Wv1tjvQZ3wHBeDUugx7TqskVuY_Y1ahwSlFqeac=\/com.apple.FileProvider.LocalStorage\/\/fid=55162173"},"filename":"iOS-Shortcuts-Gallery","displayName":"iOS-Shortcuts-Gallery"},"UUID":"200B415C-7253-4D42-8E2F-64AD25856ED6"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"\/src\/json","CustomOutputName":"\/src\/json","UUID":"932BEC25-C42D-4529-87F7-0F3D7EB7BCE0"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.file.createfolder","WFWorkflowActionParameters":{"WFFilePath":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"932BEC25-C42D-4529-87F7-0F3D7EB7BCE0","Type":"ActionOutput","OutputName":"\/src\/json"}}},"WFSerializationType":"WFTextTokenString"},"WFFolder":{"fileLocation":{"WFFileLocationType":"LocalStorage","fileProviderDomainID":"com.apple.FileProvider.LocalStorage","relativeSubpath":"iOS-Shortcuts-Gallery","appContainerBundleIdentifier":"AsheKube.app.a-Shell","crossDeviceItemID":"deviceSpecific:FE26B000-2CF4-4DFE-8FB6-71F1003739A7:fp:\/ook5Wv1tjvQZ3wHBeDUugx7TqskVuY_Y1ahwSlFqeac=\/com.apple.FileProvider.LocalStorage\/\/fid=55162173"},"filename":"iOS-Shortcuts-Gallery","displayName":"iOS-Shortcuts-Gallery"},"UUID":"33FDCF74-D28B-4604-A1BE-40CCEE05563B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"\/src\/plist","CustomOutputName":"\/src\/plist","UUID":"D5675DE1-79B8-488A-9C0C-97A3391B41D1"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.file.createfolder","WFWorkflowActionParameters":{"WFFilePath":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"D5675DE1-79B8-488A-9C0C-97A3391B41D1","Type":"ActionOutput","OutputName":"\/src\/plist"}}},"WFSerializationType":"WFTextTokenString"},"WFFolder":{"fileLocation":{"WFFileLocationType":"LocalStorage","fileProviderDomainID":"com.apple.FileProvider.LocalStorage","relativeSubpath":"iOS-Shortcuts-Gallery","appContainerBundleIdentifier":"AsheKube.app.a-Shell","crossDeviceItemID":"deviceSpecific:FE26B000-2CF4-4DFE-8FB6-71F1003739A7:fp:\/ook5Wv1tjvQZ3wHBeDUugx7TqskVuY_Y1ahwSlFqeac=\/com.apple.FileProvider.LocalStorage\/\/fid=55162173"},"filename":"iOS-Shortcuts-Gallery","displayName":"iOS-Shortcuts-Gallery"},"UUID":"772C9224-98E9-45C3-B3E0-9C6881477945"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"\/docs","CustomOutputName":"\/docs","UUID":"AB787090-8293-43CD-B056-532815FE9A4A"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.file.createfolder","WFWorkflowActionParameters":{"WFFilePath":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"AB787090-8293-43CD-B056-532815FE9A4A","Type":"ActionOutput","OutputName":"\/docs"}}},"WFSerializationType":"WFTextTokenString"},"WFFolder":{"fileLocation":{"WFFileLocationType":"LocalStorage","fileProviderDomainID":"com.apple.FileProvider.LocalStorage","relativeSubpath":"iOS-Shortcuts-Gallery","appContainerBundleIdentifier":"AsheKube.app.a-Shell","crossDeviceItemID":"deviceSpecific:FE26B000-2CF4-4DFE-8FB6-71F1003739A7:fp:\/ook5Wv1tjvQZ3wHBeDUugx7TqskVuY_Y1ahwSlFqeac=\/com.apple.FileProvider.LocalStorage\/\/fid=55162173"},"filename":"iOS-Shortcuts-Gallery","displayName":"iOS-Shortcuts-Gallery"},"UUID":"6E7F4050-6157-438D-AAF4-F93E9097D30F"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getmyworkflows","WFWorkflowActionParameters":{"UUID":"A02CD15C-2463-4E8E-8E76-5B2FD9CD4CE4"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.repeat.each","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"A02CD15C-2463-4E8E-8E76-5B2FD9CD4CE4","Type":"ActionOutput","OutputName":"My Shortcuts"},"WFSerializationType":"WFTextTokenAttachment"},"GroupingIdentifier":"0DC983E2-AEA5-403C-83EC-F065ED2228A9","WFControlFlowMode":0}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"# ￼\n\n---\n","attachmentsByRange":{"{2, 1}":{"VariableName":"Repeat Item","Type":"Variable"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"1F845ED7-7DD0-410D-99C6-D168E5E52A9E"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"￼.md","attachmentsByRange":{"{0, 1}":{"VariableName":"Repeat Item","Type":"Variable"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"36B4052F-4988-48F1-A800-B115D5843B5F"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.documentpicker.save","WFWorkflowActionParameters":{"WFFolder":{"Value":{"OutputUUID":"6E7F4050-6157-438D-AAF4-F93E9097D30F","Type":"ActionOutput","OutputName":"Created Folder"},"WFSerializationType":"WFTextTokenAttachment"},"WFAskWhereToSave":false,"WFInput":{"Value":{"OutputUUID":"1F845ED7-7DD0-410D-99C6-D168E5E52A9E","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"CBAE7146-0C21-4407-BB72-8778DE089DED","WFSaveFileOverwrite":true,"WFFileDestinationPath":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"36B4052F-4988-48F1-A800-B115D5843B5F","Type":"ActionOutput","OutputName":"Text"}}},"WFSerializationType":"WFTextTokenString"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.repeat.each","WFWorkflowActionParameters":{"GroupingIdentifier":"0DC983E2-AEA5-403C-83EC-F065ED2228A9","WFControlFlowMode":2}},{"WFWorkflowActionIdentifier":"AsheKube.app.a-Shell.ExecuteCommandIntent","WFWorkflowActionParameters":{"command":["jump Root","cd iOS-Shortcuts-Gallery","lg2 add .","lg2 commit -m \"Weekly iOS Shortcuts update\"","lg2 push"],"UUID":"65EA8795-D29A-4320-8196-173E56929559"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.notification","WFWorkflowActionParameters":{"WFNotificationActionSound":false,"WFNotificationActionBody":"✅ Backup My iOS Shortcuts","UUID":"55B9E9CA-1982-4A49-A3D3-B706B62ED928"}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":["Watch","NCWidget"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "1106",
+  "WFWorkflowMinimumClientVersion": 1106,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 946986751,
+    "WFWorkflowIconGlyphNumber": 59737
+  },
+  "WFWorkflowClientVersion": "2206.0.6",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "/src/shortcut",
+        "CustomOutputName": "/src/shortcut",
+        "UUID": "37B1CFA2-D58F-45D2-B083-E84C24577DA9"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.file.createfolder",
+      "WFWorkflowActionParameters": {
+        "WFFilePath": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "37B1CFA2-D58F-45D2-B083-E84C24577DA9",
+                "Type": "ActionOutput",
+                "OutputName": "/src/shortcut"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "WFFolder": {
+          "fileLocation": {
+            "WFFileLocationType": "LocalStorage",
+            "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+            "relativeSubpath": "iOS-Shortcuts-Gallery",
+            "appContainerBundleIdentifier": "AsheKube.app.a-Shell",
+            "crossDeviceItemID": "deviceSpecific:FE26B000-2CF4-4DFE-8FB6-71F1003739A7:fp:/ook5Wv1tjvQZ3wHBeDUugx7TqskVuY_Y1ahwSlFqeac=/com.apple.FileProvider.LocalStorage//fid=55162173"
+          },
+          "filename": "iOS-Shortcuts-Gallery",
+          "displayName": "iOS-Shortcuts-Gallery"
+        },
+        "UUID": "200B415C-7253-4D42-8E2F-64AD25856ED6"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "/src/json",
+        "CustomOutputName": "/src/json",
+        "UUID": "932BEC25-C42D-4529-87F7-0F3D7EB7BCE0"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.file.createfolder",
+      "WFWorkflowActionParameters": {
+        "WFFilePath": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "932BEC25-C42D-4529-87F7-0F3D7EB7BCE0",
+                "Type": "ActionOutput",
+                "OutputName": "/src/json"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "WFFolder": {
+          "fileLocation": {
+            "WFFileLocationType": "LocalStorage",
+            "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+            "relativeSubpath": "iOS-Shortcuts-Gallery",
+            "appContainerBundleIdentifier": "AsheKube.app.a-Shell",
+            "crossDeviceItemID": "deviceSpecific:FE26B000-2CF4-4DFE-8FB6-71F1003739A7:fp:/ook5Wv1tjvQZ3wHBeDUugx7TqskVuY_Y1ahwSlFqeac=/com.apple.FileProvider.LocalStorage//fid=55162173"
+          },
+          "filename": "iOS-Shortcuts-Gallery",
+          "displayName": "iOS-Shortcuts-Gallery"
+        },
+        "UUID": "33FDCF74-D28B-4604-A1BE-40CCEE05563B"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "/src/plist",
+        "CustomOutputName": "/src/plist",
+        "UUID": "D5675DE1-79B8-488A-9C0C-97A3391B41D1"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.file.createfolder",
+      "WFWorkflowActionParameters": {
+        "WFFilePath": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "D5675DE1-79B8-488A-9C0C-97A3391B41D1",
+                "Type": "ActionOutput",
+                "OutputName": "/src/plist"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "WFFolder": {
+          "fileLocation": {
+            "WFFileLocationType": "LocalStorage",
+            "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+            "relativeSubpath": "iOS-Shortcuts-Gallery",
+            "appContainerBundleIdentifier": "AsheKube.app.a-Shell",
+            "crossDeviceItemID": "deviceSpecific:FE26B000-2CF4-4DFE-8FB6-71F1003739A7:fp:/ook5Wv1tjvQZ3wHBeDUugx7TqskVuY_Y1ahwSlFqeac=/com.apple.FileProvider.LocalStorage//fid=55162173"
+          },
+          "filename": "iOS-Shortcuts-Gallery",
+          "displayName": "iOS-Shortcuts-Gallery"
+        },
+        "UUID": "772C9224-98E9-45C3-B3E0-9C6881477945"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "/docs",
+        "CustomOutputName": "/docs",
+        "UUID": "AB787090-8293-43CD-B056-532815FE9A4A"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.file.createfolder",
+      "WFWorkflowActionParameters": {
+        "WFFilePath": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "AB787090-8293-43CD-B056-532815FE9A4A",
+                "Type": "ActionOutput",
+                "OutputName": "/docs"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "WFFolder": {
+          "fileLocation": {
+            "WFFileLocationType": "LocalStorage",
+            "fileProviderDomainID": "com.apple.FileProvider.LocalStorage",
+            "relativeSubpath": "iOS-Shortcuts-Gallery",
+            "appContainerBundleIdentifier": "AsheKube.app.a-Shell",
+            "crossDeviceItemID": "deviceSpecific:FE26B000-2CF4-4DFE-8FB6-71F1003739A7:fp:/ook5Wv1tjvQZ3wHBeDUugx7TqskVuY_Y1ahwSlFqeac=/com.apple.FileProvider.LocalStorage//fid=55162173"
+          },
+          "filename": "iOS-Shortcuts-Gallery",
+          "displayName": "iOS-Shortcuts-Gallery"
+        },
+        "UUID": "6E7F4050-6157-438D-AAF4-F93E9097D30F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+      "WFWorkflowActionParameters": {
+        "UUID": "A02CD15C-2463-4E8E-8E76-5B2FD9CD4CE4"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "A02CD15C-2463-4E8E-8E76-5B2FD9CD4CE4",
+            "Type": "ActionOutput",
+            "OutputName": "My Shortcuts"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "GroupingIdentifier": "0DC983E2-AEA5-403C-83EC-F065ED2228A9",
+        "WFControlFlowMode": 0
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": {
+          "Value": {
+            "string": "# ￼\n\n---\n",
+            "attachmentsByRange": {
+              "{2, 1}": {
+                "VariableName": "Repeat Item",
+                "Type": "Variable"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "1F845ED7-7DD0-410D-99C6-D168E5E52A9E"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": {
+          "Value": {
+            "string": "￼.md",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "VariableName": "Repeat Item",
+                "Type": "Variable"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "36B4052F-4988-48F1-A800-B115D5843B5F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+      "WFWorkflowActionParameters": {
+        "WFFolder": {
+          "Value": {
+            "OutputUUID": "6E7F4050-6157-438D-AAF4-F93E9097D30F",
+            "Type": "ActionOutput",
+            "OutputName": "Created Folder"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFAskWhereToSave": false,
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "1F845ED7-7DD0-410D-99C6-D168E5E52A9E",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "CBAE7146-0C21-4407-BB72-8778DE089DED",
+        "WFSaveFileOverwrite": true,
+        "WFFileDestinationPath": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "36B4052F-4988-48F1-A800-B115D5843B5F",
+                "Type": "ActionOutput",
+                "OutputName": "Text"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters": {
+        "GroupingIdentifier": "0DC983E2-AEA5-403C-83EC-F065ED2228A9",
+        "WFControlFlowMode": 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "AsheKube.app.a-Shell.ExecuteCommandIntent",
+      "WFWorkflowActionParameters": {
+        "command": [
+          "jump Root",
+          "cd iOS-Shortcuts-Gallery",
+          "lg2 add .",
+          "lg2 commit -m \"Weekly iOS Shortcuts update\"",
+          "lg2 push"
+        ],
+        "UUID": "65EA8795-D29A-4320-8196-173E56929559"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+      "WFWorkflowActionParameters": {
+        "WFNotificationActionSound": false,
+        "WFNotificationActionBody": "✅ Backup My iOS Shortcuts",
+        "UUID": "55B9E9CA-1982-4A49-A3D3-B706B62ED928"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [
+    "Watch",
+    "NCWidget"
+  ],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

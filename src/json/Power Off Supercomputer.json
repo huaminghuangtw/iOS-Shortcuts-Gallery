@@ -1,1 +1,180 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"Power Off Supercomputer","UUID":"E96F592D-A691-43B4-BF47-4309FA293991"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"E96F592D-A691-43B4-BF47-4309FA293991","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"5ED53481-429A-437D-96AC-AE97D9B187DE","workflowName":"Get isPlayed","isSelf":false},"UUID":"DC82D808-7492-4B99-9931-9EAC45CD716A","WFWorkflowName":"Get isPlayed"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"Type":"ActionOutput","OutputName":"Shortcut Result","OutputUUID":"DC82D808-7492-4B99-9931-9EAC45CD716A","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFBooleanContentItem"},{"PropertyUserInfo":"WFItemName","Type":"WFPropertyVariableAggrandizement","PropertyName":"Name"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"No","GroupingIdentifier":"83BB635B-EC05-4AB7-8CD4-123736CA5A9D","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"E96F592D-A691-43B4-BF47-4309FA293991","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"84F36B55-C1B0-4409-83EA-18BEFAC92A25","workflowName":"Set isPlayed","isSelf":false},"UUID":"1A944744-AC09-49E3-9D50-8797D5585793","WFWorkflowName":"Set isPlayed"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"D61A5E8D-FB4B-4944-AF1A-72FCE4804F77","workflowName":"Choose Audio Device","isSelf":false},"WFWorkflowName":"Choose Audio Device","UUID":"E0B3FAE5-4840-4E0B-8F87-47F9C5A5E730"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"00BAA816-FC02-4019-817D-AEA7783E7B2C","workflowName":"Good Evening","isSelf":false},"WFWorkflowName":"Good Evening","UUID":"0F3DB250-0426-430D-B504-78736200BFF9"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"D07366E6-7117-4A26-A427-82C369EB7770","workflowName":"Death Clock","isSelf":false},"WFWorkflowName":"Death Clock","UUID":"6CC01017-6C83-4C62-85F3-2F9AC7C72AC2"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":2}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"3A098D0F-A8D3-492D-81D4-D8043500D8E8","workflowName":"Subconscious Mind Exercise","isSelf":false},"WFWorkflowName":"Subconscious Mind Exercise","UUID":"27D6B194-92C9-4A2E-8E1F-E7E6FB900198"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"83BB635B-EC05-4AB7-8CD4-123736CA5A9D","UUID":"102BECEE-965A-4C26-B9DA-10C3AA48574D"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.delay","WFWorkflowActionParameters":{"WFDelayTime":3}},{"WFWorkflowActionIdentifier":"is.workflow.actions.pausemusic","WFWorkflowActionParameters":{"WFPlayPauseBehavior":"Play"}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":["NCWidget"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "Power Off Supercomputer",
+        "UUID": "E96F592D-A691-43B4-BF47-4309FA293991"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "E96F592D-A691-43B4-BF47-4309FA293991",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "5ED53481-429A-437D-96AC-AE97D9B187DE",
+          "workflowName": "Get isPlayed",
+          "isSelf": false
+        },
+        "UUID": "DC82D808-7492-4B99-9931-9EAC45CD716A",
+        "WFWorkflowName": "Get isPlayed"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Type": "Variable",
+          "Variable": {
+            "Value": {
+              "Type": "ActionOutput",
+              "OutputName": "Shortcut Result",
+              "OutputUUID": "DC82D808-7492-4B99-9931-9EAC45CD716A",
+              "Aggrandizements": [
+                {
+                  "Type": "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass": "WFBooleanContentItem"
+                },
+                {
+                  "PropertyUserInfo": "WFItemName",
+                  "Type": "WFPropertyVariableAggrandizement",
+                  "PropertyName": "Name"
+                }
+              ]
+            },
+            "WFSerializationType": "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode": 0,
+        "WFConditionalActionString": "No",
+        "GroupingIdentifier": "83BB635B-EC05-4AB7-8CD4-123736CA5A9D",
+        "WFCondition": 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "E96F592D-A691-43B4-BF47-4309FA293991",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "84F36B55-C1B0-4409-83EA-18BEFAC92A25",
+          "workflowName": "Set isPlayed",
+          "isSelf": false
+        },
+        "UUID": "1A944744-AC09-49E3-9D50-8797D5585793",
+        "WFWorkflowName": "Set isPlayed"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "D61A5E8D-FB4B-4944-AF1A-72FCE4804F77",
+          "workflowName": "Choose Audio Device",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Choose Audio Device",
+        "UUID": "E0B3FAE5-4840-4E0B-8F87-47F9C5A5E730"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "00BAA816-FC02-4019-817D-AEA7783E7B2C",
+          "workflowName": "Good Evening",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Good Evening",
+        "UUID": "0F3DB250-0426-430D-B504-78736200BFF9"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+      "WFWorkflowActionParameters": {
+        "WFDelayTime": 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "D07366E6-7117-4A26-A427-82C369EB7770",
+          "workflowName": "Death Clock",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Death Clock",
+        "UUID": "6CC01017-6C83-4C62-85F3-2F9AC7C72AC2"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+      "WFWorkflowActionParameters": {
+        "WFDelayTime": 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "3A098D0F-A8D3-492D-81D4-D8043500D8E8",
+          "workflowName": "Subconscious Mind Exercise",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Subconscious Mind Exercise",
+        "UUID": "27D6B194-92C9-4A2E-8E1F-E7E6FB900198"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFControlFlowMode": 2,
+        "GroupingIdentifier": "83BB635B-EC05-4AB7-8CD4-123736CA5A9D",
+        "UUID": "102BECEE-965A-4C26-B9DA-10C3AA48574D"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+      "WFWorkflowActionParameters": {
+        "WFDelayTime": 3
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.pausemusic",
+      "WFWorkflowActionParameters": {
+        "WFPlayPauseBehavior": "Play"
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [
+    "NCWidget"
+  ],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

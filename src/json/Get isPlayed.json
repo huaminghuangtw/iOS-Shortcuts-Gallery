@@ -1,1 +1,113 @@
-{"WFWorkflowMinimumClientVersionString":"1113","WFWorkflowMinimumClientVersion":1113,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":["WFDictionaryContentItem","WFNumberContentItem","WFDateContentItem","WFStringContentItem","WFBooleanContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowNoInputBehavior":{"Name":"WFWorkflowNoInputBehaviorAskForInput","Parameters":{"ItemClass":"WFStringContentItem"}},"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.documentpicker.open","WFWorkflowActionParameters":{"WFFileErrorIfNotFound":true,"WFFile":{"fileLocation":{"WFFileLocationType":"Shortcuts","fileProviderDomainID":"com.apple.CloudDocs.iCloudDriveFileProvider\/8490D092-B665-44CE-B773-583DD8574185","relativeSubpath":"My Voice Assistant","appContainerBundleIdentifier":"com.apple.shortcuts","crossDeviceItemID":"docs.icloud.com:com.apple.CloudDocs\/4CA79DBB-FCB5-4B46-B7EC-9E4938D8A551\/d045e76f71204d39fa4cfbb572f3690db3ce1d2c"},"filename":"My Voice Assistant","displayName":"My Voice Assistant"},"WFGetFilePath":"config.json","UUID":"F9353798-7BDC-4C07-8BD2-E5E9044098D2","WFGetFolderContents":true,"WFShowFilePicker":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.detect.dictionary","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"F9353798-7BDC-4C07-8BD2-E5E9044098D2","Type":"ActionOutput","OutputName":"File"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"AC0BBBA3-B4D9-422E-B711-4F5371082583"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getvalueforkey","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"AC0BBBA3-B4D9-422E-B711-4F5371082583","Type":"ActionOutput","OutputName":"Dictionary"},"WFSerializationType":"WFTextTokenAttachment"},"WFDictionaryKey":{"Value":{"string":"￼.isPlayed","attachmentsByRange":{"{0, 1}":{"Type":"ExtensionInput"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"7741BE16-E8DE-463B-9FAF-9474B239C0C8"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"7741BE16-E8DE-463B-9FAF-9474B239C0C8","Type":"ActionOutput","OutputName":"Dictionary Value"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFQuickActionSurfaces":[],"WFWorkflowTypes":["Watch","NCWidget"],"WFWorkflowHasShortcutInputVariables":true}
+{
+  "WFWorkflowMinimumClientVersionString": "1113",
+  "WFWorkflowMinimumClientVersion": 1113,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [
+    "WFDictionaryContentItem",
+    "WFNumberContentItem",
+    "WFDateContentItem",
+    "WFStringContentItem",
+    "WFBooleanContentItem"
+  ],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowNoInputBehavior": {
+    "Name": "WFWorkflowNoInputBehaviorAskForInput",
+    "Parameters": {
+      "ItemClass": "WFStringContentItem"
+    }
+  },
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+      "WFWorkflowActionParameters": {
+        "WFFileErrorIfNotFound": true,
+        "WFFile": {
+          "fileLocation": {
+            "WFFileLocationType": "Shortcuts",
+            "fileProviderDomainID": "com.apple.CloudDocs.iCloudDriveFileProvider/8490D092-B665-44CE-B773-583DD8574185",
+            "relativeSubpath": "My Voice Assistant",
+            "appContainerBundleIdentifier": "com.apple.shortcuts",
+            "crossDeviceItemID": "docs.icloud.com:com.apple.CloudDocs/4CA79DBB-FCB5-4B46-B7EC-9E4938D8A551/d045e76f71204d39fa4cfbb572f3690db3ce1d2c"
+          },
+          "filename": "My Voice Assistant",
+          "displayName": "My Voice Assistant"
+        },
+        "WFGetFilePath": "config.json",
+        "UUID": "F9353798-7BDC-4C07-8BD2-E5E9044098D2",
+        "WFGetFolderContents": true,
+        "WFShowFilePicker": false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.detect.dictionary",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "F9353798-7BDC-4C07-8BD2-E5E9044098D2",
+            "Type": "ActionOutput",
+            "OutputName": "File"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "AC0BBBA3-B4D9-422E-B711-4F5371082583"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "AC0BBBA3-B4D9-422E-B711-4F5371082583",
+            "Type": "ActionOutput",
+            "OutputName": "Dictionary"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFDictionaryKey": {
+          "Value": {
+            "string": "￼.isPlayed",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "ExtensionInput"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "7741BE16-E8DE-463B-9FAF-9474B239C0C8"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+      "WFWorkflowActionParameters": {
+        "WFOutput": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "7741BE16-E8DE-463B-9FAF-9474B239C0C8",
+                "Type": "ActionOutput",
+                "OutputName": "Dictionary Value"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowTypes": [
+    "Watch",
+    "NCWidget"
+  ],
+  "WFWorkflowHasShortcutInputVariables": true
+}

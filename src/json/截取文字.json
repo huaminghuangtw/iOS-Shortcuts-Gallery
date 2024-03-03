@@ -1,1 +1,181 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.dismisssiri","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"55CEA7A1-FCB8-44DC-A4D1-2E4A5D633664","workflowName":"Extract Text from Screenshot","isSelf":false},"WFWorkflowName":"Extract Text from Screenshot","UUID":"6CDCEEDE-5955-4FBD-B56C-5C9D7BF062B2"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"6CDCEEDE-5955-4FBD-B56C-5C9D7BF062B2","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"BA414822-2658-46E8-A73E-20471863F9B3","workflowName":"Select Extracted Text from Screenshot","isSelf":false},"UUID":"3AF71AC5-7688-474C-9257-992AE4F41284","WFWorkflowName":"Select Extracted Text from Screenshot"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefrommenu","WFWorkflowActionParameters":{"WFMenuPrompt":"🤖 Which one?","WFControlFlowMode":0,"WFMenuItems":["✂️ Copy to Clipboard","📥 Add to Inbox"],"GroupingIdentifier":"C5653A72-E9DC-4B52-8435-22072FC2F4AD"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefrommenu","WFWorkflowActionParameters":{"WFMenuItemTitle":"✂️ Copy to Clipboard","GroupingIdentifier":"C5653A72-E9DC-4B52-8435-22072FC2F4AD","WFControlFlowMode":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.vibrate","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.ask","WFWorkflowActionParameters":{"UUID":"B5F13A8F-D74B-4B40-AEED-10F2216748C2","WFAskActionDefaultAnswer":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"3AF71AC5-7688-474C-9257-992AE4F41284","Type":"ActionOutput","OutputName":"Shortcut Result"}}},"WFSerializationType":"WFTextTokenString"},"WFAskActionPrompt":"👀"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"B5F13A8F-D74B-4B40-AEED-10F2216748C2","Type":"ActionOutput","OutputName":"Provided Input"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"6F90C947-A84E-47F6-80D9-7C994C96A8C9","workflowName":"Copy to Clipboard","isSelf":false},"UUID":"7CE10829-FB5C-4792-A974-9957B6CC9C42","WFWorkflowName":"Copy to Clipboard"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"B5F13A8F-D74B-4B40-AEED-10F2216748C2","Type":"ActionOutput","OutputName":"Provided Input"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"4F01DBEE-6F75-4D25-A918-41F41C3A2A72","workflowName":"Notify \"Copied to Clipboard!\"","isSelf":false},"UUID":"90C910F8-BBED-420A-BDA1-01F18E875067","WFWorkflowName":"Notify \"Copied to Clipboard!\""}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefrommenu","WFWorkflowActionParameters":{"WFMenuItemTitle":"📥 Add to Inbox","GroupingIdentifier":"C5653A72-E9DC-4B52-8435-22072FC2F4AD","WFControlFlowMode":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"3AF71AC5-7688-474C-9257-992AE4F41284","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"BD94B8A5-33FB-409C-BF55-0BD26765BC95","workflowName":"Add Text to Inbox","isSelf":false},"UUID":"B326628B-27D6-4E37-A3B4-0A98EC8C6BD0","WFWorkflowName":"Add Text to Inbox"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.choosefrommenu","WFWorkflowActionParameters":{"GroupingIdentifier":"C5653A72-E9DC-4B52-8435-22072FC2F4AD","WFControlFlowMode":2}}],"WFWorkflowInputContentItemClasses":["WFRichTextContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.dismisssiri",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "55CEA7A1-FCB8-44DC-A4D1-2E4A5D633664",
+          "workflowName": "Extract Text from Screenshot",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Extract Text from Screenshot",
+        "UUID": "6CDCEEDE-5955-4FBD-B56C-5C9D7BF062B2"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "6CDCEEDE-5955-4FBD-B56C-5C9D7BF062B2",
+            "Type": "ActionOutput",
+            "OutputName": "Shortcut Result"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "BA414822-2658-46E8-A73E-20471863F9B3",
+          "workflowName": "Select Extracted Text from Screenshot",
+          "isSelf": false
+        },
+        "UUID": "3AF71AC5-7688-474C-9257-992AE4F41284",
+        "WFWorkflowName": "Select Extracted Text from Screenshot"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFMenuPrompt": "🤖 Which one?",
+        "WFControlFlowMode": 0,
+        "WFMenuItems": [
+          "✂️ Copy to Clipboard",
+          "📥 Add to Inbox"
+        ],
+        "GroupingIdentifier": "C5653A72-E9DC-4B52-8435-22072FC2F4AD"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFMenuItemTitle": "✂️ Copy to Clipboard",
+        "GroupingIdentifier": "C5653A72-E9DC-4B52-8435-22072FC2F4AD",
+        "WFControlFlowMode": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+      "WFWorkflowActionParameters": {
+        "UUID": "B5F13A8F-D74B-4B40-AEED-10F2216748C2",
+        "WFAskActionDefaultAnswer": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "3AF71AC5-7688-474C-9257-992AE4F41284",
+                "Type": "ActionOutput",
+                "OutputName": "Shortcut Result"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "WFAskActionPrompt": "👀"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "B5F13A8F-D74B-4B40-AEED-10F2216748C2",
+            "Type": "ActionOutput",
+            "OutputName": "Provided Input"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "6F90C947-A84E-47F6-80D9-7C994C96A8C9",
+          "workflowName": "Copy to Clipboard",
+          "isSelf": false
+        },
+        "UUID": "7CE10829-FB5C-4792-A974-9957B6CC9C42",
+        "WFWorkflowName": "Copy to Clipboard"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "B5F13A8F-D74B-4B40-AEED-10F2216748C2",
+            "Type": "ActionOutput",
+            "OutputName": "Provided Input"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "4F01DBEE-6F75-4D25-A918-41F41C3A2A72",
+          "workflowName": "Notify \"Copied to Clipboard!\"",
+          "isSelf": false
+        },
+        "UUID": "90C910F8-BBED-420A-BDA1-01F18E875067",
+        "WFWorkflowName": "Notify \"Copied to Clipboard!\""
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFMenuItemTitle": "📥 Add to Inbox",
+        "GroupingIdentifier": "C5653A72-E9DC-4B52-8435-22072FC2F4AD",
+        "WFControlFlowMode": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "3AF71AC5-7688-474C-9257-992AE4F41284",
+            "Type": "ActionOutput",
+            "OutputName": "Shortcut Result"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "BD94B8A5-33FB-409C-BF55-0BD26765BC95",
+          "workflowName": "Add Text to Inbox",
+          "isSelf": false
+        },
+        "UUID": "B326628B-27D6-4E37-A3B4-0A98EC8C6BD0",
+        "WFWorkflowName": "Add Text to Inbox"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "GroupingIdentifier": "C5653A72-E9DC-4B52-8435-22072FC2F4AD",
+        "WFControlFlowMode": 2
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFRichTextContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

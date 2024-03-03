@@ -1,1 +1,102 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"Backup Daily Bullet Journals","UUID":"57125A4E-DC48-441F-9DF8-86314DF9620F"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Create Notification","UUID":"6F0EA1CE-49D2-4546-BF27-4BDFB5B86EB5","parameter":{"Value":{"OutputUUID":"57125A4E-DC48-441F-9DF8-86314DF9620F","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.number","WFWorkflowActionParameters":{"WFNumberActionNumber":"3","CustomOutputName":"monthAgo","UUID":"FD39073C-617C-4260-876E-CC578C335AD8"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Backup Daily Bullet Journals","UUID":"AD9D877D-32BF-4CD6-A2EA-8B8CF01140C2","parameter":{"Value":{"OutputUUID":"FD39073C-617C-4260-876E-CC578C335AD8","Type":"ActionOutput","OutputName":"monthAgo"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.notification","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"AD9D877D-32BF-4CD6-A2EA-8B8CF01140C2","Type":"ActionOutput","OutputName":"Output"},"WFSerializationType":"WFTextTokenAttachment"},"WFNotificationActionBody":"✅ Done","UUID":"BB4D514A-112B-42B8-9D70-A2CFF62BEA24","WFNotificationActionSound":false}}],"WFWorkflowInputContentItemClasses":["WFAppStoreAppContentItem","WFArticleContentItem","WFContactContentItem","WFDateContentItem","WFEmailAddressContentItem","WFGenericFileContentItem","WFImageContentItem","WFiTunesProductContentItem","WFLocationContentItem","WFDCMapsLinkContentItem","WFAVAssetContentItem","WFPDFContentItem","WFPhoneNumberContentItem","WFRichTextContentItem","WFSafariWebPageContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":["Watch","NCWidget"],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "Backup Daily Bullet Journals",
+        "UUID": "57125A4E-DC48-441F-9DF8-86314DF9620F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters": {
+        "fileName": "Create Notification",
+        "UUID": "6F0EA1CE-49D2-4546-BF27-4BDFB5B86EB5",
+        "parameter": {
+          "Value": {
+            "OutputUUID": "57125A4E-DC48-441F-9DF8-86314DF9620F",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "ShowWhenRun": false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+      "WFWorkflowActionParameters": {
+        "WFNumberActionNumber": "3",
+        "CustomOutputName": "monthAgo",
+        "UUID": "FD39073C-617C-4260-876E-CC578C335AD8"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+      "WFWorkflowActionParameters": {
+        "fileName": "Backup Daily Bullet Journals",
+        "UUID": "AD9D877D-32BF-4CD6-A2EA-8B8CF01140C2",
+        "parameter": {
+          "Value": {
+            "OutputUUID": "FD39073C-617C-4260-876E-CC578C335AD8",
+            "Type": "ActionOutput",
+            "OutputName": "monthAgo"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "ShowWhenRun": false
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "AD9D877D-32BF-4CD6-A2EA-8B8CF01140C2",
+            "Type": "ActionOutput",
+            "OutputName": "Output"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFNotificationActionBody": "✅ Done",
+        "UUID": "BB4D514A-112B-42B8-9D70-A2CFF62BEA24",
+        "WFNotificationActionSound": false
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [
+    "Watch",
+    "NCWidget"
+  ],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}

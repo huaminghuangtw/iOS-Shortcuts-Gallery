@@ -1,1 +1,203 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2302.0.5","WFWorkflowOutputContentItemClasses":["WFContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.returntohomescreen","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"com.alexhay.ToolboxProForShortcuts.InternetConnectionIntent","WFWorkflowActionParameters":{"UUID":"C5A99FDE-CDFD-49D0-9DFF-63D6B030397B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"Type":"ActionOutput","OutputName":"Is Connected","OutputUUID":"C5A99FDE-CDFD-49D0-9DFF-63D6B030397B","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFBooleanContentItem"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"GroupingIdentifier":"BDD79E38-53F5-4BBE-B9D4-68154B77E697","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getmyworkflows","WFWorkflowActionParameters":{"UUID":"54B21458-79B4-4A64-A282-CFBDF7A19DDB","Folder":{"Identifier":"D280D0F2-15EE-481B-93FD-BE1C62318628","DisplayString":"Spotify - Meditation"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.getitemfromlist","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"54B21458-79B4-4A64-A282-CFBDF7A19DDB","Type":"ActionOutput","OutputName":"My Shortcuts"},"WFSerializationType":"WFTextTokenAttachment"},"WFItemSpecifier":"Random Item","UUID":"3B2C32CA-CD26-4602-9A77-89947FD36DA8"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"Value":{"OutputUUID":"3B2C32CA-CD26-4602-9A77-89947FD36DA8","Type":"ActionOutput","OutputName":"Item from List"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflowName":{"Value":{"OutputUUID":"3B2C32CA-CD26-4602-9A77-89947FD36DA8","Type":"ActionOutput","OutputName":"Item from List"},"WFSerializationType":"WFTextTokenAttachment"},"UUID":"D8ECA5A8-60EA-4F54-92D7-1950688ACAE1"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"GroupingIdentifier":"BDD79E38-53F5-4BBE-B9D4-68154B77E697","WFControlFlowMode":1}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":"Rain","UUID":"B6EE1AEE-E99F-4278-91D9-395BC0C33E7F"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"B6EE1AEE-E99F-4278-91D9-395BC0C33E7F","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"35823B12-88E1-437C-AF56-CA9488AB93E2","workflowName":"Play Background Sound","isSelf":false},"UUID":"8737CC4A-5723-4FF1-93EE-1A19D2CB269F","WFWorkflowName":"Play Background Sound"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"BDD79E38-53F5-4BBE-B9D4-68154B77E697","UUID":"A764AFDE-784A-41AD-A115-86EFCCFAFF7D"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.number","WFWorkflowActionParameters":{"WFNumberActionNumber":"13","UUID":"39858702-F800-4F86-826C-29B77050F167"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"39858702-F800-4F86-826C-29B77050F167","Type":"ActionOutput","OutputName":"Number"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"F4491D4E-B909-4C62-B2DB-6860423316D5","workflowName":"Audio Timer","isSelf":false},"UUID":"3C7ECA19-9AFF-4FCC-AD76-D26ABB1B9C2D","WFWorkflowName":"Audio Timer"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"3A098D0F-A8D3-492D-81D4-D8043500D8E8","workflowName":"Subconscious Mind Exercise","isSelf":false},"WFWorkflowName":"Subconscious Mind Exercise","UUID":"D8BCCFC4-6B79-4347-A3DF-E8E8215C8F99"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"D8BCCFC4-6B79-4347-A3DF-E8E8215C8F99","Type":"ActionOutput","OutputName":"Shortcut Result"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 2846468607,
+    "WFWorkflowIconGlyphNumber": 61440
+  },
+  "WFWorkflowClientVersion": "2302.0.5",
+  "WFWorkflowOutputContentItemClasses": [
+    "WFContentItem"
+  ],
+  "WFWorkflowHasOutputFallback": false,
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.returntohomescreen",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "com.alexhay.ToolboxProForShortcuts.InternetConnectionIntent",
+      "WFWorkflowActionParameters": {
+        "UUID": "C5A99FDE-CDFD-49D0-9DFF-63D6B030397B"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Type": "Variable",
+          "Variable": {
+            "Value": {
+              "Type": "ActionOutput",
+              "OutputName": "Is Connected",
+              "OutputUUID": "C5A99FDE-CDFD-49D0-9DFF-63D6B030397B",
+              "Aggrandizements": [
+                {
+                  "Type": "WFCoercionVariableAggrandizement",
+                  "CoercionItemClass": "WFBooleanContentItem"
+                }
+              ]
+            },
+            "WFSerializationType": "WFTextTokenAttachment"
+          }
+        },
+        "WFControlFlowMode": 0,
+        "GroupingIdentifier": "BDD79E38-53F5-4BBE-B9D4-68154B77E697",
+        "WFCondition": 4
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+      "WFWorkflowActionParameters": {
+        "UUID": "54B21458-79B4-4A64-A282-CFBDF7A19DDB",
+        "Folder": {
+          "Identifier": "D280D0F2-15EE-481B-93FD-BE1C62318628",
+          "DisplayString": "Spotify - Meditation"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "54B21458-79B4-4A64-A282-CFBDF7A19DDB",
+            "Type": "ActionOutput",
+            "OutputName": "My Shortcuts"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFItemSpecifier": "Random Item",
+        "UUID": "3B2C32CA-CD26-4602-9A77-89947FD36DA8"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "Value": {
+            "OutputUUID": "3B2C32CA-CD26-4602-9A77-89947FD36DA8",
+            "Type": "ActionOutput",
+            "OutputName": "Item from List"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflowName": {
+          "Value": {
+            "OutputUUID": "3B2C32CA-CD26-4602-9A77-89947FD36DA8",
+            "Type": "ActionOutput",
+            "OutputName": "Item from List"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "D8ECA5A8-60EA-4F54-92D7-1950688ACAE1"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "GroupingIdentifier": "BDD79E38-53F5-4BBE-B9D4-68154B77E697",
+        "WFControlFlowMode": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+      "WFWorkflowActionParameters": {
+        "WFTextActionText": "Rain",
+        "UUID": "B6EE1AEE-E99F-4278-91D9-395BC0C33E7F"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "B6EE1AEE-E99F-4278-91D9-395BC0C33E7F",
+            "Type": "ActionOutput",
+            "OutputName": "Text"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "35823B12-88E1-437C-AF56-CA9488AB93E2",
+          "workflowName": "Play Background Sound",
+          "isSelf": false
+        },
+        "UUID": "8737CC4A-5723-4FF1-93EE-1A19D2CB269F",
+        "WFWorkflowName": "Play Background Sound"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+      "WFWorkflowActionParameters": {
+        "WFControlFlowMode": 2,
+        "GroupingIdentifier": "BDD79E38-53F5-4BBE-B9D4-68154B77E697",
+        "UUID": "A764AFDE-784A-41AD-A115-86EFCCFAFF7D"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+      "WFWorkflowActionParameters": {
+        "WFNumberActionNumber": "13",
+        "UUID": "39858702-F800-4F86-826C-29B77050F167"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "39858702-F800-4F86-826C-29B77050F167",
+            "Type": "ActionOutput",
+            "OutputName": "Number"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFWorkflow": {
+          "workflowIdentifier": "F4491D4E-B909-4C62-B2DB-6860423316D5",
+          "workflowName": "Audio Timer",
+          "isSelf": false
+        },
+        "UUID": "3C7ECA19-9AFF-4FCC-AD76-D26ABB1B9C2D",
+        "WFWorkflowName": "Audio Timer"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+      "WFWorkflowActionParameters": {
+        "WFWorkflow": {
+          "workflowIdentifier": "3A098D0F-A8D3-492D-81D4-D8043500D8E8",
+          "workflowName": "Subconscious Mind Exercise",
+          "isSelf": false
+        },
+        "WFWorkflowName": "Subconscious Mind Exercise",
+        "UUID": "D8BCCFC4-6B79-4347-A3DF-E8E8215C8F99"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.output",
+      "WFWorkflowActionParameters": {
+        "WFOutput": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "D8BCCFC4-6B79-4347-A3DF-E8E8215C8F99",
+                "Type": "ActionOutput",
+                "OutputName": "Shortcut Result"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        }
+      }
+    }
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFStringContentItem"
+  ],
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [],
+  "WFQuickActionSurfaces": [],
+  "WFWorkflowHasShortcutInputVariables": false
+}
