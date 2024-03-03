@@ -17,13 +17,19 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.vibrate</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.choosefromlist</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
 				<string>60AAFB89-CF58-4BAE-85F2-00E88B84EAA0</string>
 				<key>WFChooseFromListActionPrompt</key>
-				<string>Choose first shortcut</string>
+				<string>🤖 Choose 1st Shortcut:</string>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -65,13 +71,19 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.vibrate</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.choosefromlist</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
 				<string>45A74A9B-DC82-4155-8C69-FFCE80783A29</string>
 				<key>WFChooseFromListActionPrompt</key>
-				<string>Choose shortcut to append</string>
+				<string>🤖 Choose 2nd Shortcut:</string>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -345,6 +357,12 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.vibrate</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.openurl</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -366,7 +384,7 @@
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>2206.0.6</string>
+	<string>2302.0.5</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>
@@ -376,7 +394,7 @@
 		<key>WFWorkflowIconGlyphNumber</key>
 		<integer>59830</integer>
 		<key>WFWorkflowIconStartColor</key>
-		<integer>4292093695</integer>
+		<integer>3679049983</integer>
 	</dict>
 	<key>WFWorkflowImportQuestions</key>
 	<array/>

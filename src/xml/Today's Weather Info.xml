@@ -481,7 +481,7 @@
 				<key>UUID</key>
 				<string>F326F7FA-A83B-476C-B537-0F9E6D80D49D</string>
 				<key>WFTextActionText</key>
-				<string>記得外出走走，曬曬太陽！</string>
+				<string>記得外出走走接觸大自然唷！</string>
 			</dict>
 		</dict>
 		<dict>
@@ -599,7 +599,7 @@
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>2206.0.6</string>
+	<string>2302.0.5</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>

@@ -72,26 +72,6 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>99C4CE8B-4F24-488D-8D29-441D4E885E77</string>
-				<key>WFWorkflow</key>
-				<dict>
-					<key>isSelf</key>
-					<false/>
-					<key>workflowIdentifier</key>
-					<string>BE52727F-FA91-41C9-8345-F5FE1E04E05C</string>
-					<key>workflowName</key>
-					<string>Set Not Completed Daily Routines and Calendar Items as Completed</string>
-				</dict>
-				<key>WFWorkflowName</key>
-				<string>Set Not Completed Daily Routines and Calendar Items as Completed</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.runworkflow</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
 				<string>7CF94866-D11B-4F5B-8C42-A054D2653A80</string>
 				<key>WFWorkflow</key>
 				<dict>
@@ -155,7 +135,7 @@
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>2206.0.6</string>
+	<string>2302.0.5</string>
 	<key>WFWorkflowHasOutputFallback</key>
 	<false/>
 	<key>WFWorkflowHasShortcutInputVariables</key>
