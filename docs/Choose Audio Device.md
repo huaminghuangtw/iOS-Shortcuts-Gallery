@@ -1,3 +1,0 @@
-# Choose Audio Device
-
----

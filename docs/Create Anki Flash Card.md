@@ -1,3 +1,0 @@
-# Create Anki Flash Card
-
----

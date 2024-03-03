@@ -1,3 +1,0 @@
-# Binaural Beats
-
----

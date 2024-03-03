@@ -1,3 +1,0 @@
-# Yoga & Meditation
-
----

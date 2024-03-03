@@ -1,3 +1,0 @@
-# Fetch Daily Bullet Journal
-
----

@@ -1,3 +1,0 @@
-# 🎧 Soundcore // Navy Blue
-
----

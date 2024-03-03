@@ -1,3 +1,0 @@
-# View Strava Latest Activity
-
----

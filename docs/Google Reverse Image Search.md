@@ -1,3 +1,0 @@
-# Google Reverse Image Search
-
----

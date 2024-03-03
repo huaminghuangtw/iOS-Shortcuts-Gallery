@@ -1,3 +1,0 @@
-# KONVOI Slack Check-in
-
----

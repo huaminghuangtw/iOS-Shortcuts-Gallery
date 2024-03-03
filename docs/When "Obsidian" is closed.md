@@ -1,3 +1,0 @@
-# When "Obsidian" is closed
-
----

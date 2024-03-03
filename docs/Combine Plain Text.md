@@ -1,3 +1,0 @@
-# Combine Plain Text
-
----

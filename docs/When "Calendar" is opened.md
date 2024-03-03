@@ -1,3 +1,0 @@
-# When "Calendar" is opened
-
----

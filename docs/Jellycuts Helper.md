@@ -1,3 +1,0 @@
-# Jellycuts Helper
-
----

@@ -1,3 +1,0 @@
-# Trade Republic
-
----

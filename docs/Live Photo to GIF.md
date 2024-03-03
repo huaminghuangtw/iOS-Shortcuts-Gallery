@@ -1,3 +1,0 @@
-# Live Photo to GIF
-
----

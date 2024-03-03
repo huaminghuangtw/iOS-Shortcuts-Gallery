@@ -1,3 +1,0 @@
-# When Charging Cable Plugged
-
----

@@ -1,3 +1,0 @@
-# Turn on Grayscale
-
----

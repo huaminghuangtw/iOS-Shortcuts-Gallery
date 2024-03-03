@@ -1,3 +1,0 @@
-# Dinner with Friends
-
----

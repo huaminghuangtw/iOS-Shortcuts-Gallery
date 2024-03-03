@@ -1,3 +1,0 @@
-# Log First Meal Time
-
----

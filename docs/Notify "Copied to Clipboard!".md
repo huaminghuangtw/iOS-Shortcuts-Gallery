@@ -1,3 +1,0 @@
-# Notify "Copied to Clipboard!"
-
----

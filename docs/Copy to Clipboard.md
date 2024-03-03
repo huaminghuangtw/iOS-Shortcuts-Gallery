@@ -1,3 +1,0 @@
-# Copy to Clipboard
-
----

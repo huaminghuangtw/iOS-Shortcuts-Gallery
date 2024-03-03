@@ -1,3 +1,0 @@
-# NSDR by Andrew Huberman
-
----

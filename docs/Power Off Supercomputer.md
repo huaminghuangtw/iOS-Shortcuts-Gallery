@@ -1,3 +1,0 @@
-# Power Off Supercomputer
-
----

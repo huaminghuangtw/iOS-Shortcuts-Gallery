@@ -1,3 +1,0 @@
-# Let's Go Running
-
----

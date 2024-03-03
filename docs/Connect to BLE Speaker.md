@@ -1,3 +1,0 @@
-# Connect to BLE Speaker
-
----

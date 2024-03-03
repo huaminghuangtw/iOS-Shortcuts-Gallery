@@ -1,3 +1,0 @@
-# Save to Clips
-
----

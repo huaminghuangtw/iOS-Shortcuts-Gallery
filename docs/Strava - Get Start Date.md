@@ -1,3 +1,0 @@
-# Strava - Get Start Date
-
----

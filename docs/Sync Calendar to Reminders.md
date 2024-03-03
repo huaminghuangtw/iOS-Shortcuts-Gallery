@@ -1,3 +1,0 @@
-# Sync Calendar to Reminders
-
----

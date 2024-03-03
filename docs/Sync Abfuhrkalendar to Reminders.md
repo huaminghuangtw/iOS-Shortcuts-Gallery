@@ -1,3 +1,0 @@
-# Sync Abfuhrkalendar to Reminders
-
----

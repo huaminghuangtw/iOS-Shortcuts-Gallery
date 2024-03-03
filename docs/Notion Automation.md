@@ -1,3 +1,0 @@
-# Notion Automation
-
----

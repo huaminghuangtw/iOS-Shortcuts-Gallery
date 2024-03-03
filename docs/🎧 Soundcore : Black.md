@@ -1,3 +1,0 @@
-# 🎧 Soundcore // Black
-
----

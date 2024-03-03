@@ -1,3 +1,0 @@
-# Today's Weather Info
-
----

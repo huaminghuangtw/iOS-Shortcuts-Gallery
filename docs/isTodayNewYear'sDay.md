@@ -1,3 +1,0 @@
-# isTodayNewYear'sDay
-
----

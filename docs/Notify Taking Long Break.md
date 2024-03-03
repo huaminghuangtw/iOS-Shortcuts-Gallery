@@ -1,3 +1,0 @@
-# Notify Taking Long Break
-
----

@@ -1,3 +1,0 @@
-# Organize Today's Photos
-
----

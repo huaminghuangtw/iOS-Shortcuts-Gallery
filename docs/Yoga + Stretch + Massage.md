@@ -1,3 +1,0 @@
-# Yoga + Stretch + Massage
-
----

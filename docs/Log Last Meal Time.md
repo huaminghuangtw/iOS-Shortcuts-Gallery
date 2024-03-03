@@ -1,3 +1,0 @@
-# Log Last Meal Time
-
----

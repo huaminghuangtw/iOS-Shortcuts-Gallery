@@ -1,3 +1,0 @@
-# Go to Screen Time
-
----

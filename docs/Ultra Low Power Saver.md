@@ -1,3 +1,0 @@
-# Ultra Low Power Saver
-
----

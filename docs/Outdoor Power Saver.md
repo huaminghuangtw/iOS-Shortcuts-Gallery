@@ -1,3 +1,0 @@
-# Outdoor Power Saver
-
----

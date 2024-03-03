@@ -1,3 +1,0 @@
-# Schedule My Workout - Kernel
-
----

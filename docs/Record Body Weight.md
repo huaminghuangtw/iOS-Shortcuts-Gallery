@@ -1,3 +1,0 @@
-# Record Body Weight
-
----

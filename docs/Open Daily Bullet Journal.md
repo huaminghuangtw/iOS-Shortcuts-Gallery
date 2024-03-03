@@ -1,3 +1,0 @@
-# Open Daily Bullet Journal
-
----

@@ -1,3 +1,0 @@
-# Brighten Screen
-
----

@@ -1,3 +1,0 @@
-# Pretty Print Dictionary
-
----

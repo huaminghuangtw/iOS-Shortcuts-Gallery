@@ -1,3 +1,0 @@
-# Show Clipboard
-
----

@@ -1,3 +1,0 @@
-# Subconscious Mind Exercise
-
----

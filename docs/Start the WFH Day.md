@@ -1,3 +1,0 @@
-# Start the WFH Day
-
----

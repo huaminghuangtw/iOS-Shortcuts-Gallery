@@ -1,3 +1,0 @@
-# Educate My Brain
-
----

@@ -1,3 +1,0 @@
-# Get Google Search Link
-
----

@@ -1,1 +1,0 @@
-# Sanity Check Markdown Files

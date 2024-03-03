@@ -1,3 +1,0 @@
-# Upload to Imgur
-
----

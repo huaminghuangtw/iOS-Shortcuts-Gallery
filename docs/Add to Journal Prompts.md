@@ -1,3 +1,0 @@
-# Add to Journal Prompts
-
----

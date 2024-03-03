@@ -1,3 +1,0 @@
-# Get Reddit Search Link
-
----

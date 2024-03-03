@@ -1,3 +1,0 @@
-# Power On Supercomputer
-
----

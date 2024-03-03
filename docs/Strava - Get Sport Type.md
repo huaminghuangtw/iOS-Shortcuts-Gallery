@@ -1,3 +1,0 @@
-# Strava - Get Sport Type
-
----

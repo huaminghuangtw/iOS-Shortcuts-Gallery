@@ -1,3 +1,0 @@
-# Extract Text from Screenshot
-
----

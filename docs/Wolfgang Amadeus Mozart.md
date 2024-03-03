@@ -1,3 +1,0 @@
-# Wolfgang Amadeus Mozart
-
----

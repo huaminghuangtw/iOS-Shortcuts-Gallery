@@ -1,3 +1,0 @@
-# Peaceful Guitar
-
----

@@ -1,3 +1,0 @@
-# Connect to Walking Pad
-
----

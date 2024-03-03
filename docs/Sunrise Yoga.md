@@ -1,3 +1,0 @@
-# Sunrise Yoga
-
----

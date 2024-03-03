@@ -1,3 +1,0 @@
-# Set Medium Brightness
-
----

@@ -1,3 +1,0 @@
-# Log Daily Bullet Journal
-
----
