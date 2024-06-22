@@ -1,0 +1,8 @@
+# Ignore folders containing spaces
+*/* *
+
+# Ignore all dot files
+.*
+
+# Except for .gitignore
+!.gitignore
