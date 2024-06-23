@@ -1,1 +1,447 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2605.0.5","WFWorkflowOutputContentItemClasses":["WFContentItem"],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"Type":"ExtensionInput"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"GroupingIdentifier":"E4DF2AB1-B3AB-49B5-961D-0C47F375E992","WFCondition":100}},{"WFWorkflowActionIdentifier":"is.workflow.actions.urlencode","WFWorkflowActionParameters":{"WFInput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"Type":"ExtensionInput"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"289EAADF-678A-498C-B07B-A11D3DF009C0"}},{"WFWorkflowActionIdentifier":"dk.simonbs.Scriptable.ParameterizedRunScriptIntent","WFWorkflowActionParameters":{"fileName":"Daily Routine","UUID":"3C23FD09-DCD0-4414-A17C-E70BAEA9EB3B","parameter":{"Value":{"OutputUUID":"289EAADF-678A-498C-B07B-A11D3DF009C0","Type":"ActionOutput","OutputName":"URL Encoded Text"},"WFSerializationType":"WFTextTokenAttachment"},"ShowWhenRun":false}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"E4DF2AB1-B3AB-49B5-961D-0C47F375E992","UUID":"FBF9F837-178E-4E29-BDFA-90A3E288362B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.lockscreen","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"com.sindresorhus.Actions.GetAudioPlaybackDestinationIntent","WFWorkflowActionParameters":{"UUID":"DBBFE60F-87CB-470F-BDB5-E80473BC9811","AppIntentDescriptor":{"TeamIdentifier":"YG56YK5RN5","BundleIdentifier":"com.sindresorhus.Actions","Name":"Actions","AppIntentIdentifier":"GetAudioPlaybackDestinationIntent"}}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"DBBFE60F-87CB-470F-BDB5-E80473BC9811","Type":"ActionOutput","OutputName":"Audio Playback Destination"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"🎧","GroupingIdentifier":"45BDD6E4-87A5-4A00-A432-69AD5EC08450","WFCondition":99}},{"WFWorkflowActionIdentifier":"is.workflow.actions.dictionary","WFWorkflowActionParameters":{"WFItems":{"Value":{"WFDictionaryFieldValueItems":[{"WFItemType":0,"WFKey":{"Value":{"string":"topic"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"Evening Reflection"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":3,"WFKey":{"Value":{"string":"numberOfItems"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"3"},"WFSerializationType":"WFTextTokenString"}},{"WFItemType":0,"WFKey":{"Value":{"string":"opener"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"1"},"WFSerializationType":"WFTextTokenString"}}]},"WFSerializationType":"WFDictionaryFieldValue"},"UUID":"4CA6030B-87AF-4CBA-91B0-51D7C09ABEDC"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"4CA6030B-87AF-4CBA-91B0-51D7C09ABEDC","Type":"ActionOutput","OutputName":"Dictionary"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"EB7AA479-3F00-4D7C-95B0-B1FDDA68A3AD","workflowName":"Journal Prompt Question Opener","isSelf":false},"UUID":"CDDC03FD-4D1C-4D6C-BC97-6880BAD67035","WFWorkflowName":"Journal Prompt Question Opener"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"45BDD6E4-87A5-4A00-A432-69AD5EC08450","UUID":"3E7DA339-4F6B-4E7E-ACA2-A8F3AAAC17BD"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"A16EE6A1-059D-4282-9A2A-5D61782DA748","workflowName":"Open Today's Bullet Journal","isSelf":false},"WFWorkflowName":"Open Today's Bullet Journal","UUID":"D124CE16-3201-43DF-BFCE-D94C2E46C6F2"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.dictionary","WFWorkflowActionParameters":{"WFItems":{"Value":{"WFDictionaryFieldValueItems":[{"WFItemType":0,"WFKey":{"Value":{"string":"date"},"WFSerializationType":"WFTextTokenString"},"WFValue":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"Type":"CurrentDate"}}},"WFSerializationType":"WFTextTokenString"}}]},"WFSerializationType":"WFDictionaryFieldValue"},"UUID":"858ED8F3-710F-48B7-9C20-82B53A6A057C"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.gettext","WFWorkflowActionParameters":{"WFTextActionText":{"Value":{"string":"35|￼","attachmentsByRange":{"{3, 1}":{"OutputUUID":"858ED8F3-710F-48B7-9C20-82B53A6A057C","Type":"ActionOutput","OutputName":"Dictionary"}}},"WFSerializationType":"WFTextTokenString"},"UUID":"A23274AB-459F-4BC2-840A-E0579A28A747"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"A23274AB-459F-4BC2-840A-E0579A28A747","Type":"ActionOutput","OutputName":"Text"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"286E3087-0A41-45E1-A6CD-84282481131D","workflowName":"Open My iPhone Shortcut(s)","isSelf":false},"UUID":"1CDA0231-7067-46BA-8E84-241E1D01279E","WFWorkflowName":"Open My iPhone Shortcut(s)"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"40755C57-6EFC-4B16-AAD9-0F394F315C66","workflowName":"Query On This Day Journal","isSelf":false},"WFWorkflowName":"Query On This Day Journal","UUID":"21E78D80-41CC-4204-9226-66CF8A20DA9F"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"Type":"ActionOutput","OutputName":"Shortcut Result","OutputUUID":"21E78D80-41CC-4204-9226-66CF8A20DA9F","Aggrandizements":[{"Type":"WFCoercionVariableAggrandizement","CoercionItemClass":"WFDictionaryContentItem"},{"Type":"WFDictionaryValueVariableAggrandizement","DictionaryKey":"results"}]},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"GroupingIdentifier":"56BA11ED-D5FF-4982-A8F3-429BEEE62CB3","WFCondition":100}},{"WFWorkflowActionIdentifier":"is.workflow.actions.number","WFWorkflowActionParameters":{"WFNumberActionNumber":"25","UUID":"22FCC5A3-0BE8-4F13-9864-76AEFC6ED07B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"22FCC5A3-0BE8-4F13-9864-76AEFC6ED07B","Type":"ActionOutput","OutputName":"Number"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"286E3087-0A41-45E1-A6CD-84282481131D","workflowName":"Open My iPhone Shortcut(s)","isSelf":false},"UUID":"BE07B638-E02C-48C9-80AD-23CA01104B0A","WFWorkflowName":"Open My iPhone Shortcut(s)"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"56BA11ED-D5FF-4982-A8F3-429BEEE62CB3","UUID":"C1F5D6B8-9AB1-4F9D-8729-191711BA8F4B"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"64352340-E70F-4D72-8B10-9DCD65333E32","workflowName":"getDayOfWeek","isSelf":false},"WFWorkflowName":"getDayOfWeek","UUID":"E81F2511-BF6F-43EA-A89C-D6AC5CACBF4F"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFInput":{"Type":"Variable","Variable":{"Value":{"OutputUUID":"E81F2511-BF6F-43EA-A89C-D6AC5CACBF4F","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"}},"WFControlFlowMode":0,"WFConditionalActionString":"Sunday","GroupingIdentifier":"2E950916-A8FF-4686-9C09-3DF45EE6E7AF","WFCondition":4}},{"WFWorkflowActionIdentifier":"is.workflow.actions.number","WFWorkflowActionParameters":{"WFNumberActionNumber":"30","UUID":"C6DA1874-4206-4382-B9A4-7290D1B995DF"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"C6DA1874-4206-4382-B9A4-7290D1B995DF","Type":"ActionOutput","OutputName":"Number"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"286E3087-0A41-45E1-A6CD-84282481131D","workflowName":"Open My iPhone Shortcut(s)","isSelf":false},"UUID":"878FA4A9-6FA9-46AD-81FF-8E0F415DDD9C","WFWorkflowName":"Open My iPhone Shortcut(s)"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.conditional","WFWorkflowActionParameters":{"WFControlFlowMode":2,"GroupingIdentifier":"2E950916-A8FF-4686-9C09-3DF45EE6E7AF","UUID":"1CDE6760-A3D9-43B3-ABE6-A0F68D44E192"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.output","WFWorkflowActionParameters":{"WFOutput":{"Value":{"string":"￼","attachmentsByRange":{"{0, 1}":{"OutputUUID":"1CDE6760-A3D9-43B3-ABE6-A0F68D44E192","Type":"ActionOutput","OutputName":"If Result"}}},"WFSerializationType":"WFTextTokenString"}}}],"WFWorkflowInputContentItemClasses":["WFStringContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":true}
+{
+	"WFWorkflowMinimumClientVersionString": "900",
+	"WFWorkflowMinimumClientVersion": 900,
+	"WFWorkflowIcon": {
+		"WFWorkflowIconStartColor": 2846468607,
+		"WFWorkflowIconGlyphNumber": 61440
+	},
+	"WFWorkflowClientVersion": "2605.0.5",
+	"WFWorkflowOutputContentItemClasses": [
+		"WFContentItem"
+	],
+	"WFWorkflowHasOutputFallback": false,
+	"WFWorkflowActions": [
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Type": "Variable",
+					"Variable": {
+						"Value": {
+							"Type": "ExtensionInput"
+						},
+						"WFSerializationType": "WFTextTokenAttachment"
+					}
+				},
+				"WFControlFlowMode": 0,
+				"GroupingIdentifier": "E4DF2AB1-B3AB-49B5-961D-0C47F375E992",
+				"WFCondition": 100
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.urlencode",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"string": "￼",
+						"attachmentsByRange": {
+							"{0, 1}": {
+								"Type": "ExtensionInput"
+							}
+						}
+					},
+					"WFSerializationType": "WFTextTokenString"
+				},
+				"UUID": "289EAADF-678A-498C-B07B-A11D3DF009C0"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "dk.simonbs.Scriptable.ParameterizedRunScriptIntent",
+			"WFWorkflowActionParameters": {
+				"fileName": "Daily Routine",
+				"UUID": "3C23FD09-DCD0-4414-A17C-E70BAEA9EB3B",
+				"parameter": {
+					"Value": {
+						"OutputUUID": "289EAADF-678A-498C-B07B-A11D3DF009C0",
+						"Type": "ActionOutput",
+						"OutputName": "URL Encoded Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"ShowWhenRun": false
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"WFControlFlowMode": 2,
+				"GroupingIdentifier": "E4DF2AB1-B3AB-49B5-961D-0C47F375E992",
+				"UUID": "FBF9F837-178E-4E29-BDFA-90A3E288362B"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.lockscreen",
+			"WFWorkflowActionParameters": {}
+		},
+		{
+			"WFWorkflowActionIdentifier": "com.sindresorhus.Actions.GetAudioPlaybackDestinationIntent",
+			"WFWorkflowActionParameters": {
+				"UUID": "DBBFE60F-87CB-470F-BDB5-E80473BC9811",
+				"AppIntentDescriptor": {
+					"TeamIdentifier": "YG56YK5RN5",
+					"BundleIdentifier": "com.sindresorhus.Actions",
+					"Name": "Actions",
+					"AppIntentIdentifier": "GetAudioPlaybackDestinationIntent"
+				}
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Type": "Variable",
+					"Variable": {
+						"Value": {
+							"OutputUUID": "DBBFE60F-87CB-470F-BDB5-E80473BC9811",
+							"Type": "ActionOutput",
+							"OutputName": "Audio Playback Destination"
+						},
+						"WFSerializationType": "WFTextTokenAttachment"
+					}
+				},
+				"WFControlFlowMode": 0,
+				"WFConditionalActionString": "🎧",
+				"GroupingIdentifier": "45BDD6E4-87A5-4A00-A432-69AD5EC08450",
+				"WFCondition": 99
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+			"WFWorkflowActionParameters": {
+				"WFItems": {
+					"Value": {
+						"WFDictionaryFieldValueItems": [
+							{
+								"WFItemType": 0,
+								"WFKey": {
+									"Value": {
+										"string": "topic"
+									},
+									"WFSerializationType": "WFTextTokenString"
+								},
+								"WFValue": {
+									"Value": {
+										"string": "Evening Reflection"
+									},
+									"WFSerializationType": "WFTextTokenString"
+								}
+							},
+							{
+								"WFItemType": 3,
+								"WFKey": {
+									"Value": {
+										"string": "numberOfItems"
+									},
+									"WFSerializationType": "WFTextTokenString"
+								},
+								"WFValue": {
+									"Value": {
+										"string": "3"
+									},
+									"WFSerializationType": "WFTextTokenString"
+								}
+							},
+							{
+								"WFItemType": 0,
+								"WFKey": {
+									"Value": {
+										"string": "opener"
+									},
+									"WFSerializationType": "WFTextTokenString"
+								},
+								"WFValue": {
+									"Value": {
+										"string": "1"
+									},
+									"WFSerializationType": "WFTextTokenString"
+								}
+							}
+						]
+					},
+					"WFSerializationType": "WFDictionaryFieldValue"
+				},
+				"UUID": "4CA6030B-87AF-4CBA-91B0-51D7C09ABEDC"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "4CA6030B-87AF-4CBA-91B0-51D7C09ABEDC",
+						"Type": "ActionOutput",
+						"OutputName": "Dictionary"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFWorkflow": {
+					"workflowIdentifier": "EB7AA479-3F00-4D7C-95B0-B1FDDA68A3AD",
+					"workflowName": "Journal Prompt Question Opener",
+					"isSelf": false
+				},
+				"UUID": "CDDC03FD-4D1C-4D6C-BC97-6880BAD67035",
+				"WFWorkflowName": "Journal Prompt Question Opener"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"WFControlFlowMode": 2,
+				"GroupingIdentifier": "45BDD6E4-87A5-4A00-A432-69AD5EC08450",
+				"UUID": "3E7DA339-4F6B-4E7E-ACA2-A8F3AAAC17BD"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFWorkflow": {
+					"workflowIdentifier": "A16EE6A1-059D-4282-9A2A-5D61782DA748",
+					"workflowName": "Open Today's Bullet Journal",
+					"isSelf": false
+				},
+				"WFWorkflowName": "Open Today's Bullet Journal",
+				"UUID": "D124CE16-3201-43DF-BFCE-D94C2E46C6F2"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+			"WFWorkflowActionParameters": {
+				"WFItems": {
+					"Value": {
+						"WFDictionaryFieldValueItems": [
+							{
+								"WFItemType": 0,
+								"WFKey": {
+									"Value": {
+										"string": "date"
+									},
+									"WFSerializationType": "WFTextTokenString"
+								},
+								"WFValue": {
+									"Value": {
+										"string": "￼",
+										"attachmentsByRange": {
+											"{0, 1}": {
+												"Type": "CurrentDate"
+											}
+										}
+									},
+									"WFSerializationType": "WFTextTokenString"
+								}
+							}
+						]
+					},
+					"WFSerializationType": "WFDictionaryFieldValue"
+				},
+				"UUID": "858ED8F3-710F-48B7-9C20-82B53A6A057C"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": {
+					"Value": {
+						"string": "35|￼",
+						"attachmentsByRange": {
+							"{3, 1}": {
+								"OutputUUID": "858ED8F3-710F-48B7-9C20-82B53A6A057C",
+								"Type": "ActionOutput",
+								"OutputName": "Dictionary"
+							}
+						}
+					},
+					"WFSerializationType": "WFTextTokenString"
+				},
+				"UUID": "A23274AB-459F-4BC2-840A-E0579A28A747"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "A23274AB-459F-4BC2-840A-E0579A28A747",
+						"Type": "ActionOutput",
+						"OutputName": "Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFWorkflow": {
+					"workflowIdentifier": "286E3087-0A41-45E1-A6CD-84282481131D",
+					"workflowName": "Open My iPhone Shortcut(s)",
+					"isSelf": false
+				},
+				"UUID": "1CDA0231-7067-46BA-8E84-241E1D01279E",
+				"WFWorkflowName": "Open My iPhone Shortcut(s)"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFWorkflow": {
+					"workflowIdentifier": "40755C57-6EFC-4B16-AAD9-0F394F315C66",
+					"workflowName": "Query On This Day Journal",
+					"isSelf": false
+				},
+				"WFWorkflowName": "Query On This Day Journal",
+				"UUID": "21E78D80-41CC-4204-9226-66CF8A20DA9F"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Type": "Variable",
+					"Variable": {
+						"Value": {
+							"Type": "ActionOutput",
+							"OutputName": "Shortcut Result",
+							"OutputUUID": "21E78D80-41CC-4204-9226-66CF8A20DA9F",
+							"Aggrandizements": [
+								{
+									"Type": "WFCoercionVariableAggrandizement",
+									"CoercionItemClass": "WFDictionaryContentItem"
+								},
+								{
+									"Type": "WFDictionaryValueVariableAggrandizement",
+									"DictionaryKey": "results"
+								}
+							]
+						},
+						"WFSerializationType": "WFTextTokenAttachment"
+					}
+				},
+				"WFControlFlowMode": 0,
+				"GroupingIdentifier": "56BA11ED-D5FF-4982-A8F3-429BEEE62CB3",
+				"WFCondition": 100
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.number",
+			"WFWorkflowActionParameters": {
+				"WFNumberActionNumber": "25",
+				"UUID": "22FCC5A3-0BE8-4F13-9864-76AEFC6ED07B"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "22FCC5A3-0BE8-4F13-9864-76AEFC6ED07B",
+						"Type": "ActionOutput",
+						"OutputName": "Number"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFWorkflow": {
+					"workflowIdentifier": "286E3087-0A41-45E1-A6CD-84282481131D",
+					"workflowName": "Open My iPhone Shortcut(s)",
+					"isSelf": false
+				},
+				"UUID": "BE07B638-E02C-48C9-80AD-23CA01104B0A",
+				"WFWorkflowName": "Open My iPhone Shortcut(s)"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"WFControlFlowMode": 2,
+				"GroupingIdentifier": "56BA11ED-D5FF-4982-A8F3-429BEEE62CB3",
+				"UUID": "C1F5D6B8-9AB1-4F9D-8729-191711BA8F4B"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFWorkflow": {
+					"workflowIdentifier": "64352340-E70F-4D72-8B10-9DCD65333E32",
+					"workflowName": "getDayOfWeek",
+					"isSelf": false
+				},
+				"WFWorkflowName": "getDayOfWeek",
+				"UUID": "E81F2511-BF6F-43EA-A89C-D6AC5CACBF4F"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Type": "Variable",
+					"Variable": {
+						"Value": {
+							"OutputUUID": "E81F2511-BF6F-43EA-A89C-D6AC5CACBF4F",
+							"Type": "ActionOutput",
+							"OutputName": "Shortcut Result"
+						},
+						"WFSerializationType": "WFTextTokenAttachment"
+					}
+				},
+				"WFControlFlowMode": 0,
+				"WFConditionalActionString": "Sunday",
+				"GroupingIdentifier": "2E950916-A8FF-4686-9C09-3DF45EE6E7AF",
+				"WFCondition": 4
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.number",
+			"WFWorkflowActionParameters": {
+				"WFNumberActionNumber": "30",
+				"UUID": "C6DA1874-4206-4382-B9A4-7290D1B995DF"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "C6DA1874-4206-4382-B9A4-7290D1B995DF",
+						"Type": "ActionOutput",
+						"OutputName": "Number"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFWorkflow": {
+					"workflowIdentifier": "286E3087-0A41-45E1-A6CD-84282481131D",
+					"workflowName": "Open My iPhone Shortcut(s)",
+					"isSelf": false
+				},
+				"UUID": "878FA4A9-6FA9-46AD-81FF-8E0F415DDD9C",
+				"WFWorkflowName": "Open My iPhone Shortcut(s)"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+			"WFWorkflowActionParameters": {
+				"WFControlFlowMode": 2,
+				"GroupingIdentifier": "2E950916-A8FF-4686-9C09-3DF45EE6E7AF",
+				"UUID": "1CDE6760-A3D9-43B3-ABE6-A0F68D44E192"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.output",
+			"WFWorkflowActionParameters": {
+				"WFOutput": {
+					"Value": {
+						"string": "￼",
+						"attachmentsByRange": {
+							"{0, 1}": {
+								"OutputUUID": "1CDE6760-A3D9-43B3-ABE6-A0F68D44E192",
+								"Type": "ActionOutput",
+								"OutputName": "If Result"
+							}
+						}
+					},
+					"WFSerializationType": "WFTextTokenString"
+				}
+			}
+		}
+	],
+	"WFWorkflowInputContentItemClasses": [
+		"WFStringContentItem"
+	],
+	"WFWorkflowImportQuestions": [],
+	"WFWorkflowTypes": [],
+	"WFQuickActionSurfaces": [],
+	"WFWorkflowHasShortcutInputVariables": true
+}

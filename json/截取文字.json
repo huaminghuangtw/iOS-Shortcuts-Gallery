@@ -1,1 +1,78 @@
-{"WFWorkflowMinimumClientVersionString":"900","WFWorkflowMinimumClientVersion":900,"WFWorkflowIcon":{"WFWorkflowIconStartColor":2846468607,"WFWorkflowIconGlyphNumber":61440},"WFWorkflowClientVersion":"2605.0.5","WFWorkflowOutputContentItemClasses":[],"WFWorkflowHasOutputFallback":false,"WFWorkflowActions":[{"WFWorkflowActionIdentifier":"is.workflow.actions.dismisssiri","WFWorkflowActionParameters":{}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFWorkflow":{"workflowIdentifier":"55CEA7A1-FCB8-44DC-A4D1-2E4A5D633664","workflowName":"Extract Text from Screenshot","isSelf":false},"WFWorkflowName":"Extract Text from Screenshot","UUID":"6CDCEEDE-5955-4FBD-B56C-5C9D7BF062B2"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"6CDCEEDE-5955-4FBD-B56C-5C9D7BF062B2","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"BA414822-2658-46E8-A73E-20471863F9B3","workflowName":"Select Extracted Text from Screenshot","isSelf":false},"UUID":"3AF71AC5-7688-474C-9257-992AE4F41284","WFWorkflowName":"Select Extracted Text from Screenshot"}},{"WFWorkflowActionIdentifier":"is.workflow.actions.runworkflow","WFWorkflowActionParameters":{"WFInput":{"Value":{"OutputUUID":"3AF71AC5-7688-474C-9257-992AE4F41284","Type":"ActionOutput","OutputName":"Shortcut Result"},"WFSerializationType":"WFTextTokenAttachment"},"WFWorkflow":{"workflowIdentifier":"1398EAAC-402F-4C79-88CB-2FE1FF26F84C","workflowName":"Add to My Knowledge Base","isSelf":false},"UUID":"D7FC2A3B-25DB-4577-893E-4CF808A327D9","WFWorkflowName":"Add to My Knowledge Base"}}],"WFWorkflowInputContentItemClasses":["WFRichTextContentItem","WFStringContentItem","WFURLContentItem"],"WFWorkflowImportQuestions":[],"WFWorkflowTypes":[],"WFQuickActionSurfaces":[],"WFWorkflowHasShortcutInputVariables":false}
+{
+	"WFWorkflowMinimumClientVersionString": "900",
+	"WFWorkflowMinimumClientVersion": 900,
+	"WFWorkflowIcon": {
+		"WFWorkflowIconStartColor": 2846468607,
+		"WFWorkflowIconGlyphNumber": 61440
+	},
+	"WFWorkflowClientVersion": "2605.0.5",
+	"WFWorkflowOutputContentItemClasses": [],
+	"WFWorkflowHasOutputFallback": false,
+	"WFWorkflowActions": [
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.dismisssiri",
+			"WFWorkflowActionParameters": {}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFWorkflow": {
+					"workflowIdentifier": "55CEA7A1-FCB8-44DC-A4D1-2E4A5D633664",
+					"workflowName": "Extract Text from Screenshot",
+					"isSelf": false
+				},
+				"WFWorkflowName": "Extract Text from Screenshot",
+				"UUID": "6CDCEEDE-5955-4FBD-B56C-5C9D7BF062B2"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "6CDCEEDE-5955-4FBD-B56C-5C9D7BF062B2",
+						"Type": "ActionOutput",
+						"OutputName": "Shortcut Result"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFWorkflow": {
+					"workflowIdentifier": "BA414822-2658-46E8-A73E-20471863F9B3",
+					"workflowName": "Select Extracted Text from Screenshot",
+					"isSelf": false
+				},
+				"UUID": "3AF71AC5-7688-474C-9257-992AE4F41284",
+				"WFWorkflowName": "Select Extracted Text from Screenshot"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "3AF71AC5-7688-474C-9257-992AE4F41284",
+						"Type": "ActionOutput",
+						"OutputName": "Shortcut Result"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFWorkflow": {
+					"workflowIdentifier": "1398EAAC-402F-4C79-88CB-2FE1FF26F84C",
+					"workflowName": "Add to My Knowledge Base",
+					"isSelf": false
+				},
+				"UUID": "D7FC2A3B-25DB-4577-893E-4CF808A327D9",
+				"WFWorkflowName": "Add to My Knowledge Base"
+			}
+		}
+	],
+	"WFWorkflowInputContentItemClasses": [
+		"WFRichTextContentItem",
+		"WFStringContentItem",
+		"WFURLContentItem"
+	],
+	"WFWorkflowImportQuestions": [],
+	"WFWorkflowTypes": [],
+	"WFQuickActionSurfaces": [],
+	"WFWorkflowHasShortcutInputVariables": false
+}
