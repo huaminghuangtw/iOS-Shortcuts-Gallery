@@ -1,0 +1,157 @@
+{
+	"WFWorkflowMinimumClientVersionString": "900",
+	"WFWorkflowMinimumClientVersion": 900,
+	"WFWorkflowIcon": {
+		"WFWorkflowIconStartColor": -1263359489,
+		"WFWorkflowIconGlyphNumber": 61440
+	},
+	"WFWorkflowClientVersion": "2605.0.5",
+	"WFWorkflowOutputContentItemClasses": [],
+	"WFWorkflowHasOutputFallback": false,
+	"WFWorkflowActions": [
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.open",
+			"WFWorkflowActionParameters": {
+				"WFGetFilePath": "Names.csv",
+				"WFShowFilePicker": false,
+				"UUID": "338FD6E9-EA91-482F-A203-2ACC6948E9FF",
+				"WFGetFolderContents": true
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+			"WFWorkflowActionParameters": {
+				"UUID": "5DFAC6A0-1995-48DE-8D81-0EDA9483F83D",
+				"text": {
+					"Value": {
+						"OutputUUID": "338FD6E9-EA91-482F-A203-2ACC6948E9FF",
+						"Type": "ActionOutput",
+						"OutputName": "File"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"Show-text": true
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "5DFAC6A0-1995-48DE-8D81-0EDA9483F83D",
+						"Type": "ActionOutput",
+						"OutputName": "Split Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFItemSpecifier": "Items in Range",
+				"WFItemRangeStart": "2",
+				"UUID": "59B75B19-6FAB-4175-92E2-0BDAB0292C88"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "59B75B19-6FAB-4175-92E2-0BDAB0292C88",
+						"Type": "ActionOutput",
+						"OutputName": "Item from List"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"GroupingIdentifier": "12433F83-3B75-412E-99E3-327118D63C1A",
+				"WFControlFlowMode": 0
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+			"WFWorkflowActionParameters": {
+				"Show-text": true,
+				"WFTextCustomSeparator": ",",
+				"UUID": "CC452233-B569-40D5-A3B1-1A329A7F6915",
+				"WFTextSeparator": "Custom",
+				"text": {
+					"Value": {
+						"VariableName": "Repeat Item",
+						"Type": "Variable"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				}
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "CC452233-B569-40D5-A3B1-1A329A7F6915",
+						"Type": "ActionOutput",
+						"OutputName": "Split Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				}
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+			"WFWorkflowActionParameters": {
+				"WFControlFlowMode": 2,
+				"GroupingIdentifier": "12433F83-3B75-412E-99E3-327118D63C1A",
+				"UUID": "41A06F21-7DA1-4768-BBB3-BC96B1F6EAEF"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "41A06F21-7DA1-4768-BBB3-BC96B1F6EAEF",
+						"Type": "ActionOutput",
+						"OutputName": "Repeat Results"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"UUID": "17827DCC-0715-4B0A-94DB-167E6AA0FE56"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "17827DCC-0715-4B0A-94DB-167E6AA0FE56",
+						"Type": "ActionOutput",
+						"OutputName": "Chosen Item"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				}
+			}
+		}
+	],
+	"WFWorkflowInputContentItemClasses": [
+		"WFAppStoreAppContentItem",
+		"WFArticleContentItem",
+		"WFContactContentItem",
+		"WFDateContentItem",
+		"WFEmailAddressContentItem",
+		"WFGenericFileContentItem",
+		"WFImageContentItem",
+		"WFiTunesProductContentItem",
+		"WFLocationContentItem",
+		"WFDCMapsLinkContentItem",
+		"WFAVAssetContentItem",
+		"WFPDFContentItem",
+		"WFPhoneNumberContentItem",
+		"WFRichTextContentItem",
+		"WFSafariWebPageContentItem",
+		"WFStringContentItem",
+		"WFURLContentItem"
+	],
+	"WFWorkflowImportQuestions": [],
+	"WFWorkflowTypes": [
+		"Watch"
+	],
+	"WFQuickActionSurfaces": [],
+	"WFWorkflowHasShortcutInputVariables": false
+}

@@ -1,5 +1,4 @@
 {
-<<<<<<< main
 	"WFWorkflowMinimumClientVersionString": "900",
 	"WFWorkflowMinimumClientVersion": 900,
 	"WFWorkflowIcon": {
@@ -50,66 +49,4 @@
 	"WFWorkflowTypes": [],
 	"WFQuickActionSurfaces": [],
 	"WFWorkflowHasShortcutInputVariables": false
-=======
-  "WFWorkflowMinimumClientVersionString" : "900",
-  "WFWorkflowMinimumClientVersion" : 900,
-  "WFWorkflowIcon" : {
-    "WFWorkflowIconStartColor" : 2846468607,
-    "WFWorkflowIconGlyphNumber" : 61440
-  },
-  "WFWorkflowClientVersion" : "2605.0.5",
-  "WFWorkflowOutputContentItemClasses" : [
-
-  ],
-  "WFWorkflowHasOutputFallback" : false,
-  "WFWorkflowActions" : [
-    {
-      "WFWorkflowActionIdentifier" : "is.workflow.actions.dismisssiri",
-      "WFWorkflowActionParameters" : {
-
-      }
-    },
-    {
-      "WFWorkflowActionIdentifier" : "is.workflow.actions.runworkflow",
-      "WFWorkflowActionParameters" : {
-        "UUID" : "441A4419-8403-42FC-A4C0-BAE8ABC8812D",
-        "WFWorkflowName" : "🔢 Record Body Weight",
-        "WFWorkflow" : {
-          "workflowIdentifier" : "B28D4CBB-6828-4642-AEA6-41F6994F5353",
-          "isSelf" : false,
-          "workflowName" : "🔢 Record Body Weight"
-        }
-      }
-    }
-  ],
-  "WFWorkflowInputContentItemClasses" : [
-    "WFAppStoreAppContentItem",
-    "WFArticleContentItem",
-    "WFContactContentItem",
-    "WFDateContentItem",
-    "WFEmailAddressContentItem",
-    "WFGenericFileContentItem",
-    "WFImageContentItem",
-    "WFiTunesProductContentItem",
-    "WFLocationContentItem",
-    "WFDCMapsLinkContentItem",
-    "WFAVAssetContentItem",
-    "WFPDFContentItem",
-    "WFPhoneNumberContentItem",
-    "WFRichTextContentItem",
-    "WFSafariWebPageContentItem",
-    "WFStringContentItem",
-    "WFURLContentItem"
-  ],
-  "WFWorkflowImportQuestions" : [
-
-  ],
-  "WFWorkflowTypes" : [
-
-  ],
-  "WFQuickActionSurfaces" : [
-
-  ],
-  "WFWorkflowHasShortcutInputVariables" : false
->>>>>>> origin/main
 }

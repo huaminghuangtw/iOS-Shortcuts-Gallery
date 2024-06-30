@@ -1,0 +1,390 @@
+{
+	"WFWorkflowMinimumClientVersionString": "900",
+	"WFWorkflowMinimumClientVersion": 900,
+	"WFWorkflowIcon": {
+		"WFWorkflowIconStartColor": 946986751,
+		"WFWorkflowIconGlyphNumber": 59395
+	},
+	"WFWorkflowClientVersion": "2605.0.5",
+	"WFWorkflowOutputContentItemClasses": [],
+	"WFWorkflowHasOutputFallback": false,
+	"WFWorkflowActions": [
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": "Welcome to my expense tracker. My first useful shortcut. It will record your expenses to Apple Numbers. You can change the title of this document in the end of this shortcut."
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.date",
+			"WFWorkflowActionParameters": {
+				"WFDateActionMode": "Current Date",
+				"UUID": "F22D85C2-F740-4E4E-AA82-E6306EA69A50"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"Type": "ActionOutput",
+						"OutputName": "Date",
+						"OutputUUID": "F22D85C2-F740-4E4E-AA82-E6306EA69A50",
+						"Aggrandizements": [
+							{
+								"WFDateFormatStyle": "Medium",
+								"WFISO8601IncludeTime": false,
+								"Type": "WFDateFormatVariableAggrandizement",
+								"WFTimeFormatStyle": "Short"
+							}
+						]
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFVariableName": "Date"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFMenuPrompt": "Cash or card ?",
+				"WFControlFlowMode": 0,
+				"UUID": "CED099B8-902B-48CC-9A75-731D3FE5FB02",
+				"WFMenuItems": [
+					"Cash 💵",
+					"Card 💳"
+				],
+				"GroupingIdentifier": "7F9705A5-FAEE-4F07-AA09-8C705D498DED"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFMenuItemTitle": "Cash 💵",
+				"GroupingIdentifier": "7F9705A5-FAEE-4F07-AA09-8C705D498DED",
+				"WFControlFlowMode": 1
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": "Cash",
+				"UUID": "92B3B449-4765-4384-BB6B-2B930AD8D6BC"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "92B3B449-4765-4384-BB6B-2B930AD8D6BC",
+						"Type": "ActionOutput",
+						"OutputName": "Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFVariableName": "Account"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFMenuItemTitle": "Card 💳",
+				"GroupingIdentifier": "7F9705A5-FAEE-4F07-AA09-8C705D498DED",
+				"WFControlFlowMode": 1
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": "Card",
+				"UUID": "C144B53A-EDED-42AF-97E5-3E1A122980BF"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "C144B53A-EDED-42AF-97E5-3E1A122980BF",
+						"Type": "ActionOutput",
+						"OutputName": "Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFVariableName": "Account"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFControlFlowMode": 2,
+				"GroupingIdentifier": "7F9705A5-FAEE-4F07-AA09-8C705D498DED",
+				"UUID": "5EE283FE-6F74-4350-B91C-01CC3D9702FD"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFMenuPrompt": "What did you buy?",
+				"WFControlFlowMode": 0,
+				"WFMenuItems": [
+					"🍖 Groceries",
+					"🍔 Restaurants",
+					"🚘 Gas & Auto",
+					"🐶 Pets"
+				],
+				"GroupingIdentifier": "BEBE5266-5321-4F82-ACD6-B640C022631F"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFMenuItemTitle": "🍖 Groceries",
+				"GroupingIdentifier": "BEBE5266-5321-4F82-ACD6-B640C022631F",
+				"WFControlFlowMode": 1
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": "Groceries",
+				"UUID": "93C758A4-4705-4B6E-8B9B-7A5FC15A47A7"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "93C758A4-4705-4B6E-8B9B-7A5FC15A47A7",
+						"Type": "ActionOutput",
+						"OutputName": "Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFVariableName": "Category"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFMenuItemTitle": "🍔 Restaurants",
+				"GroupingIdentifier": "BEBE5266-5321-4F82-ACD6-B640C022631F",
+				"WFControlFlowMode": 1
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": "Restaurants",
+				"UUID": "5208BBBF-E32A-4B99-83E5-C9A6F6474CD0"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "5208BBBF-E32A-4B99-83E5-C9A6F6474CD0",
+						"Type": "ActionOutput",
+						"OutputName": "Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFVariableName": "Category"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFMenuItemTitle": "🚘 Gas & Auto",
+				"GroupingIdentifier": "BEBE5266-5321-4F82-ACD6-B640C022631F",
+				"WFControlFlowMode": 1
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": "Gas & Auto",
+				"UUID": "1B492D6E-3AD0-4FE7-8062-1D6595F991C3"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "1B492D6E-3AD0-4FE7-8062-1D6595F991C3",
+						"Type": "ActionOutput",
+						"OutputName": "Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFVariableName": "Category"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFMenuItemTitle": "🐶 Pets",
+				"GroupingIdentifier": "BEBE5266-5321-4F82-ACD6-B640C022631F",
+				"WFControlFlowMode": 1
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": "Pets",
+				"UUID": "729BA60B-C44D-446C-8D6D-295A9BC396C5"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "729BA60B-C44D-446C-8D6D-295A9BC396C5",
+						"Type": "ActionOutput",
+						"OutputName": "Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFVariableName": "Category"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+			"WFWorkflowActionParameters": {
+				"WFControlFlowMode": 2,
+				"GroupingIdentifier": "BEBE5266-5321-4F82-ACD6-B640C022631F",
+				"UUID": "C2147229-4FF5-4CB6-AC1A-7BEFF307530B"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+			"WFWorkflowActionParameters": {
+				"WFAskActionDefaultAnswerNumber": "00.00",
+				"WFAskActionAllowsNegativeNumbers": false,
+				"UUID": "9850257A-57A2-426E-BE35-2D411066B106",
+				"WFInputType": "Number",
+				"WFAskActionPrompt": "Total cost ?"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "9850257A-57A2-426E-BE35-2D411066B106",
+						"Type": "ActionOutput",
+						"OutputName": "Provided Input"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFVariableName": "Amount"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "com.apple.Numbers.TNiOSAddValuesToSpreadsheetIntent",
+			"WFWorkflowActionParameters": {
+				"values": [
+					{
+						"Value": {
+							"string": "￼",
+							"attachmentsByRange": {
+								"{0, 1}": {
+									"VariableName": "Date",
+									"Type": "Variable"
+								}
+							}
+						},
+						"WFSerializationType": "WFTextTokenString"
+					},
+					{
+						"Value": {
+							"string": "￼",
+							"attachmentsByRange": {
+								"{0, 1}": {
+									"VariableName": "Category",
+									"Type": "Variable"
+								}
+							}
+						},
+						"WFSerializationType": "WFTextTokenString"
+					},
+					{
+						"Value": {
+							"string": "￼",
+							"attachmentsByRange": {
+								"{0, 1}": {
+									"VariableName": "Amount",
+									"Type": "Variable"
+								}
+							}
+						},
+						"WFSerializationType": "WFTextTokenString"
+					},
+					{
+						"Value": {
+							"string": "￼",
+							"attachmentsByRange": {
+								"{0, 1}": {
+									"VariableName": "Account",
+									"Type": "Variable"
+								}
+							}
+						},
+						"WFSerializationType": "WFTextTokenString"
+					}
+				],
+				"tableName": "Table 1",
+				"position": "top",
+				"spreadsheet": {
+					"fileLocation": {
+						"WFFileLocationType": "iCloud",
+						"fileProviderDomainID": "com.apple.CloudDocs.MobileDocumentsFileProvider",
+						"relativeSubpath": "com~apple~Numbers/Documents/expenses.numbers",
+						"appContainerBundleIdentifier": "com.apple.Numbers",
+						"crossDeviceItemID": "docs.icloud.com:com.apple.Numbers/5001752D-58C4-448F-B59F-41DAD5CE92C6/c4c7ce3e377ffae52a1ed44d00d9c1cba5b865ca"
+					},
+					"filename": "expenses.numbers",
+					"displayName": "expenses"
+				},
+				"UUID": "A0C4EBEF-5FFD-45AD-BA17-5D8BE5F3C1FE",
+				"sheetName": "Sheet 1",
+				"Show-values": true
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.vibrate",
+			"WFWorkflowActionParameters": {}
+		}
+	],
+	"WFWorkflowInputContentItemClasses": [
+		"WFAppStoreAppContentItem",
+		"WFArticleContentItem",
+		"WFContactContentItem",
+		"WFDateContentItem",
+		"WFEmailAddressContentItem",
+		"WFFolderContentItem",
+		"WFGenericFileContentItem",
+		"WFImageContentItem",
+		"WFiTunesProductContentItem",
+		"WFLocationContentItem",
+		"WFDCMapsLinkContentItem",
+		"WFAVAssetContentItem",
+		"WFPDFContentItem",
+		"WFPhoneNumberContentItem",
+		"WFRichTextContentItem",
+		"WFSafariWebPageContentItem",
+		"WFStringContentItem",
+		"WFURLContentItem"
+	],
+	"WFWorkflowImportQuestions": [],
+	"WFWorkflowTypes": [
+		"Watch"
+	],
+	"WFQuickActionSurfaces": [],
+	"WFWorkflowHasShortcutInputVariables": false
+}
